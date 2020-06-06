@@ -71,7 +71,7 @@ avuto
 basta
 
 c
-
+c'
 certa
 certe
 certi
@@ -270,6 +270,7 @@ invece
 io
 
 l
+l'
 la
 lasciato
 le
