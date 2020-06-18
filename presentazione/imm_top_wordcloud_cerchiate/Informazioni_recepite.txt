@@ -1,0 +1,45 @@
+DVD POSITIVO
+-> signore anell:	Piaciuto
+-> tolkien:			Piaciuto il signore degli anelli
+-> bambini:			Sono stati criticati bene i film adatti ai bambini
+-> versione estesa: sono piaciuti i dvd con questa caratteristica
+
+DVD NEGATIVO
+-> war:			Star wars infatti non è piaciuto
+-> marvel:		non piacciono i dvd della marvel
+-> rocky:		non è piaciuto rocky
+-> vecch:		non sono piaciuti i dvd vecchi -> Rocky
+-> episod:		sono stati criticati i dvd contenenti episodi, serie tv
+-> ser:			sono stati criticati i dvd contenenti serie tv
+
+VIDEOGAMES POSITIVE
+-> gameplay: 		tipologia di gioco che è piaciuta
+-> zeld: 			è piaciuto questo gioco
+-> nintendo switch: 		
+-> open word:		piacciono i giochi in cui puoi esplorare 
+-> mar kart:		Piace Mario Kart
+-> super mario:		piace super mario
+
+VIDEOGAMES NEGATIVE
+-> pedalier:		I giochi di macchine con il pedale danno problemi/non piacciono
+-> macchin:			I giochi di macchina non piacciono
+-> volant:			I giochi di macchine con il volante danno problemi/non piacciono
+-> grafic:			La grafica viene spesso criticata 
+-> destiny:			Gioco criticato
+-> grand turism:	Gioco criticato
+
+LIBRI POSITIVO
+-> illustr:		Piacciono i libri con le illustrazioni, quindi per i bambini
+-> bambin:		Piacciono i libri per bambini
+-> color:		Piacciono i libri colorati, per bambini
+-> animal:		Piacciono i libri con animali, per bambini
+-> racconti:	Piacciono i libri di racconti, per bambini
+-> semplic:		Piacciono i libri semplici, per bambini
+-> disegn:		Piacciono i libri disegnati, per bambini
+-> regal:		O usato buoni regalo o comunque un buon regalo per qualcuno
+
+LIBRI NEGATIVO
+-> medic:		Tema medicina criticato/non piace
+-> aliment:		Tema cucina criticato/non piace
+-> giall:		Tema gialli criticato/non piace
+-> romanz:		Piaciuti i romanzi
