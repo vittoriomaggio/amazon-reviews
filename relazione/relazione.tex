@@ -1,0 +1,44 @@
+\documentclass[a4paper,11pt]{report} 			%foglio A4, dimensione 11 testo%
+\usepackage[T1]{fontenc}						%[T1]:codifica di output,  [fontenc]:codifica dei font%
+\usepackage[utf8]{inputenc}						%[utf8]:codifica di input, [inputenc]:codifica di input%
+\usepackage[italian]{babel}						%lingua del documento%
+\usepackage{indentfirst}						%serve per indentare all'inizio di un nuovo capoverso%
+\usepackage{amsmath}							%matematica%
+\usepackage{graphicx}							%immagini%
+\usepackage{booktabs}							%tabelle%
+\usepackage{tabularx}							%tabella esce dai bordi%
+\usepackage{hyperref}							%collegamenti ipertestuali tra figure e altro%
+\usepackage{caption}							%centrare la tabella nel testo%
+\usepackage{mparhack}							%per note piè pagina%
+\usepackage{longtable}							%tabelle lunghe%
+\usepackage[output-decimal-marker={,}]{siunitx}	%unità di misura%
+\usepackage[nottoc]{tocbibind}					%inserisce la bibliografia nell'indice%
+\usepackage{verbatim}							%commenti multiriga%
+\usepackage{setspace}							%regolare la spaziatura(tab verticale, frontespizio)%
+\usepackage{ragged2e}
+\usepackage{parallel}							%mettere su due colonne (frontespizio)%
+\usepackage{siunitx}
+\usepackage{textcomp} 
+\usepackage{xltabular}
+
+\begin{document}
+		\input{Capitoli/Titolo}
+
+	\tableofcontents
+	\listoftables
+	\listoffigures
+
+		\input{Capitoli/Introduzione}
+		\input{Capitoli/SentimentAnalysis}
+
+
+	%	\appendix
+	%	\addcontentsline{toc}{part}{Appendice}
+
+		\newpage
+
+			\bibliographystyle{amsplain}
+			\bibliography{Bibliografia/Riferimenti}
+
+
+\end{document}
