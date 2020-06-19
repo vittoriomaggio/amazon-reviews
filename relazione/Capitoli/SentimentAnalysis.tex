@@ -25,6 +25,18 @@
 			\item [Approccio non supervisionato:] ????????	
 		\end{description}
 		
-	\section{Il nostro lavoro}
+		Vedremo che per il nostro non è stato necessario andare a calcolare il \textit{sentiment}; in quanto un attributo si prestava bene per questo tipo di analisi.
 		
-		SentiWordNet è una risorsa lessicale per il mining di opinioni. SentiWordNet assegna a ciascun synset di WordNet tre punteggi sentiment: positività, negatività, obiettività. SentiWordNet è descritto in dettaglio nei documenti:
+	\section{Textual Preprocessing}
+		Il nostro primo obiettivo è quello di studiare l'intrattenimento, in particolare quali siano i prodotti più recensiti all'interno delle nostre quattro categorie. Abbiamo scelto di effettuare lo studio su un numero limitato di prodotti, riducendoli a duecento, e di analizzare la loro distribuzione in questo sottoinsieme. I risultati ottenuti sono presentati nella Figura \ref{fig:pie_category}
+		
+		\begin{figure} [h]
+			\includegraphics[width=\textwidth]{Figure/pie_category}
+			\caption{\textit{Distribuzione delle recensioni per ogni categoria}.}
+			\label{fig:pie_category}
+		\end{figure}
+	
+		Per poter eseguire delle analisi consistenti sono indispensabili una serie di operazioni atti a uniformare il \textit{dataset}. Con il termine "uniformare" intendiamo riscrivere i dati seguendo delle specifiche regole comuni. Nel seguito ogni procedura verrà descritta nel dettaglio.
+		
+		
+		
