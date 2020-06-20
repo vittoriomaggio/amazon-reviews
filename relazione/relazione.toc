@@ -6,5 +6,5 @@
 \contentsline {chapter}{\numberline {2}Sentiment Analysis}{5}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Scelta delle top three category}{5}{section.2.1}% 
 \contentsline {subsection}{\numberline {2.1.1}Primo passaggio: distribuzione del sentiment}{5}{subsection.2.1.1}% 
-\contentsline {subsection}{\numberline {2.1.2}Secondo passaggio: analisi delle parole pi\IeC {\`u} usate}{8}{subsection.2.1.2}% 
-\contentsline {chapter}{Bibliografia}{10}{chapter*.11}% 
+\contentsline {subsection}{\numberline {2.1.2}Secondo passaggio: analisi delle parole pi\IeC {\`u} usate}{7}{subsection.2.1.2}% 
+\contentsline {chapter}{Bibliografia}{10}{chapter*.12}% 

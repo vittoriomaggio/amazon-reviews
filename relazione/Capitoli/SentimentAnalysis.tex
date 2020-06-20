@@ -10,7 +10,7 @@
 			\label{fig:pie_category}
 		\end{figure}
 	
-		Dalla figura è possibile notare che, in percentuale, i prodotti più recensiti appartengono alla categoria dei videogiochi (\verb|45%|), seguiti dai libri (\verb|27.5%|), dai dvd (\verb|21%|) e dalla musica (\verb|6.5%|). Quest'ultima categoria è davvero esigua perché delle analisi diano risultati consistenti e si possano ricavare informazioni utili; inoltre poiché lo studio su cui abbiamo posto l'attenzione riguardava i più popolari, non aveva senso esaminare dei prodotti quasi privi di recensioni. Da questa considerazione è derivata la scelta di escludere \verb|music| e procedere ad analizzare l'intrattenimento solo sulle tre migliori categorie, quindi \verb|videogames|, \verb|books| e \verb|dvd|. Arrivati a questo punto il nostro studio è stato diviso in due diversi passaggi; nel primo siamo andati a cercare i prodotti meglio recensiti e quelli con più recensioni negative; mentre nel secondo passaggio abbiamo ricostruito quali fossero le parole più usate all'interno dei due diversi insiemi di recensioni. 
+		Dalla figura è possibile notare che, in percentuale, i prodotti più recensiti appartengono alla categoria dei videogiochi (\verb|45%|), seguiti dai libri (\verb|27.5%|), dai dvd (\verb|21%|) e dalla musica (\verb|6.5%|). Quest'ultima categoria è davvero esigua perché delle analisi diano risultati consistenti e si possano ricavare informazioni utili; inoltre poiché lo studio su cui abbiamo posto l'attenzione riguardava i più popolari, non aveva senso esaminare dei prodotti quasi privi di recensioni. Da questa considerazione è derivata la scelta di escludere \verb|music| e procedere ad analizzare l'intrattenimento solo sulle tre migliori categorie, quindi \verb|videogames|, \verb|books| e \verb|dvd|. Arrivati a questo punto il nostro studio è stato diviso in due diversi passaggi, durante i quali abbiamo cercato di rispondere a due domande ovvero quali siano i prodotti più recensiti e perché prorio loro. 
 		
 		\subsection{Primo passaggio: distribuzione del sentiment}
 			Come già accennato, per poter valutare la polarità di una recensione è necessario calcolare il \textit{sentiment}. Abbiamo visto che questo calcolo può essere eseguito secondo diverse metodologie, tuttavia il nostro \textit{dataset} relativo ai prodotti, presentava al suo interno un campo che ben si prestava a questo tipo di analisi. L'attributo in questione è quello delle stelle. \textit{Amazon} infatti per ogni recensione riferita a un determinato prodotto associa una valutazione in stelle da \verb|0| a \verb|5|. Questo ha permesso di effettuare un conteggio per ogni prodotto di tutte le sue recensioni, dividendole in positive negative e neutre, secondo lo schema di seguito.
@@ -63,10 +63,34 @@
 				\label{fig:top_neg_videogames_table}
 			\end{figure}
 		
-\pagebreak	
+	
 		\subsection{Secondo passaggio: analisi delle parole più usate}
+			Avendo risposto al primo quesito ci siamo potuti soffermare sulla seconda interrogazione, ovvero perché fossero risultati proprio questi prodotti. Siamo così andati alla ricerca delle parole più utilizzate all'interno delle recensioni (negative e positive), cercando una corrispondenza tra queste e i prodotti migliori. Tuttavia per poter eseguire questo confronto sono state necessarie delle operazioni atte a uniformare il \textit{dataset}; i dati infatti non sempre sono puliti, in essi sono presenti errori di battitura, intere frasi scritte in maiuscolo, eccessiva punteggiatura, etc. Ecco dunque il motivo del termine "uniformare", intendiamo con esso il processo di riscrittura delle frasi seguendo degli specifici passaggi, che saranno descritti nel seguito.
 			
-		Per poter eseguire delle analisi consistenti sono indispensabili una serie di operazioni atti a uniformare il \textit{dataset}. Con il termine "uniformare" intendiamo riscrivere i dati seguendo delle specifiche regole comuni. Nel seguito ogni procedura verrà descritta nel dettaglio.
-		
+			\begin{description}
+				\item[tokenizzazione:] suddivide un testo in singole parole, i\textit{token}), che saranno utilizzati per altri tipi di analisi o attività.
+				\item[standardizzazione:] riscrittura delle parole da \textit{upper case} a \textit{lower case}. 
+				\item[rimozione delle \textit{stopwords},] parole comuni prive di significato, ma che ricorrono spesso all'interno della frasi.
+				\item[rimozione delle cifre numeriche]
+				\item[rimozione della punteggiatura,] tuttavia nella nostra implementazione questa fase è subentrata all'interno della \verb|tokenizzazione|. 
+				\item [stemming:] processo di riduzione delle parole flesse (o talvolta derivate) alla loro forma di origine, base o radice.
+			\end{description}
+			
+			Al termine del processo, l'\textit{output} risultante era composto da un elenco di parole scritte Italiano corretto, privo di segni di punteggiatura o numeri, scritto in forma minuscola, ridotto alla radice. A questo punto è stato quindi possibile effettuare un'operazione di visualizzazioni delle parole più usate all'interno delle recensioni, per comprendere il motivo per cui proprio quei prodotti presenti nella lista rientrino nei migliori, per entrambe le polarità.
+			
+			\begin{figure} 
+				\centering
+				\begin{subfigure}{0.48\textwidth}
+					\includegraphics[width=\textwidth]{Figure/top_positive_books}
+					\caption{Positivo}
+					\label{fig:top_positive_books}
+				\end{subfigure}
+				\begin{subfigure}{0.48\textwidth}
+					\includegraphics[width=\textwidth]{Figure/top_negative_books}
+					\caption{Negativo}
+					\label{fig:top_negative_books}
+				\end{subfigure}
+				\caption{Wordclouds libri}\label{fig:animals}
+			\end{figure}
 		
 		
