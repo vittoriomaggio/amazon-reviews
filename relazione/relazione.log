@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.11)  19 JUN 2020 19:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.11)  20 JUN 2020 12:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -896,54 +896,114 @@ l.29 	\listoftables
 \openout6 = `relazione.lof'.
 
 
-(./Capitoli/Introduzione.tex) (./Capitoli/SentimentAnalysis.tex [3
+(./Capitoli/Introduzione.tex) (./Capitoli/Teoria.tex [3
 
 ]
 Capitolo 1.
-[4
+) (./Capitoli/SentimentAnalysis.tex [4
 
 ]
-<Figure/pie_category.jpeg, id=67, 702.625pt x 501.875pt>
+Capitolo 2.
+<Figure/pie_category.jpeg, id=88, 702.625pt x 501.875pt>
 File: Figure/pie_category.jpeg Graphic file (type jpg)
 <use Figure/pie_category.jpeg>
-Package pdftex.def Info: Figure/pie_category.jpeg  used on input line 34.
+Package pdftex.def Info: Figure/pie_category.jpeg  used on input line 8.
 (pdftex.def)             Requested size: 360.0pt x 257.1475pt.
-) [5 <./Figure/pie_category.jpeg>] (./relazione.bbl
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 13.
+(c:/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) [5
+
+] [6 <./Figure/pie_category.jpeg>]
+<Figure/top_pos_book_table.png, id=107, 791.45688pt x 241.90375pt>
+File: Figure/top_pos_book_table.png Graphic file (type png)
+<use Figure/top_pos_book_table.png>
+Package pdftex.def Info: Figure/top_pos_book_table.png  used on input line 31.
+(pdftex.def)             Requested size: 360.0pt x 110.03314pt.
+<Figure/top_neg_book_table.png, id=109, 761.34438pt x 248.42813pt>
+File: Figure/top_neg_book_table.png Graphic file (type png)
+<use Figure/top_neg_book_table.png>
+Package pdftex.def Info: Figure/top_neg_book_table.png  used on input line 37.
+(pdftex.def)             Requested size: 360.0pt x 117.4701pt.
+<Figure/top_pos_film_table.png, id=110, 795.47188pt x 265.99374pt>
+File: Figure/top_pos_film_table.png Graphic file (type png)
+<use Figure/top_pos_film_table.png>
+Package pdftex.def Info: Figure/top_pos_film_table.png  used on input line 43.
+(pdftex.def)             Requested size: 360.0pt x 120.37793pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figure/top_neg_film_table.png, id=111, 757.83125pt x 280.04625pt>
+File: Figure/top_neg_film_table.png Graphic file (type png)
+<use Figure/top_neg_film_table.png>
+Package pdftex.def Info: Figure/top_neg_film_table.png  used on input line 49.
+(pdftex.def)             Requested size: 360.0pt x 133.03188pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figure/top_pos_videogames_table.png, id=112, 783.42688pt x 266.49562pt>
+File: Figure/top_pos_videogames_table.png Graphic file (type png)
+<use Figure/top_pos_videogames_table.png>
+Package pdftex.def Info: Figure/top_pos_videogames_table.png  used on input lin
+e 55.
+(pdftex.def)             Requested size: 360.0pt x 122.45934pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figure/top_neg_videogames_table.png, id=113, 771.88374pt x 256.96pt>
+File: Figure/top_neg_videogames_table.png Graphic file (type png)
+<use Figure/top_neg_videogames_table.png>
+Package pdftex.def Info: Figure/top_neg_videogames_table.png  used on input lin
+e 61.
+(pdftex.def)             Requested size: 360.0pt x 119.84196pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7 <./Figure/top_pos_book_table.PNG> <./Figure/top_neg_book_table.PNG>])
+[8 <./Figure/top_pos_film_table.PNG> <./Figure/top_neg_film_table.PNG>]
+(./relazione.bbl [9 <./Figure/top_pos_videogames_table.PNG> <./Figure/top_neg_v
+ideogames_table.PNG>]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 10.
 
-) [6
+) [10
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
  (./relazione.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 45.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
 Package rerunfilecheck Info: File `relazione.out' has not changed.
-(rerunfilecheck)             Checksum: 86638B368626C3C3433EA66AF7CAC2A3;341.
+(rerunfilecheck)             Checksum: 0438CFE4E193F4D8A7CE042E3371B01E;543.
  ) 
 Here is how much of TeX's memory you used:
- 21234 strings out of 492609
- 395812 string characters out of 6132818
- 445728 words of memory out of 5000000
- 24939 multiletter control sequences out of 15000+600000
- 545913 words of font info for 54 fonts, out of 8000000 for 9000
+ 21311 strings out of 492609
+ 397867 string characters out of 6132818
+ 446728 words of memory out of 5000000
+ 24990 multiletter control sequences out of 15000+600000
+ 547003 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,5n,63p,858b,797s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{c:/tex
-live/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2019/
+ 40i,5n,63p,1211b,748s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
+ive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/
 texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2019/texmf-dist
-/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2019/texmf-dist/fonts/typ
-e1/public/cm-super/sfbx2074.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/
-cm-super/sfbx2488.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/s
-frm1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pf
-b><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texl
-ive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on relazione.pdf (7 pages, 154319 bytes).
+/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2019/texmf-dist/fonts/typ
+e1/public/cm-super/sfbx1440.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/
+cm-super/sfbx2074.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/s
+fbx2488.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pf
+b><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texl
+ive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2019/t
+exmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2019/texmf-dist/
+fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on relazione.pdf (11 pages, 850262 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 54 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 181 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 100 words of extra memory for PDF output out of 10000 (max. 10000000)
 

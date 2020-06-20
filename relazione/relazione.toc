@@ -2,7 +2,9 @@
 \babel@toc {italian}{}
 \contentsline {chapter}{Elenco delle tabelle}{2}{chapter*.2}% 
 \contentsline {chapter}{Elenco delle figure}{3}{chapter*.3}% 
-\contentsline {chapter}{\numberline {1}Sentiment Analysis}{4}{chapter.1}% 
-\contentsline {section}{\numberline {1.1}Richiami teorici}{4}{section.1.1}% 
-\contentsline {section}{\numberline {1.2}Textual Preprocessing}{5}{section.1.2}% 
-\contentsline {chapter}{Bibliografia}{6}{chapter*.5}% 
+\contentsline {chapter}{\numberline {1}Richiami teorici}{4}{chapter.1}% 
+\contentsline {chapter}{\numberline {2}Sentiment Analysis}{5}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Scelta delle top three category}{5}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}Primo passaggio: distribuzione del sentiment}{5}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.2}Secondo passaggio: analisi delle parole pi\IeC {\`u} usate}{8}{subsection.2.1.2}% 
+\contentsline {chapter}{Bibliografia}{10}{chapter*.11}% 

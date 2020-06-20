@@ -1,6 +1,8 @@
 \BOOKMARK [0][-]{chapter*.2}{Elenco delle tabelle}{}% 1
 \BOOKMARK [0][-]{chapter*.3}{Elenco delle figure}{}% 2
-\BOOKMARK [0][-]{chapter.1}{Sentiment Analysis}{}% 3
-\BOOKMARK [1][-]{section.1.1}{Richiami teorici}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.2}{Textual Preprocessing}{chapter.1}% 5
-\BOOKMARK [0][-]{chapter*.5}{Bibliografia}{}% 6
+\BOOKMARK [0][-]{chapter.1}{Richiami teorici}{}% 3
+\BOOKMARK [0][-]{chapter.2}{Sentiment Analysis}{}% 4
+\BOOKMARK [1][-]{section.2.1}{Scelta delle top three category}{chapter.2}% 5
+\BOOKMARK [2][-]{subsection.2.1.1}{Primo passaggio: distribuzione del sentiment}{section.2.1}% 6
+\BOOKMARK [2][-]{subsection.2.1.2}{Secondo passaggio: analisi delle parole pi\371 usate}{section.2.1}% 7
+\BOOKMARK [0][-]{chapter*.11}{Bibliografia}{}% 8
