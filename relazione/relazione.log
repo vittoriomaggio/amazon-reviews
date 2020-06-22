@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.11)  22 JUN 2020 17:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.11)  22 JUN 2020 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -937,37 +937,37 @@ Package pdftex.def Info: Figure/top_neg_book_table.png  used on input line 34.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figure/top_pos_film_table.png, id=119, 795.47188pt x 265.99374pt>
+<Figure/top_pos_film_table.png, id=119, 535.50063pt x 164.615pt>
 File: Figure/top_pos_film_table.png Graphic file (type png)
 <use Figure/top_pos_film_table.png>
 Package pdftex.def Info: Figure/top_pos_film_table.png  used on input line 40.
-(pdftex.def)             Requested size: 360.0pt x 120.37793pt.
+(pdftex.def)             Requested size: 360.0pt x 110.67075pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figure/top_neg_film_table.png, id=120, 757.83125pt x 280.04625pt>
+<Figure/top_neg_film_table.png, id=120, 537.00626pt x 173.14688pt>
 File: Figure/top_neg_film_table.png Graphic file (type png)
 <use Figure/top_neg_film_table.png>
 Package pdftex.def Info: Figure/top_neg_film_table.png  used on input line 46.
-(pdftex.def)             Requested size: 360.0pt x 133.03188pt.
+(pdftex.def)             Requested size: 360.0pt x 116.07385pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figure/top_pos_videogames_table.png, id=121, 783.42688pt x 266.49562pt>
+<Figure/top_pos_videogames_table.png, id=121, 503.38063pt x 172.645pt>
 File: Figure/top_pos_videogames_table.png Graphic file (type png)
 <use Figure/top_pos_videogames_table.png>
 Package pdftex.def Info: Figure/top_pos_videogames_table.png  used on input lin
 e 52.
-(pdftex.def)             Requested size: 360.0pt x 122.45934pt.
+(pdftex.def)             Requested size: 360.0pt x 123.4692pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figure/top_neg_videogames_table.png, id=122, 771.88374pt x 256.96pt>
+<Figure/top_neg_videogames_table.png, id=122, 521.95pt x 174.6525pt>
 File: Figure/top_neg_videogames_table.png Graphic file (type png)
 <use Figure/top_neg_videogames_table.png>
 Package pdftex.def Info: Figure/top_neg_videogames_table.png  used on input lin
 e 58.
-(pdftex.def)             Requested size: 360.0pt x 119.84196pt.
+(pdftex.def)             Requested size: 360.0pt x 120.46237pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -977,18 +977,18 @@ Overfull \hbox (12.09227pt too wide) in paragraph at lines 72--73
  []
 
 [7 <./Figure/top_pos_book_table.PNG> <./Figure/top_neg_book_table.PNG>]
-[8 <./Figure/top_pos_film_table.PNG> <./Figure/top_neg_film_table.PNG>]
-<Figure/top_positive_books.png, id=143, 567.11874pt x 287.0725pt>
+<Figure/top_positive_books.png, id=137, 567.11874pt x 287.0725pt>
 File: Figure/top_positive_books.png Graphic file (type png)
 <use Figure/top_positive_books.png>
 Package pdftex.def Info: Figure/top_positive_books.png  used on input line 84.
 (pdftex.def)             Requested size: 172.79846pt x 87.46718pt.
-<Figure/top_negative_books.png, id=144, 567.11874pt x 287.0725pt>
+<Figure/top_negative_books.png, id=138, 567.11874pt x 287.0725pt>
 File: Figure/top_negative_books.png Graphic file (type png)
 <use Figure/top_negative_books.png>
 Package pdftex.def Info: Figure/top_negative_books.png  used on input line 89.
 (pdftex.def)             Requested size: 172.79846pt x 87.46718pt.
 
+[8 <./Figure/top_pos_film_table.PNG> <./Figure/top_neg_film_table.PNG>]
 Overfull \hbox (3.25105pt too wide) in paragraph at lines 98--99
 []\T1/cmr/m/n/10.95 nello sche-ma so-no rap-pre-sen-ta-te con di-men-sio-ne mag
 -
@@ -1078,7 +1078,7 @@ exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2019/texmf-dist/
 fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2019/texmf-dist/fonts/type
 1/public/cm-super/sfti1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/c
 m-super/sftt1095.pfb>
-Output written on relazione.pdf (16 pages, 4224005 bytes).
+Output written on relazione.pdf (16 pages, 3871073 bytes).
 PDF statistics:
  251 PDF objects out of 1000 (max. 8388607)
  194 compressed objects within 2 object streams
