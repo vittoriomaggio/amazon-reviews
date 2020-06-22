@@ -75,7 +75,7 @@
 			
 		Al termine del processo, l'\textit{output} risultante era composto da un elenco di parole scritte Italiano corretto, privo di segni di punteggiatura o numeri, scritto in forma minuscola, ridotto alla radice. A questo punto è stato quindi possibile effettuare un'operazione di visualizzazioni delle parole più usate all'interno delle recensioni, per comprendere il motivo per cui proprio quei prodotti presenti nella lista rientrino nei migliori, per entrambe le polarità. La tecnica visiva utilizzata è quella dei \verb|wordclouds|, che consiste nella raccolta delle parole più usate nelle recensioni (\verb|word|), rappresentate per mezzo di \verb|cloud|, ha permesso di confrontare le recensioni positive e negative per ogni categoria e di comprendere che cosa determinava l'appartenenza dei prodotti all'insieme dei "migliori" o dei peggiori. 
 		
-		\subsection{Wordclouds libri} ????????????????????????? manca corrispondenza tabella
+		\subsection{Wordclouds libri} 
 			Nella Figura \ref{fig:wordclouds_book} sono mostrati i \textit{wordclouds} ottenuti per la categoria libri. In particolare l'immagine di sinistra rappresenta le parole più usate nelle recensioni positive, mentre a destra sono rappresentate quelle negative. 
 			
 			\begin{figure} [h]
@@ -95,19 +95,36 @@
 			
 			\begin{description}
 				\item[Recensioni positive:]
-				 nello schema sono rappresentate con dimensione maggiore le parole \verb|libr|, \verb|stori|, \verb|legg|, a dimostrazione del fatto che queste sono in assoluto le parole più frequenti all'interno delle recensioni degli utenti. Non sorprende che i tre termini si riferiscano alla categoria selezionata, nel caso attuale quella dei libri; vedremo che questo comportamento ricorrerà spesso nell'analisi sui \textit{wordclouds}. Concentriamoci invece sulle parole che racchiudono informazioni. 	
+				 nello schema sono rappresentate con dimensione maggiore le parole \verb|libr|, \verb|stori|, \verb|legg|, a dimostrazione del fatto che queste sono in assoluto le parole più frequenti all'interno delle recensioni degli utenti. Non sorprende che i tre termini si riferiscano alla categoria selezionata, nel caso attuale quella dei libri; vedremo che questo comportamento ricorrerà sempre durante l'analisi tramite textit{wordclouds}. Concentriamoci invece sulle parole che racchiudono informazioni, ricordando che l'obiettivo primario è comprendere perché i libri di Figura \ref{fig:top_pos_book_table} siano risultati i migliori.
 				\begin{itemize}
+					\item \texttt{ricc}, \texttt{figl}, \texttt{falcon},  \texttt{giovann}, \texttt{"emozion"}, \texttt{pop up}: \\
+					sono tutte parole presenti in alcuni dei titoli della lista dei migliori, in ordine \textit{"Per questo mi chiamo Giovanni. da un padre a un figlio il racconto della vita di Giovanni Falcone"}, \textit{"I colori delle emozioni (pop-up)"}, "\textit{25 grammi di felicità - Come un piccolo riccio può cambiarti la vita}". 
+					\item \texttt{maf}: \\
+					termine che se esteso indica la mafia, riferito quindi al primo libro dell'elenco.
 					\item \texttt{illustr}, \texttt{bambin}, \texttt{color}, \texttt{semplic},  \texttt{disegn}, \texttt{raccont}, \texttt{animal} : \\
-					sono tutti termini riguardanti l'infanzia. Da questa informazioni comprendiamo che la maggior parte delle recensioni commenta positivamente i libri per bambini, che sono semplici, colorati, ricchi di disegni e di racconti basati sugli animali. 
-					\item \texttt{regal}: \\
-					molto probabilmente alcuni libri, comprati per un regalo, hanno suscitato delle impressioni positive nell'utente, che ha quindi recensito positivamente.
+					sono tutti termini riguardanti l'infanzia. Da questa informazioni comprendiamo che la maggior parte delle recensioni commenta positivamente i libri per bambini, che sono semplici, colorati, ricchi di disegni e di racconti basati sugli animali. Quindi questi vocaboli sono riferiti per lo più al secondo e al terzo libro dell'elenco dei migliori; tuttavia l'ultimo termine può essere esteso anche quarto prodotto. 
+					\item \texttt{insegn}, \texttt{scuol}: \\
+					sono vocaboli riferiti all'ambiente scolastico; quindi probabilmente riferito all'ultimo libro, criticato positivamente poiché insegna tematiche relative alla scuola.
+					\item \texttt{acquist}, \texttt{regal}: \\
+					molto probabilmente alcuni libri, acquistati per un regalo, hanno suscitato delle impressioni positive nell'utente, che ha quindi recensito positivamente.
 				\end{itemize}	
 			
 				\item[Recensioni negative:] 
-				nello schema sono rappresentate con dimensione maggiore le parole \verb|libr|, \verb|pagin|, \verb|legg|, a dimostrazione del fatto che queste sono in assoluto le parole più frequenti all'interno delle recensioni degli utenti. Notiamo che due su tre sono parole già trovate all'interno dell'elenco delle parole positive, poiché anche in questo caso sono termini utili a determinare la categoria in questione.
+				nello schema sono rappresentate con dimensione maggiore le parole \verb|libr|, \verb|pagin|, \verb|legg|, a dimostrazione del fatto che queste sono in assoluto le parole più frequenti all'interno delle recensioni degli utenti. Notiamo che due su tre sono parole già trovate all'interno dell'elenco delle parole positive, poiché anche in questo caso sono termini utili a determinare la categoria in questione. Studiamo ora le altre parole in relazione all'elenco già stilato (Figura \ref{fig:top_neg_book_table}).
+				
 				\begin{itemize}
-					\item \texttt{medic}, \texttt{romanz}, \texttt{giall}, \texttt{aliment} : \\
-					sono tutti termini riguardanti i possibili generi di un libro. L'informazione che ricaviamo è che i libri riguardanti la medicina, la cucina, i gialli e i romanzi, sono quelli che più di tutti sono stati criticati.			
+					\item \texttt{hardin}, \texttt{tess}, \texttt{romanz}: \\
+					sono i termini più espliciti dell'insieme, indicano infatti i nomi dei protagonisti del romanzo "\textit{After}"
+					\item \texttt{ordin}, \texttt{cas}:\\
+					sono parole usate nel secondo prodotto dell'elenco 
+					\item \texttt{scrittor}, \texttt{giall}:\\
+					si riferiscono probabilmente a "\textit{La verità del caso di Harry Quebert}", un giallo che vede protagonista uno scrittore.
+					\texttt{bambin}: \\
+					fra tutti i prodotti dell'elenco quello che certamente si adatta alle linee giovanili è sicuramente il quarto libro dell'elenco, pieno di attività creative e non proposte ai più piccini.
+					\texttt{aliment}: \\
+					vocabolo riferito a "\textit{Vivere 120 anni. la verità che nessuno vuole raccontarti}".
+					\texttt{medic}, \texttt{ragazz}, \texttt{interessant}: \\
+					tra i proposti sono quelli che più di tutti racchiudono le possibili cause di una critica. Il libro, presupponibilmente l'ultimo dell'elenco, probabilmente aveva un approccio troppo rivolto alla medicina o forse troppo poco. Il secondo è forse più rivolto ad "\textit{After}", criticato spesso per rivolgersi esclusivamente a un pubblico femminile. Più generico, invece, è il vocabolo \verb|interessante|, che ben si adatta a ognuno dei prodotti proposti.												
 				\end{itemize}
 			\end{description}
 		
@@ -130,28 +147,74 @@
 				\caption{Wordclouds dvd}\label{fig:wordclouds_dvd}
 			\end{figure}
 		
-				\begin{description}
+			\begin{description}
 				\item[Recensioni positive:]
 				nello schema sono rappresentate con dimensione maggiore le parole \verb|dvd|, \verb|film|, \verb|blu ray|, riferite genericamente alla categoria presa in esame. 	
 				\begin{itemize}
 					\item \texttt{signore anell}, \texttt{tolkien}, \texttt{tre film}: \\
-					I termini selezionati sono accomunati dalla tematica "Signore degli Anelli", trilogia ispirato all'omonimo romanzo scritto da Tolkien, che ha raccolto molti consensi, dato che più parole lo caratterizzano.
+					I termini selezionati sono accomunati dalla tematica "\textit{Signore degli Anelli}", trilogia ispirato all'omonimo romanzo scritto da \textit{Tolkien}, che ha raccolto molti consensi, dato che più parole lo caratterizzano.
 					\item \texttt{bambin}: \\
-					I dvd criticati positivamente sono stati quelli adatti a un giovane pubblico. Da notare che il termine risponde ancora alle caratteristiche del "Signore degli Anelli".
+					I dvd criticati positivamente sono stati quelli adatti a un giovane pubblico. Da notare che il termine risponde ancora alle caratteristiche del "\textit{Signore degli Anelli}".
 					\item \texttt{version estes}: \\
 					Tra i tanti comprati o visti, i dvd in versione estesa hanno riscontrato un consenso positivo.
 				\end{itemize}	
-			
-				Si noti che le parole trovate ben si accordano con i risultati trovati nei passaggi precedenti (Figura \ref{fig:top_pos_film_table}), dove il miglior prodotto era la trilogia del "Signore degli anelli", seguito poi da altri film adatti ai bambini ("Coco", terzo posto, e "Gli Aristogatti", sono addirittura dei cartoni animati).
 				
+				Si noti che le parole trovate ben si accordano con i risultati trovati nei passaggi precedenti (Figura \ref{fig:top_pos_film_table}), dove il miglior prodotto era la trilogia del \textit{"Signore degli anelli}", seguito poi da altri film adatti ai bambini ("\textit{Coco}", terzo posto, e "\textit{Gli Aristogatti}", ultimo posto, sono addirittura dei cartoni animati).
+					
 				\item[Recensioni negative:] 
-				nello schema i termini generici riscontrabile con la categoria in questione sono \verb|film|, \verb|dvd |, \verb|blu ray|. Poiché nella Figura \ref{fig:top_neg_film_table}, abbiamo trovato cinque prodotti di diversa natura come maggiormente criticati, ci aspettiamo di trovare termini che li identifichino e che argomentino le recensioni negative.
+				nello schema i termini generici riscontrabili con la categoria in questione sono \verb|film|, \verb|dvd |, \verb|blu ray|. Poiché nella Figura \ref{fig:top_neg_film_table}, abbiamo trovato cinque prodotti di diversa natura come maggiormente criticati, ci aspettiamo di trovare termini che li identifichino e che argomentino le recensioni negative.
 				\begin{itemize}
 					\item \texttt{war}, \texttt{marvel}, \texttt{rocky}: \\
-					sono tutti termini utili a identificare il dvd in questione. Come ci aspettavamo, il primo di questi si riferisce al film di "Star Wars", il primo peggio criticato, il secondo invece riguarda "Deadpool", un film della marvel e il terzo del film "Rocky". 
+					sono tutti termini utili a identificare il dvd in questione. Come ci aspettavamo, il primo di questi si riferisce al film di "\textit{Star Wars}", il primo peggio criticato, il secondo invece riguarda "\textit{Deadpool}", un film della marvel e il terzo del film "\textit{Rocky}". 
 					\item \texttt{ser}, \texttt{episod}, \texttt{vecc}: \\
-					In queste parole sono racchiuse le cause delle critiche. I primi due probabilmente rivolti a "Star Wars", una serie di nove film, ognuno dei quali denominato con il termine di "episodio". Il terzo vocabolo, che molto probabilmente si rifesce a "Rocky", criticato invece per l'età.		
+					In queste parole sono racchiuse le cause delle critiche. I primi due probabilmente rivolti a "\textit{Star Wars}", una serie di nove film, ognuno dei quali denominato con il termine di "episodio". Il terzo vocabolo, che molto probabilmente si rifesce a "\textit{Rocky}", criticato invece per l'età.		
 				\end{itemize}
 			\end{description}
 		
+		
+		\subsection{Wordclouds videogiochi}
+			Nella Figura \ref{fig:wordclouds_videogames} sono mostrati i \textit{wordclouds} ottenuti per la categoria videogiochi. In particolare l'immagine di sinistra rappresenta le parole più usate nelle recensioni positive, mentre a destra sono rappresentate quelle negative. 
+			
+			\begin{figure} [h]
+				\centering
+				\begin{subfigure}{0.48\textwidth}
+					\includegraphics[width=\textwidth]{Figure/top_positive_videogames}
+					\caption{Recensioni positive}
+					\label{fig:top_positive_videogames}
+				\end{subfigure}
+				\begin{subfigure}{0.48\textwidth}
+					\includegraphics[width=\textwidth]{Figure/top_negative_videogames}
+					\caption{Recensioni negative}
+					\label{fig:top_negative_videogames}
+				\end{subfigure}
+				\caption{Wordclouds videogiochi}\label{fig:wordclouds_videogames}
+			\end{figure}
+			
+			\begin{description}
+				\item[Recensioni positive:]
+				nello schema sono rappresentate con dimensione maggiore le parole \verb|gioc|, \verb|grafic|, riferite genericamente alla categoria presa in esame, di cui si apprezza la natura del gioco e la grafica. Per quanto riguarda invece il contenuto informativo, soffermiamoci sulla Figura \ref{fig:top_pos_videogames_table}; dalla quale apprendiamo quali sono i cinque prodotti migliori e cerchiamo di ricostruire cosa li caratterizza.
+				\begin{itemize}
+					\item \texttt{super mar}, \texttt{mar kart}, \texttt{zeld}: \\
+					I termini selezionati rappresentano infatti il podio dei migliori, rispettivamente "\textit{Super Mario Odyssey}", "\textit{The Legend of Zelda}" e \textit{Mario Kart 8 Deluxe}". 
+					\item \texttt{nint switch}: \\
+					i videogiochi più apprezzati sono quelli per \textit{ninntendo switch}; non a caso infatti i tre migliori sono proprio accomunati da questa caratteristica.
+					\item \texttt{avventur}, \texttt{online}, \texttt{modalit}, \texttt{open world}, \texttt{livell}, \texttt{gameplay}: \\
+					tutti questi vocaboli sono caratteristiche positive dei giochi; probabilmente apprezzati quindi dalle avventure proposte dalla storia, dalla possibilità di giocare online in più modalità, compresa anche quella esplorativa, organizzate in livelli o dal \textit{gameplay} intuitivo, etc.
+					\item \texttt{prezz}: l'appartenenza dei giochi alla lista dei migliori può anche essere stata determinata dal prezzo, trovato forse dagli utenti accessibile o anche basso.
+				\end{itemize}	
+								
+				\item[Recensioni negative:] 
+				nello schema i termini generici più rilevanti per la categoria sono \verb|gioc|, \verb|prodott|. Concentriamoci ora sulla \textit{top five} dei prodotti negativi (Figura \ref{fig:top_neg_videogames_table}), contrariamente ai casi precedenti abbiamo rappresentati tra i pprimi cinque prodotti ci sono sia videogiochi, sia accessori appartenenti alla categoria in questione.
+				\begin{itemize}
+					\item \texttt{gran turism}, \texttt{destiny}, \texttt{controller}: \\
+					sono tutti termini appartenenti all'elenco dei primi cinque prodotti con più recensioni negative. 
+					\item \texttt{gt}, \texttt{pedalier}, \texttt{macchin}, \texttt{volant}: \\
+					Sono parole riferite al gioco di corse automobilistiche "\textit{Grand Turism}", apprezzato soprattutto quando si gioca con un volante o una pedaliera. 
+					\item \texttt{grafic}, \texttt{stabil}: 
+					i giochi sono probabilmente apprezzati per la grafica efficace e con il termine \verb|stabile| ci si vuole forse riferire alla qualità da parte del gioco di  mantenere la fluidità dell'immagine priva di scatti, o anche la capacità del gioco di non "\textit{crashare}".
+					\item \texttt{prezz}: 
+					anche in questo caso il prodotto è stato recensito rispetto al suo prezzo, contrariamente a prima però questa volta trovato troppo alto.
+				\end{itemize}
+			\end{description}
+			
 		
