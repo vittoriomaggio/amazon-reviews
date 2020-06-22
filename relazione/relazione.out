@@ -2,7 +2,8 @@
 \BOOKMARK [0][-]{chapter*.3}{Elenco delle figure}{}% 2
 \BOOKMARK [0][-]{chapter.1}{Richiami teorici}{}% 3
 \BOOKMARK [0][-]{chapter.2}{Sentiment Analysis}{}% 4
-\BOOKMARK [1][-]{section.2.1}{Scelta delle top three category}{chapter.2}% 5
-\BOOKMARK [2][-]{subsection.2.1.1}{Primo passaggio: distribuzione del sentiment}{section.2.1}% 6
-\BOOKMARK [2][-]{subsection.2.1.2}{Secondo passaggio: analisi delle parole pi\371 usate}{section.2.1}% 7
-\BOOKMARK [0][-]{chapter*.12}{Bibliografia}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Primo passaggio: distribuzione del sentiment}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.2}{Secondo passaggio: analisi delle parole pi\371 usate}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.1}{Wordclouds libri}{section.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.2}{Wordclouds dvd}{section.2.2}% 8
+\BOOKMARK [0][-]{chapter*.13}{Bibliografia}{}% 9
