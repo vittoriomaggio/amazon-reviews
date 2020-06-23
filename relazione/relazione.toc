@@ -10,4 +10,8 @@
 \contentsline {subsection}{\numberline {2.2.2}Wordclouds dvd}{11}{subsection.2.2.2}% 
 \contentsline {subsection}{\numberline {2.2.3}Wordclouds videogiochi}{12}{subsection.2.2.3}% 
 \contentsline {section}{\numberline {2.3}Correlazione tra prezzo e sentiment}{14}{section.2.3}% 
-\contentsline {chapter}{Bibliografia}{15}{chapter*.14}% 
+\contentsline {subsection}{\numberline {2.3.1}Categoria libri}{14}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Categoria dvd}{15}{subsection.2.3.2}% 
+\contentsline {subsection}{\numberline {2.3.3}Categoria videogiochi}{15}{subsection.2.3.3}% 
+\contentsline {subsection}{\numberline {2.3.4}Categoria musica}{15}{subsection.2.3.4}% 
+\contentsline {chapter}{Bibliografia}{18}{chapter*.18}% 

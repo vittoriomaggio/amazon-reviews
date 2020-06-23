@@ -219,14 +219,61 @@
 			
 	\section{Correlazione tra prezzo e sentiment}
 		Avendo trovato un riscontro positivo alle domande poste, siamo passati a una seconda analisi del \textit{sentiment} sul \textit{dataset} prodotti. In particolare ci siamo chiesti se il prezzo associato a ogni prodotto, fosse determinante per la polarità delle recensioni. Esiste infatti un'idea duale legato a un prezzo ridotto o eccessivo. Nel primo caso un prezzo ridotto può essere fonte di:
+		
 		\begin{itemize}
 			\item \textbf{reazioni positive}, legate all'esigua quantità di denaro spesa per un prodotto funzionante.
 			\item \textbf{reazioni negative}, legate alla qualità infima dei materiali.
 		\end{itemize}
+	
 		Medesimo comportamento è legato ad alti costi. In questo caso abbiamo:
+		
 		\begin{itemize}
-			\item \textbf{reazioni positive}, perché il prodotto oltre che a essere funzionante è di ottima qualità.
+			\item \textbf{reazioni positive}, perché il prodotto oltre che essere funzionante è di ottima qualità.
 			\item \textbf{reazioni negative}, dovute al costo eccessivo di alcuni prodotti, dove si paga non tanto la qualità, quanto piuttosto il marchio.
 		\end{itemize}
+	
+		Contrariamente a quanto è stato compiuto per le prime analisi, ora non si è eseugita una campionatura sui rodotti migliori, ma è stato calcolato il sentiment, secondo le modalità precdente descritte, per ogni prodotto. Questo sentiement è stato poi raccolto in base alle categorie, sviluppando ancora una volta due gruppi di insiemi, per le recensioni positive e negative, questa volta però sull'intero \textit{set} di prodotti. Ad operazione conclusa abbiamo raccolto tutti i possibili prezzi perr ogni categoria e li abbiamo suddivisi in intervalli, così che per esempio, per la categoria libri ci fosse, tra i tanti, l'intervallo \verb|[1-10]| che racchiudesse al suo interno tutti i prodotti con un prezzo compreso tra il valore \verb|1| e il valore \verb|10|. 
+
+		Una volta ottenuti i sottoraggruppamenti dei prezzi per ogni categoria, siamo andati a visualizzare la tipologia delle recensioni per ognuno di essi. In particolare, tramite un istogramma, abbiamo rappresentato sull'asse delle ascisse tutti gli intervalli per una certa categoria e sull'asse delle ordinate la valutazione totale sulle recensioni in percentuale. Analizziamo i risultati per ogni categoria.
+		
+		\subsection{Categoria libri}
+			Dalla Figura \ref{fig:priceVSrating_books} si evince che ...
+		
+			\begin{figure} [h]
+				\includegraphics[width=\textwidth]{Figure/priceVSrating_books}
+				\caption{Istogramma relazione prezzo e valutazione recensioni.}
+				\label{fig:priceVSrating_books}
+			\end{figure}
+		
+		
+		\subsection{Categoria dvd}
+		Dalla Figura \ref{fig:priceVSrating_dvd} si evince che ...
+		
+		\begin{figure} [h]
+			\includegraphics[width=\textwidth]{Figure/priceVSrating_dvd}
+			\caption{Libri : Istogramma relazione prezzo e valutazione recensioni.}
+			\label{fig:priceVSrating_dvd}
+		\end{figure}
+	
+	
+		\subsection{Categoria videogiochi}
+		Dalla Figura \ref{fig:priceVSrating_videogames} si evince che ...
+		
+		\begin{figure} [h]
+			\includegraphics[width=\textwidth]{Figure/priceVSrating_videogames}
+			\caption{Istogramma relazione prezzo e valutazione recensioni.}
+			\label{fig:priceVSrating_videogames}
+		\end{figure}
+	
+		
+		\subsection{Categoria musica}
+		Dalla Figura \ref{fig:priceVSrating_music} si evince che ...
+		
+		\begin{figure} [h]
+			\includegraphics[width=\textwidth]{Figure/priceVSrating_music}
+			\caption{Istogramma relazione prezzo e valutazione recensioni.}
+			\label{fig:priceVSrating_music}
+		\end{figure}
+		
 		
 		
