@@ -1,8 +1,5 @@
 \chapter{Sentiment Analysis}   
-	Il nostro primo obiettivo è quello di studiare l'intrattenimento, in particolare quali siano i prodotti più recensiti all'interno delle nostre quattro categorie. Come primo passo abbiamo  quindi scelto di effettuare lo studio su un numero limitato di prodotti, riducendoli a duecento, e di analizzare la loro distribuzione. I risultati ottenuti sono presentati nella Figura \ref{fig:pie_category}
-	
-	
-	\textbf{DATASET REVIEWS????????????????????????????????????????}
+	Il nostro primo obiettivo è quello di studiare l'intrattenimento, in particolare quali siano i prodotti più recensiti all'interno del \textit{dataset} riguardante le recensioni. Come primo passo abbiamo  quindi scelto di effettuare lo studio su un numero limitato di prodotti, riducendoli a duecento, e di analizzare la loro distribuzione. I risultati ottenuti sono presentati nella Figura \ref{fig:pie_category}. 
 		
 	\begin{figure} [h]
 		\includegraphics[width=\textwidth]{Figure/pie_category}	
@@ -235,7 +232,8 @@
 			\item \textbf{reazioni negative}, dovute al costo eccessivo di alcuni prodotti, dove si paga non tanto la qualità, quanto piuttosto il marchio.
 		\end{itemize}
 	
-		Contrariamente a quanto è stato compiuto per le prime analisi, ora non si è eseguita una campionatura sui prodotti migliori, ma è stato calcolato il sentiment, secondo le modalità precedente descritte, per ogni prodotto. Questo sentiment è stato poi raccolto in base alle categorie, sviluppando ancora una volta due gruppi di insiemi, per le recensioni positive e negative, questa volta però sull'intero \textit{set} di prodotti. Ad operazione conclusa abbiamo raccolto tutti i possibili prezzi per ogni categoria e li abbiamo suddivisi in intervalli, così che per esempio, per la categoria libri ci fosse, tra i tanti, l'intervallo \verb|[1-10]| che racchiudesse al suo interno tutti i prodotti con un prezzo compreso tra il valore \verb|0| e il valore \verb|10|. 
+		Attributo essenziale per la nostra analisi è il campo \verb|avg-rting|, rappresentante la valutazione media di tutte le recensioni relative a uno stesso prodotto. Tuttavia
+		contrariamente a quanto è stato compiuto per le prime analisi, ora non si è eseguita una campionatura sui prodotti migliori, ma si è stato calcolato il \textit{sentiment} per ogni prodotto, secondo le modalità precedente descritte. Questo \textit{sentiment} è stato poi raccolto in base alle categorie, sviluppando ancora una volta due gruppi di insiemi, per le recensioni positive e negative, questa volta però sull'intero \textit{set} di prodotti. Ad operazione conclusa abbiamo raccolto tutti i possibili prezzi per ogni categoria e li abbiamo suddivisi in intervalli, così che per esempio, per la categoria libri ci fosse, tra i tanti, l'intervallo \verb|[1-10]| che racchiudesse al suo interno tutti i prodotti con un prezzo compreso tra il valore \verb|0| e il valore \verb|10|. 
 
 		Una volta ottenuti i sotto-raggruppamenti dei prezzi per ogni categoria, siamo andati a visualizzare la tipologia delle recensioni per ognuno di essi. In particolare, tramite un istogramma, abbiamo rappresentato sull'asse delle ascisse tutti gli intervalli per una certa categoria e sull'asse delle ordinate la valutazione totale sulle recensioni in percentuale. Analizziamo i risultati per ogni categoria.
 		
