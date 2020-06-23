@@ -240,69 +240,83 @@
 		Una volta ottenuti i sotto-raggruppamenti dei prezzi per ogni categoria, siamo andati a visualizzare la tipologia delle recensioni per ognuno di essi. In particolare, tramite un istogramma, abbiamo rappresentato sull'asse delle ascisse tutti gli intervalli per una certa categoria e sull'asse delle ordinate la valutazione totale sulle recensioni in percentuale. Analizziamo i risultati per ogni categoria.
 		
 		\subsection{Categoria libri}
-			Per la categoria "libri", abbiamo il \verb|???| composto da recensioni positive, mentre le restanti sono negative, come mostrato in Figura ??????
+			Per la categoria "libri", abbiamo il \verb|98.8%| composto da recensioni positive, mentre le restanti sono negative, come mostrato in Figura \ref{fig:pie_books}
 			Studiamo come queste sono distribuite in base al prezzo, più precisamente all'intervallo di prezzi. \\
 			Dalla Figura \ref{fig:priceVSrating_books} si evince che le recensioni positive sono maggiormente distribuite nei prodotti con un prezzo che oscilla tra \verb|0| e \verb|15| euro. Andando avanti la percentuale diminuisce, fino a non avere esemplari su un range dal valore compreso tra i \verb|100| e \verb|150| euro. Per quanto riguarda le recensioni negative, invece, si riscontra una presenza dominante tra quelle appartenenti al primo intervallo, cala drasticamente nel secondo fino a non avere prodotti per i tre \textit{range} successivi. Una possibile chiave di lettura per questa rappresentazione potrebbe essere che, per quanto riguarda i commenti positivi, questi siano presenti in ogni categoria perché con un prezzo basso, se l'utente è soddisfatto a maggior ragione lascerà una recensione positiva, in quanto non ha dovuto spendere molto per un prodotto funzionante. A prezzi elevati invece, è difficile che il prodotto non soddisfi le aspettative, in quanto un libro richiede pochi requisiti di qualità, ne consegue che chi spende rimane soddisfatto, pertanto i commenti negativi si concentrino solo nel primo intervallo.
-		
 				
 			\begin{figure} [h]
 				\centering
 				\begin{subfigure}{0.48\textwidth}
-					\includegraphics[width=\textwidth]{Figure/???}
-					\caption{????}
-					\label{fig:???}
+					\includegraphics[width=\textwidth]{Figure/pie_books}
+					\caption{Distribuzione delle recensioni}
+					\label{fig:pie_books}
 				\end{subfigure}
 				\begin{subfigure}{0.48\textwidth}
 					\includegraphics[width=\textwidth]{Figure/priceVSrating_books}
-					\caption{Price vs raiting}
+					\caption{Correlazione prezzo e sentiment}
 					\label{fig:priceVSrating_books}
 				\end{subfigure}
-				\caption{Correlazione tra prezzo e sentiment}\label{fig:price_raiting_book}
+				\caption{Libri: studio sulle recensioni medie dei prodotti}\label{fig:price_raiting_book}
 			\end{figure}
 		
 		
 		\subsection{Categoria dvd}
-		Per la categoria "dvd", abbiamo una distribuzione probabilistica di recensioni medie pari a \verb|???| per quelle positive e \verb|???| per quelle negative.
+		Per la categoria "dvd", abbiamo una distribuzione probabilistica di recensioni medie pari a \verb|97.7| per quelle positive e \verb|2.33| per quelle negative (Figura \ref{fig:pie_dvd}).
 		Dalla Figura \ref{fig:priceVSrating_dvd} si può notare che il \verb|60%| delle recensioni positive appartengono al primo intervallo, diminuiscono per il secondo e terzo \textit{range}, mentre per il quarto si ha un impercettibile aumento delle stesse, probabilmente dovute al fattore qualità-prezzo. Come prima per l'ultimo intervallo abbiamo esclusivamente recensioni positive, seppur molto basse; in quanto difficilmente un utente spende grandi somme di denaro per comprare dvd. Dall'altra parte abbiamo invece quelle negative, il cui numero diminuisce all'aumentare del prezzo, ma che comunque si mantiene pressoché uguale per ogni intervallo.
 		 utilizzata per i libri
 		
 		\begin{figure} [h]
 			\centering
 			\begin{subfigure}{0.48\textwidth}
-				\includegraphics[width=\textwidth]{Figure/???}
-				\caption{????}
-				\label{fig:???}
+				\includegraphics[width=\textwidth]{Figure/pie_dvd}
+				\caption{Distribuzione delle recensioni}
+				\label{fig:pie_dvd}
 			\end{subfigure}
 			\begin{subfigure}{0.48\textwidth}
 				\includegraphics[width=\textwidth]{Figure/priceVSrating_dvd}
-				\caption{Price vs raiting}
+				\caption{Correlazione prezzo e sentiment}
 				\label{fig:priceVSrating_dvd}
 			\end{subfigure}
-			\caption{Correlazione tra prezzo e sentiment}\label{fig:price_raiting_dvd}
+			\caption{Dvd: studio sulle recensioni medie dei prodotti}\label{fig:price_raiting_dvd}
 		\end{figure}
 	
 	
 		\subsection{Categoria videogiochi}
-			Per la categoria "videogiochi", abbiamo una distribuzione probabilistica formata da recensioni positive per il \verb|???|, mentre dal \verb|????| per quelle negative. Studiamo come queste sono distribuite in base al prezzo, più precisamente all'intervallo di prezzi\\
-			Dalla Figura \ref{fig:priceVSrating_videogames} si può notare come anche in questo caso il comportamento per le recensioni positive sia a discesa, con più del \verb|50%| concentrate nel primo intervallo. Per quelle negative invece abbiamo una percentuale più o meno simile per i primi due intervalli, cala proseguendo, fino a scomparire del tutto nell'ultimo intervallo. Anche in questo caso la chiave di lettura può essere la stessa utilizzata per i libri.
+			Per la categoria "videogiochi", abbiamo una distribuzione probabilistica formata da recensioni positive per il \verb|96.5|, mentre dal \verb|3.55| per quelle negative (Figura \ref{fig:pie_videogames}). Studiamo come queste sono distribuite in base al prezzo, più precisamente all'intervallo di prezzi\\
+			Dalla Figura \ref{fig:priceVSrating_videogames} si può notare come anche in questo caso il comportamento per le recensioni positive sia a discesa, con più del \verb|50%| concentrate nel primo intervallo. Per quelle negative invece abbiamo una percentuale più o meno simile per i primi due intervalli, cala proseguendo, fino a scomparire del tutto nell'ultimo intervallo. Anche in questo caso la chiave di lettura può essere la stessa utilizzata per i libri. 
 		
-		
-		Dalla Figura \ref{fig:priceVSrating_videogames} si evince che ...
-		
-		\begin{figure} [h]
-			\includegraphics[width=\textwidth]{Figure/priceVSrating_videogames}
-			\caption{Istogramma relazione prezzo e valutazione recensioni.}
-			\label{fig:priceVSrating_videogames}
-		\end{figure}
+			\begin{figure} [h]
+				\centering
+				\begin{subfigure}{0.48\textwidth}
+					\includegraphics[width=\textwidth]{Figure/pie_videogames}
+					\caption{Distribuzione delle recensioni}
+					\label{fig:pie_videogames}
+				\end{subfigure}
+				\begin{subfigure}{0.48\textwidth}
+					\includegraphics[width=\textwidth]{Figure/priceVSrating_videogames}
+					\caption{Correlazione prezzo e sentiment}
+					\label{fig:priceVSrating_videogames}
+				\end{subfigure}
+				\caption{Videogiochi: studio sulle recensioni medie dei prodotti}\label{fig:price_raiting_videogames}
+			\end{figure}
 	
 		
 		\subsection{Categoria musica}
-			Un dato importante è rappresentato dalla categoria "musica", che conta solo recensioni positive. A riprova di questo, vi è anche l'istogramma in Figura \ref{fig:???}, dove non compare il colore blu delle recensioni negative. 
+			Un dato importante è rappresentato dalla categoria "musica", che conta solo recensioni positive (Figura \ref{pie_music}). A riprova di questo, vi è anche l'istogramma in Figura \ref{fig:priceVSrating_music}, dove non compare il colore blu delle recensioni negative. 
 				
 			\begin{figure} [h]
-				\includegraphics[width=\textwidth]{Figure/priceVSrating_music}
-				\caption{Istogramma relazione prezzo e valutazione recensioni.}
-				\label{fig:priceVSrating_music}
+				\centering
+				\begin{subfigure}{0.48\textwidth}
+					\includegraphics[width=\textwidth]{Figure/pie_music}
+					\caption{Distribuzione delle recensioni}
+					\label{fig:pie_music}
+				\end{subfigure}
+				\begin{subfigure}{0.48\textwidth}
+					\includegraphics[width=\textwidth]{Figure/priceVSrating_music}
+					\caption{Correlazione prezzo e sentiment}
+					\label{fig:priceVSrating_music}
+				\end{subfigure}
+				\caption{Musica: studio sulle recensioni medie dei prodotti}\label{fig:price_raiting_music}
 			\end{figure}
 		
 		

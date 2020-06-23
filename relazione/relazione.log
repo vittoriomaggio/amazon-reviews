@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.11)  23 JUN 2020 11:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.11)  23 JUN 2020 18:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -909,12 +909,17 @@ Capitolo 1.
 
 ]
 Capitolo 2.
+
+Overfull \hbox (14.42055pt too wide) in paragraph at lines 5--6
+[]\T1/cmr/bx/n/10.95 DATASET RE-VIEWS???????????????????????????????????????? 
+ []
+
 <Figure/pie_category.jpeg, id=137, 702.625pt x 501.875pt>
 File: Figure/pie_category.jpeg Graphic file (type jpg)
 <use Figure/pie_category.jpeg>
-Package pdftex.def Info: Figure/pie_category.jpeg  used on input line 5.
+Package pdftex.def Info: Figure/pie_category.jpeg  used on input line 8.
 (pdftex.def)             Requested size: 360.0pt x 257.1475pt.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 10.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 13.
 (c:/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [5
@@ -923,7 +928,7 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 <Figure/top_pos_book_table.png, id=149, 791.45688pt x 241.90375pt>
 File: Figure/top_pos_book_table.png Graphic file (type png)
 <use Figure/top_pos_book_table.png>
-Package pdftex.def Info: Figure/top_pos_book_table.png  used on input line 28.
+Package pdftex.def Info: Figure/top_pos_book_table.png  used on input line 31.
 (pdftex.def)             Requested size: 360.0pt x 110.03314pt.
 
 
@@ -932,7 +937,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figure/top_neg_book_table.png, id=151, 761.34438pt x 248.42813pt>
 File: Figure/top_neg_book_table.png Graphic file (type png)
 <use Figure/top_neg_book_table.png>
-Package pdftex.def Info: Figure/top_neg_book_table.png  used on input line 34.
+Package pdftex.def Info: Figure/top_neg_book_table.png  used on input line 37.
 (pdftex.def)             Requested size: 360.0pt x 117.4701pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -940,7 +945,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figure/top_pos_film_table.png, id=152, 535.50063pt x 164.615pt>
 File: Figure/top_pos_film_table.png Graphic file (type png)
 <use Figure/top_pos_film_table.png>
-Package pdftex.def Info: Figure/top_pos_film_table.png  used on input line 40.
+Package pdftex.def Info: Figure/top_pos_film_table.png  used on input line 43.
 (pdftex.def)             Requested size: 360.0pt x 110.67075pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -948,7 +953,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figure/top_neg_film_table.png, id=153, 537.00626pt x 173.14688pt>
 File: Figure/top_neg_film_table.png Graphic file (type png)
 <use Figure/top_neg_film_table.png>
-Package pdftex.def Info: Figure/top_neg_film_table.png  used on input line 46.
+Package pdftex.def Info: Figure/top_neg_film_table.png  used on input line 49.
 (pdftex.def)             Requested size: 360.0pt x 116.07385pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -957,7 +962,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: Figure/top_pos_videogames_table.png Graphic file (type png)
 <use Figure/top_pos_videogames_table.png>
 Package pdftex.def Info: Figure/top_pos_videogames_table.png  used on input lin
-e 52.
+e 55.
 (pdftex.def)             Requested size: 360.0pt x 123.4692pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -966,13 +971,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: Figure/top_neg_videogames_table.png Graphic file (type png)
 <use Figure/top_neg_videogames_table.png>
 Package pdftex.def Info: Figure/top_neg_videogames_table.png  used on input lin
-e 58.
+e 61.
 (pdftex.def)             Requested size: 360.0pt x 120.46237pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [6]
-Overfull \hbox (12.09227pt too wide) in paragraph at lines 72--73
+Overfull \hbox (12.09227pt too wide) in paragraph at lines 75--76
 []\T1/cmr/m/n/10.95 tuttavia nel-la no-stra im-ple-men-ta-zio-ne que-
  []
 
@@ -980,23 +985,23 @@ Overfull \hbox (12.09227pt too wide) in paragraph at lines 72--73
 <Figure/top_positive_books.png, id=171, 567.11874pt x 287.0725pt>
 File: Figure/top_positive_books.png Graphic file (type png)
 <use Figure/top_positive_books.png>
-Package pdftex.def Info: Figure/top_positive_books.png  used on input line 84.
+Package pdftex.def Info: Figure/top_positive_books.png  used on input line 87.
 (pdftex.def)             Requested size: 172.79846pt x 87.46718pt.
 <Figure/top_negative_books.png, id=172, 567.11874pt x 287.0725pt>
 File: Figure/top_negative_books.png Graphic file (type png)
 <use Figure/top_negative_books.png>
-Package pdftex.def Info: Figure/top_negative_books.png  used on input line 89.
+Package pdftex.def Info: Figure/top_negative_books.png  used on input line 92.
 (pdftex.def)             Requested size: 172.79846pt x 87.46718pt.
 
 [8 <./Figure/top_pos_film_table.PNG> <./Figure/top_neg_film_table.PNG>]
-Overfull \hbox (3.25105pt too wide) in paragraph at lines 98--99
+Overfull \hbox (3.25105pt too wide) in paragraph at lines 101--102
 []\T1/cmr/m/n/10.95 nello sche-ma so-no rap-pre-sen-ta-te con di-men-sio-ne mag
 -
  []
 
 [9 <./Figure/top_pos_videogames_table.PNG> <./Figure/top_neg_videogames_table.P
 NG> <./Figure/top_positive_books.png> <./Figure/top_negative_books.png>]
-Overfull \hbox (6.29317pt too wide) in paragraph at lines 113--114
+Overfull \hbox (6.29317pt too wide) in paragraph at lines 116--117
 []\T1/cmr/m/n/10.95 nello sche-ma so-no rap-pre-sen-ta-te con di-men-sio-ne mag
 -
  []
@@ -1005,15 +1010,15 @@ Overfull \hbox (6.29317pt too wide) in paragraph at lines 113--114
 <Figure/top_positive_dvd.png, id=196, 567.11874pt x 287.0725pt>
 File: Figure/top_positive_dvd.png Graphic file (type png)
 <use Figure/top_positive_dvd.png>
-Package pdftex.def Info: Figure/top_positive_dvd.png  used on input line 138.
+Package pdftex.def Info: Figure/top_positive_dvd.png  used on input line 141.
 (pdftex.def)             Requested size: 172.79846pt x 87.46718pt.
 <Figure/top_negative_dvd.png, id=197, 567.11874pt x 287.0725pt>
 File: Figure/top_negative_dvd.png Graphic file (type png)
 <use Figure/top_negative_dvd.png>
-Package pdftex.def Info: Figure/top_negative_dvd.png  used on input line 143.
+Package pdftex.def Info: Figure/top_negative_dvd.png  used on input line 146.
 (pdftex.def)             Requested size: 172.79846pt x 87.46718pt.
 
-Overfull \hbox (3.25105pt too wide) in paragraph at lines 152--153
+Overfull \hbox (3.25105pt too wide) in paragraph at lines 155--156
 []\T1/cmr/m/n/10.95 nello sche-ma so-no rap-pre-sen-ta-te con di-men-sio-ne mag
 -
  []
@@ -1023,67 +1028,79 @@ Overfull \hbox (3.25105pt too wide) in paragraph at lines 152--153
 File: Figure/top_positive_videogames.png Graphic file (type png)
 <use Figure/top_positive_videogames.png>
 Package pdftex.def Info: Figure/top_positive_videogames.png  used on input line
- 181.
+ 184.
 (pdftex.def)             Requested size: 172.79846pt x 87.46718pt.
 <Figure/top_negative_videogames.png, id=208, 567.11874pt x 287.0725pt>
 File: Figure/top_negative_videogames.png Graphic file (type png)
 <use Figure/top_negative_videogames.png>
 Package pdftex.def Info: Figure/top_negative_videogames.png  used on input line
- 186.
+ 189.
 (pdftex.def)             Requested size: 172.79846pt x 87.46718pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (3.25105pt too wide) in paragraph at lines 195--196
+Overfull \hbox (3.25105pt too wide) in paragraph at lines 198--199
 []\T1/cmr/m/n/10.95 nello sche-ma so-no rap-pre-sen-ta-te con di-men-sio-ne mag
 -
  []
 
 [12] [13 <./Figure/top_positive_videogames.png> <./Figure/top_negative_videogam
-es.png>]
-<Figure/priceVSrating_books.jpeg, id=223, 702.625pt x 501.875pt>
+es.png>] [14]
+<Figure/pie_books.jpeg, id=228, 702.625pt x 501.875pt>
+File: Figure/pie_books.jpeg Graphic file (type jpg)
+<use Figure/pie_books.jpeg>
+Package pdftex.def Info: Figure/pie_books.jpeg  used on input line 250.
+(pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
+<Figure/priceVSrating_books.jpeg, id=229, 702.625pt x 501.875pt>
 File: Figure/priceVSrating_books.jpeg Graphic file (type jpg)
 <use Figure/priceVSrating_books.jpeg>
-Package pdftex.def Info: Figure/priceVSrating_books.jpeg  used on input line 24
-3.
-(pdftex.def)             Requested size: 360.0pt x 257.1475pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Figure/priceVSrating_dvd.jpeg, id=225, 702.625pt x 501.875pt>
+Package pdftex.def Info: Figure/priceVSrating_books.jpeg  used on input line 25
+5.
+(pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
+ [15 <./Figure/pie_books.jpeg> <./Figure/priceVSrating_books.jpeg>]
+<Figure/pie_dvd.jpeg, id=236, 702.625pt x 501.875pt>
+File: Figure/pie_dvd.jpeg Graphic file (type jpg)
+<use Figure/pie_dvd.jpeg>
+Package pdftex.def Info: Figure/pie_dvd.jpeg  used on input line 271.
+(pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
+<Figure/priceVSrating_dvd.jpeg, id=237, 702.625pt x 501.875pt>
 File: Figure/priceVSrating_dvd.jpeg Graphic file (type jpg)
 <use Figure/priceVSrating_dvd.jpeg>
-Package pdftex.def Info: Figure/priceVSrating_dvd.jpeg  used on input line 252.
+Package pdftex.def Info: Figure/priceVSrating_dvd.jpeg  used on input line 276.
 
-(pdftex.def)             Requested size: 360.0pt x 257.1475pt.
-[14]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Figure/priceVSrating_videogames.jpeg, id=231, 702.625pt x 501.875pt>
+(pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
+<Figure/pie_videogames.jpeg, id=240, 702.625pt x 501.875pt>
+File: Figure/pie_videogames.jpeg Graphic file (type jpg)
+<use Figure/pie_videogames.jpeg>
+Package pdftex.def Info: Figure/pie_videogames.jpeg  used on input line 291.
+(pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
+<Figure/priceVSrating_videogames.jpeg, id=241, 702.625pt x 501.875pt>
 File: Figure/priceVSrating_videogames.jpeg Graphic file (type jpg)
 <use Figure/priceVSrating_videogames.jpeg>
 Package pdftex.def Info: Figure/priceVSrating_videogames.jpeg  used on input li
-ne 261.
-(pdftex.def)             Requested size: 360.0pt x 257.1475pt.
+ne 296.
+(pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figure/priceVSrating_music.jpeg, id=233, 702.625pt x 501.875pt>
+LaTeX Warning: Reference `pie_music' on page 16 undefined on input line 305.
+
+[16 <./Figure/pie_dvd.jpeg> <./Figure/priceVSrating_dvd.jpeg> <./Figure/pie_vid
+eogames.jpeg> <./Figure/priceVSrating_videogames.jpeg>]
+<Figure/pie_music.jpeg, id=247, 702.625pt x 501.875pt>
+File: Figure/pie_music.jpeg Graphic file (type jpg)
+<use Figure/pie_music.jpeg>
+Package pdftex.def Info: Figure/pie_music.jpeg  used on input line 310.
+(pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
+<Figure/priceVSrating_music.jpeg, id=248, 702.625pt x 501.875pt>
 File: Figure/priceVSrating_music.jpeg Graphic file (type jpg)
 <use Figure/priceVSrating_music.jpeg>
-Package pdftex.def Info: Figure/priceVSrating_music.jpeg  used on input line 27
-1.
-(pdftex.def)             Requested size: 360.0pt x 257.1475pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [15 <./Figure/priceVSrating_books.jpeg>] (./relazione.bbl [16 <./Figure/price
-VSrating_dvd.jpeg> <./Figure/priceVSrating_videogames.jpeg>] [17 <./Figure/pric
-eVSrating_music.jpeg>]
+Package pdftex.def Info: Figure/priceVSrating_music.jpeg  used on input line 31
+5.
+(pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
+) [17 <./Figure/pie_music.jpeg> <./Figure/priceVSrating_music.jpeg>] (./relazio
+ne.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 10.
 
@@ -1097,15 +1114,19 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `relazione.out' has not changed.
 (rerunfilecheck)             Checksum: CF6203C831B667A00896F75D97B84666;1027.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 21476 strings out of 492609
- 401477 string characters out of 6132818
- 453634 words of memory out of 5000000
- 25119 multiletter control sequences out of 15000+600000
+ 21513 strings out of 492609
+ 402330 string characters out of 6132818
+ 454663 words of memory out of 5000000
+ 25152 multiletter control sequences out of 15000+600000
  548467 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,7n,63p,1104b,878s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,7n,63p,1221b,878s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
 ive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/
 texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb><c:/texlive/2019/texmf-dist
@@ -1119,10 +1140,10 @@ exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2019/texmf-dist/
 fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2019/texmf-dist/fonts/type
 1/public/cm-super/sfti1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/c
 m-super/sftt1095.pfb>
-Output written on relazione.pdf (19 pages, 3974672 bytes).
+Output written on relazione.pdf (19 pages, 4071721 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
- 243 compressed objects within 3 object streams
+ 315 PDF objects out of 1000 (max. 8388607)
+ 246 compressed objects within 3 object streams
  49 named destinations out of 1000 (max. 500000)
- 206 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 226 words of extra memory for PDF output out of 10000 (max. 10000000)
 
