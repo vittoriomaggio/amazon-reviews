@@ -1,5 +1,8 @@
-\chapter{Sentiment Analysis}
+\chapter{Sentiment Analysis}   
 	Il nostro primo obiettivo è quello di studiare l'intrattenimento, in particolare quali siano i prodotti più recensiti all'interno delle nostre quattro categorie. Come primo passo abbiamo  quindi scelto di effettuare lo studio su un numero limitato di prodotti, riducendoli a duecento, e di analizzare la loro distribuzione. I risultati ottenuti sono presentati nella Figura \ref{fig:pie_category}
+	
+	
+	\textbf{DATASET REVIEWS????????????????????????????????????????}
 		
 	\begin{figure} [h]
 		\includegraphics[width=\textwidth]{Figure/pie_category}	
@@ -232,31 +235,58 @@
 			\item \textbf{reazioni negative}, dovute al costo eccessivo di alcuni prodotti, dove si paga non tanto la qualità, quanto piuttosto il marchio.
 		\end{itemize}
 	
-		Contrariamente a quanto è stato compiuto per le prime analisi, ora non si è eseugita una campionatura sui rodotti migliori, ma è stato calcolato il sentiment, secondo le modalità precdente descritte, per ogni prodotto. Questo sentiement è stato poi raccolto in base alle categorie, sviluppando ancora una volta due gruppi di insiemi, per le recensioni positive e negative, questa volta però sull'intero \textit{set} di prodotti. Ad operazione conclusa abbiamo raccolto tutti i possibili prezzi perr ogni categoria e li abbiamo suddivisi in intervalli, così che per esempio, per la categoria libri ci fosse, tra i tanti, l'intervallo \verb|[1-10]| che racchiudesse al suo interno tutti i prodotti con un prezzo compreso tra il valore \verb|1| e il valore \verb|10|. 
+		Contrariamente a quanto è stato compiuto per le prime analisi, ora non si è eseguita una campionatura sui prodotti migliori, ma è stato calcolato il sentiment, secondo le modalità precedente descritte, per ogni prodotto. Questo sentiment è stato poi raccolto in base alle categorie, sviluppando ancora una volta due gruppi di insiemi, per le recensioni positive e negative, questa volta però sull'intero \textit{set} di prodotti. Ad operazione conclusa abbiamo raccolto tutti i possibili prezzi per ogni categoria e li abbiamo suddivisi in intervalli, così che per esempio, per la categoria libri ci fosse, tra i tanti, l'intervallo \verb|[1-10]| che racchiudesse al suo interno tutti i prodotti con un prezzo compreso tra il valore \verb|0| e il valore \verb|10|. 
 
-		Una volta ottenuti i sottoraggruppamenti dei prezzi per ogni categoria, siamo andati a visualizzare la tipologia delle recensioni per ognuno di essi. In particolare, tramite un istogramma, abbiamo rappresentato sull'asse delle ascisse tutti gli intervalli per una certa categoria e sull'asse delle ordinate la valutazione totale sulle recensioni in percentuale. Analizziamo i risultati per ogni categoria.
+		Una volta ottenuti i sotto-raggruppamenti dei prezzi per ogni categoria, siamo andati a visualizzare la tipologia delle recensioni per ognuno di essi. In particolare, tramite un istogramma, abbiamo rappresentato sull'asse delle ascisse tutti gli intervalli per una certa categoria e sull'asse delle ordinate la valutazione totale sulle recensioni in percentuale. Analizziamo i risultati per ogni categoria.
 		
 		\subsection{Categoria libri}
-			Dalla Figura \ref{fig:priceVSrating_books} si evince che ...
+			Per la categoria "libri", abbiamo il \verb|???| composto da recensioni positive, mentre le restanti sono negative, come mostrato in Figura ??????
+			Studiamo come queste sono distribuite in base al prezzo, più precisamente all'intervallo di prezzi. \\
+			Dalla Figura \ref{fig:priceVSrating_books} si evince che le recensioni positive sono maggiormente distribuite nei prodotti con un prezzo che oscilla tra \verb|0| e \verb|15| euro. Andando avanti la percentuale diminuisce, fino a non avere esemplari su un range dal valore compreso tra i \verb|100| e \verb|150| euro. Per quanto riguarda le recensioni negative, invece, si riscontra una presenza dominante tra quelle appartenenti al primo intervallo, cala drasticamente nel secondo fino a non avere prodotti per i tre \textit{range} successivi. Una possibile chiave di lettura per questa rappresentazione potrebbe essere che, per quanto riguarda i commenti positivi, questi siano presenti in ogni categoria perché con un prezzo basso, se l'utente è soddisfatto a maggior ragione lascerà una recensione positiva, in quanto non ha dovuto spendere molto per un prodotto funzionante. A prezzi elevati invece, è difficile che il prodotto non soddisfi le aspettative, in quanto un libro richiede pochi requisiti di qualità, ne consegue che chi spende rimane soddisfatto, pertanto i commenti negativi si concentrino solo nel primo intervallo.
 		
+				
 			\begin{figure} [h]
-				\includegraphics[width=\textwidth]{Figure/priceVSrating_books}
-				\caption{Istogramma relazione prezzo e valutazione recensioni.}
-				\label{fig:priceVSrating_books}
+				\centering
+				\begin{subfigure}{0.48\textwidth}
+					\includegraphics[width=\textwidth]{Figure/???}
+					\caption{????}
+					\label{fig:???}
+				\end{subfigure}
+				\begin{subfigure}{0.48\textwidth}
+					\includegraphics[width=\textwidth]{Figure/priceVSrating_books}
+					\caption{Price vs raiting}
+					\label{fig:priceVSrating_books}
+				\end{subfigure}
+				\caption{Correlazione tra prezzo e sentiment}\label{fig:price_raiting_book}
 			\end{figure}
 		
 		
 		\subsection{Categoria dvd}
-		Dalla Figura \ref{fig:priceVSrating_dvd} si evince che ...
+		Per la categoria "dvd", abbiamo una distribuzione probabilistica di recensioni medie pari a \verb|???| per quelle positive e \verb|???| per quelle negative.
+		Dalla Figura \ref{fig:priceVSrating_dvd} si può notare che il \verb|60%| delle recensioni positive appartengono al primo intervallo, diminuiscono per il secondo e terzo \textit{range}, mentre per il quarto si ha un impercettibile aumento delle stesse, probabilmente dovute al fattore qualità-prezzo. Come prima per l'ultimo intervallo abbiamo esclusivamente recensioni positive, seppur molto basse; in quanto difficilmente un utente spende grandi somme di denaro per comprare dvd. Dall'altra parte abbiamo invece quelle negative, il cui numero diminuisce all'aumentare del prezzo, ma che comunque si mantiene pressoché uguale per ogni intervallo.
+		 utilizzata per i libri
 		
 		\begin{figure} [h]
-			\includegraphics[width=\textwidth]{Figure/priceVSrating_dvd}
-			\caption{Libri : Istogramma relazione prezzo e valutazione recensioni.}
-			\label{fig:priceVSrating_dvd}
+			\centering
+			\begin{subfigure}{0.48\textwidth}
+				\includegraphics[width=\textwidth]{Figure/???}
+				\caption{????}
+				\label{fig:???}
+			\end{subfigure}
+			\begin{subfigure}{0.48\textwidth}
+				\includegraphics[width=\textwidth]{Figure/priceVSrating_dvd}
+				\caption{Price vs raiting}
+				\label{fig:priceVSrating_dvd}
+			\end{subfigure}
+			\caption{Correlazione tra prezzo e sentiment}\label{fig:price_raiting_dvd}
 		\end{figure}
 	
 	
 		\subsection{Categoria videogiochi}
+			Per la categoria "videogiochi", abbiamo una distribuzione probabilistica formata da recensioni positive per il \verb|???|, mentre dal \verb|????| per quelle negative. Studiamo come queste sono distribuite in base al prezzo, più precisamente all'intervallo di prezzi\\
+			Dalla Figura \ref{fig:priceVSrating_videogames} si può notare come anche in questo caso il comportamento per le recensioni positive sia a discesa, con più del \verb|50%| concentrate nel primo intervallo. Per quelle negative invece abbiamo una percentuale più o meno simile per i primi due intervalli, cala proseguendo, fino a scomparire del tutto nell'ultimo intervallo. Anche in questo caso la chiave di lettura può essere la stessa utilizzata per i libri.
+		
+		
 		Dalla Figura \ref{fig:priceVSrating_videogames} si evince che ...
 		
 		\begin{figure} [h]
@@ -267,13 +297,13 @@
 	
 		
 		\subsection{Categoria musica}
-		Dalla Figura \ref{fig:priceVSrating_music} si evince che ...
-		
-		\begin{figure} [h]
-			\includegraphics[width=\textwidth]{Figure/priceVSrating_music}
-			\caption{Istogramma relazione prezzo e valutazione recensioni.}
-			\label{fig:priceVSrating_music}
-		\end{figure}
+			Un dato importante è rappresentato dalla categoria "musica", che conta solo recensioni positive. A riprova di questo, vi è anche l'istogramma in Figura \ref{fig:???}, dove non compare il colore blu delle recensioni negative. 
+				
+			\begin{figure} [h]
+				\includegraphics[width=\textwidth]{Figure/priceVSrating_music}
+				\caption{Istogramma relazione prezzo e valutazione recensioni.}
+				\label{fig:priceVSrating_music}
+			\end{figure}
 		
 		
 		
