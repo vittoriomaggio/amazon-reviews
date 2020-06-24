@@ -14,4 +14,6 @@
 \contentsline {subsection}{\numberline {2.3.2}Categoria dvd}{15}{subsection.2.3.2}% 
 \contentsline {subsection}{\numberline {2.3.3}Categoria videogiochi}{16}{subsection.2.3.3}% 
 \contentsline {subsection}{\numberline {2.3.4}Categoria musica}{17}{subsection.2.3.4}% 
-\contentsline {chapter}{Bibliografia}{18}{chapter*.18}% 
+\contentsline {section}{\numberline {2.4}Utilit\IeC {\`a} delle recensioni per gli utenti}{17}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.4.1}Analisi dei risultati tramite box plot}{18}{subsection.2.4.1}% 
+\contentsline {chapter}{Bibliografia}{20}{chapter*.19}% 

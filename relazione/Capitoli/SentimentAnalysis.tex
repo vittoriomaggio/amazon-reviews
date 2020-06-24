@@ -299,7 +299,7 @@
 	
 		
 		\subsection{Categoria musica}
-			Un dato importante è rappresentato dalla categoria "musica", che conta solo recensioni positive (Figura \ref{pie_music}). A riprova di questo, vi è anche l'istogramma in Figura \ref{fig:priceVSrating_music}, dove non compare il colore blu delle recensioni negative. 
+			Un dato importante è rappresentato dalla categoria "musica", che conta solo recensioni positive (Figura \ref{fig:pie_music}). A riprova di questo, vi è anche l'istogramma in Figura \ref{fig:priceVSrating_music}, dove non compare il colore blu delle recensioni negative. 
 				
 			\begin{figure} [h]
 				\centering
@@ -315,6 +315,43 @@
 				\end{subfigure}
 				\caption{Musica: studio sulle recensioni medie dei prodotti}\label{fig:price_raiting_music}
 			\end{figure}
+		
+		
+	\section{Utilità delle recensioni per gli utenti}
+		La nostra analisi del \textit{sentiment} è proseguita nella direzioni delle recensioni; in particolare ci siamo chiesti se gli utenti abbiano trovato più utili le recensioni negative rispetto a quelle positive. Lo studio si è concentrato all'interno di ogni categoria, raggruppando per esse l'attributo \verb|sentiment|, del \textit{dataset} sulle recensioni in due diversi gruppi, uno per ogni polarità (esclusa quella neutra). Il risultato di questa operazione erano otto diversi gruppi, due per ogni categoria. 
+		
+		Definita questa divisione siamo andati a calcolare per ognuno degli otto insiemi il valore di utilità complessivo per ogni categoria. In particolare per il calcolo del valore abbiamo inizialmente calcolato i valori su diverse metriche: utilità massima, minima, media e il calcolo della varianza.
+		
+		\begin{description}
+			\item[minimo:] valore di utilità minimo raggiunto dalle recensioni.
+			\item[massimo:] valore di utilità massimo raggiunto dalle recensioni.
+			\item[media:] valore di utilità medio raggiunto dalle recensioni.
+			\item[varianza:] dispersione dei valori di utilità intorno al valor medio.
+		\end{description}
+	
+		Di tutte le misure prese in considerazione, quella che più ci è sembrata utile nella nostra descrizione è stata la media, in quanto esprime l'andamento generico di utilità. Calcolare, invece, l'utilità minima non portava alcun informazione alla nostra analisi; in quanto per tutte le categorie il valore minimo era sempre uguale a zero. Ragionamento più o meno simile è quello seguito per il valore massimo a livello informativo; non è infatti di alcun interesse conoscere il valore massimo, questo potrebbe essere l'unico a fronte di altri valori tutti minimi. Di più interesse è stata la varianza che come abbiamo detto, misura il grado di variabilità di una distribuzione. Abbiamo scelto di non considerare questo ultimo valore in quanto molto meno immediato rispetto all'intuibile calcolo della media.
+		
+		\subsection{Analisi dei risultati tramite box plot}
+			Avendo scelto la metrica per il calcolo dei risultati, siamo andati a visualizzarli tramite un \textit{boxplot}. Il box plot è un metodo per rappresentare graficamente i gruppi di dati numerici attraverso i loro quartili. In particolare la rappresentazione prevede la visualizzazione di cinque valori: minimo, massimo, mediana, primo quantile e terzo quantile.
+			
+			\begin{itemize}
+				\item \textbf{Minimo:} il punto dati più basso esclusi eventuali valori anomali.
+				\item \textbf{Massimo:} il punto dati più alto esclusi eventuali valori anomali.
+				\item \textbf{Mediana}\verb|(Q2/50th percentile)|: il valore medio del set di dati.
+				\item \textbf{Primo Quartile}\verb|(Q1/25th percentile)|: è la mediana della metà inferiore del set di dati.
+				\item \textbf{Terzo Quartile}\verb|(Q1/75th percentile)|: è la mediana della metà superiore del set di dati.
+			\end{itemize} 
+		
+			Importante specificare che in questo specifico diagramma esistono anche dei valori anomali, che possono essere tracciati come punti individuali. \\
+				
+			\begin{figure}
+				\includegraphics[width=\textwidth]{Figure/boxplot-ratingVShelpful}	
+				\caption{Utilità delle recensioni negative e positive per ogni categoria.}
+				\label{fig:boxplot-ratingVShelpful}
+			\end{figure}
+			
+			Dalla Figura \ref{fig:boxplot-ratingVShelpful} si può osservare come per ogni categoria ci siano moltissimi valori sparsi; la "box" del \textit{box plot} si nota a malapena. Tuttavia la considerazione più importante che si può sollevare è la superiorità di utiità delle recensioni negative su quelle positive; questo a significare che gli utenti trovano molto più utile le critiche negative mosse contro i prodotti rispetto che quelle positive.
+			
 		
 		
 		
