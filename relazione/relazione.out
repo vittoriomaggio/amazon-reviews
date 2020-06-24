@@ -1,6 +1,6 @@
 \BOOKMARK [0][-]{chapter*.2}{Elenco delle tabelle}{}% 1
 \BOOKMARK [0][-]{chapter*.3}{Elenco delle figure}{}% 2
-\BOOKMARK [0][-]{chapter.1}{Richiami teorici}{}% 3
+\BOOKMARK [0][-]{chapter.1}{Richiami teorici alla sentiment analysis}{}% 3
 \BOOKMARK [0][-]{chapter.2}{Sentiment Analysis}{}% 4
 \BOOKMARK [1][-]{section.2.1}{Primo passaggio: distribuzione del sentiment}{chapter.2}% 5
 \BOOKMARK [1][-]{section.2.2}{Secondo passaggio: analisi delle parole pi\371 usate}{chapter.2}% 6
@@ -14,4 +14,6 @@
 \BOOKMARK [2][-]{subsection.2.3.4}{Categoria musica}{section.2.3}% 14
 \BOOKMARK [1][-]{section.2.4}{Utilit\340 delle recensioni per gli utenti}{chapter.2}% 15
 \BOOKMARK [2][-]{subsection.2.4.1}{Analisi dei risultati tramite box plot}{section.2.4}% 16
-\BOOKMARK [0][-]{chapter*.19}{Bibliografia}{}% 17
+\BOOKMARK [0][-]{chapter.3}{Network Analysis}{}% 17
+\BOOKMARK [1][-]{section.3.1}{title}{chapter.3}% 18
+\BOOKMARK [0][-]{chapter*.19}{Bibliografia}{}% 19
