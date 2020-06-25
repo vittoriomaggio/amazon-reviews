@@ -2,18 +2,24 @@
 \BOOKMARK [0][-]{chapter*.3}{Elenco delle figure}{}% 2
 \BOOKMARK [0][-]{chapter.1}{Richiami teorici alla sentiment analysis}{}% 3
 \BOOKMARK [0][-]{chapter.2}{Sentiment Analysis}{}% 4
-\BOOKMARK [1][-]{section.2.1}{Primo passaggio: distribuzione del sentiment}{chapter.2}% 5
-\BOOKMARK [1][-]{section.2.2}{Secondo passaggio: analisi delle parole pi\371 usate}{chapter.2}% 6
-\BOOKMARK [2][-]{subsection.2.2.1}{Wordclouds libri}{section.2.2}% 7
-\BOOKMARK [2][-]{subsection.2.2.2}{Wordclouds dvd}{section.2.2}% 8
-\BOOKMARK [2][-]{subsection.2.2.3}{Wordclouds videogiochi}{section.2.2}% 9
-\BOOKMARK [1][-]{section.2.3}{Correlazione tra prezzo e sentiment}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.2.3.1}{Categoria libri}{section.2.3}% 11
-\BOOKMARK [2][-]{subsection.2.3.2}{Categoria dvd}{section.2.3}% 12
-\BOOKMARK [2][-]{subsection.2.3.3}{Categoria videogiochi}{section.2.3}% 13
-\BOOKMARK [2][-]{subsection.2.3.4}{Categoria musica}{section.2.3}% 14
-\BOOKMARK [1][-]{section.2.4}{Utilit\340 delle recensioni per gli utenti}{chapter.2}% 15
-\BOOKMARK [2][-]{subsection.2.4.1}{Analisi dei risultati tramite box plot}{section.2.4}% 16
-\BOOKMARK [0][-]{chapter.3}{Network Analysis}{}% 17
-\BOOKMARK [1][-]{section.3.1}{title}{chapter.3}% 18
-\BOOKMARK [0][-]{chapter*.19}{Bibliografia}{}% 19
+\BOOKMARK [1][-]{section.2.1}{Analisi esplorativa: distribuzione del sentiment nel corso degli anni}{chapter.2}% 5
+\BOOKMARK [2][-]{subsection.2.1.1}{Distribuzione del sentiment negli anni: Libri}{section.2.1}% 6
+\BOOKMARK [2][-]{subsection.2.1.2}{Sentiment negli anni: Dvd}{section.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.1.3}{Sentiment negli anni: Videogiochi}{section.2.1}% 8
+\BOOKMARK [2][-]{subsection.2.1.4}{Sentiment negli anni: Musica}{section.2.1}% 9
+\BOOKMARK [1][-]{section.2.2}{Studio sull'intrattenimento}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.1}{Wordclouds libri}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.2}{Wordclouds dvd}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.3}{Wordclouds videogiochi}{section.2.2}% 13
+\BOOKMARK [1][-]{section.2.3}{Correlazione tra prezzo e sentiment}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.3.1}{Categoria libri}{section.2.3}% 15
+\BOOKMARK [2][-]{subsection.2.3.2}{Categoria dvd}{section.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.3.3}{Categoria videogiochi}{section.2.3}% 17
+\BOOKMARK [2][-]{subsection.2.3.4}{Categoria musica}{section.2.3}% 18
+\BOOKMARK [1][-]{section.2.4}{Utilit\340 delle recensioni per gli utenti}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.4.1}{Analisi dei risultati tramite box plot}{section.2.4}% 20
+\BOOKMARK [0][-]{chapter.3}{Network Analysis}{}% 21
+\BOOKMARK [1][-]{section.3.1}{title}{chapter.3}% 22
+\BOOKMARK [0][-]{chapter.4}{Conclusioni}{}% 23
+\BOOKMARK [0][-]{chapter.5}{TODO}{}% 24
+\BOOKMARK [0][-]{chapter*.24}{Bibliografia}{}% 25

@@ -2,20 +2,26 @@
 \babel@toc {italian}{}
 \contentsline {chapter}{Elenco delle tabelle}{2}{chapter*.2}% 
 \contentsline {chapter}{Elenco delle figure}{3}{chapter*.3}% 
-\contentsline {chapter}{\numberline {1}Richiami teorici alla sentiment analysis}{4}{chapter.1}% 
-\contentsline {chapter}{\numberline {2}Sentiment Analysis}{6}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Primo passaggio: distribuzione del sentiment}{7}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}Secondo passaggio: analisi delle parole pi\IeC {\`u} usate}{8}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}Wordclouds libri}{9}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}Wordclouds dvd}{12}{subsection.2.2.2}% 
-\contentsline {subsection}{\numberline {2.2.3}Wordclouds videogiochi}{13}{subsection.2.2.3}% 
-\contentsline {section}{\numberline {2.3}Correlazione tra prezzo e sentiment}{15}{section.2.3}% 
-\contentsline {subsection}{\numberline {2.3.1}Categoria libri}{16}{subsection.2.3.1}% 
-\contentsline {subsection}{\numberline {2.3.2}Categoria dvd}{16}{subsection.2.3.2}% 
-\contentsline {subsection}{\numberline {2.3.3}Categoria videogiochi}{17}{subsection.2.3.3}% 
-\contentsline {subsection}{\numberline {2.3.4}Categoria musica}{18}{subsection.2.3.4}% 
-\contentsline {section}{\numberline {2.4}Utilit\IeC {\`a} delle recensioni per gli utenti}{18}{section.2.4}% 
-\contentsline {subsection}{\numberline {2.4.1}Analisi dei risultati tramite box plot}{19}{subsection.2.4.1}% 
-\contentsline {chapter}{\numberline {3}Network Analysis}{21}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}title}{21}{section.3.1}% 
-\contentsline {chapter}{Bibliografia}{22}{chapter*.19}% 
+\contentsline {chapter}{\numberline {1}Richiami teorici alla sentiment analysis}{5}{chapter.1}% 
+\contentsline {chapter}{\numberline {2}Sentiment Analysis}{7}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Analisi esplorativa: distribuzione del sentiment nel corso degli anni}{7}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}Distribuzione del sentiment negli anni: Libri}{8}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.2}Sentiment negli anni: Dvd}{8}{subsection.2.1.2}% 
+\contentsline {subsection}{\numberline {2.1.3}Sentiment negli anni: Videogiochi}{9}{subsection.2.1.3}% 
+\contentsline {subsection}{\numberline {2.1.4}Sentiment negli anni: Musica}{9}{subsection.2.1.4}% 
+\contentsline {section}{\numberline {2.2}Studio sull'intrattenimento}{10}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Wordclouds libri}{14}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Wordclouds dvd}{17}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.3}Wordclouds videogiochi}{18}{subsection.2.2.3}% 
+\contentsline {section}{\numberline {2.3}Correlazione tra prezzo e sentiment}{19}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Categoria libri}{20}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Categoria dvd}{21}{subsection.2.3.2}% 
+\contentsline {subsection}{\numberline {2.3.3}Categoria videogiochi}{22}{subsection.2.3.3}% 
+\contentsline {subsection}{\numberline {2.3.4}Categoria musica}{22}{subsection.2.3.4}% 
+\contentsline {section}{\numberline {2.4}Utilit\IeC {\`a} delle recensioni per gli utenti}{22}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.4.1}Analisi dei risultati tramite box plot}{23}{subsection.2.4.1}% 
+\contentsline {chapter}{\numberline {3}Network Analysis}{25}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}title}{25}{section.3.1}% 
+\contentsline {chapter}{\numberline {4}Conclusioni}{26}{chapter.4}% 
+\contentsline {chapter}{\numberline {5}TODO}{27}{chapter.5}% 
+\contentsline {chapter}{Bibliografia}{28}{chapter*.24}% 
