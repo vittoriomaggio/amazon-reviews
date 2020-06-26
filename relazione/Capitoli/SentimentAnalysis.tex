@@ -13,7 +13,7 @@
 			\item \texttt{music}
 		\end{itemize}
 		
-		A questo punto all'interno di ogni categoria abbiamo creato tre diversi gruppi formato da tutte le recensioni positive per il primo, tutte quelle negative per il secondo e infine neutre per il terzo. Per ogni gruppo di una stessa categoria si è studiata la distribuzione nel corso degli anni tramite un grafico, in cui sull'asse delle ordinate è rappresentato il numero delle recensioni; su quelle delle ascisse gli intervalli temporali. Si noti che i due valori posti agli estremi sull'asse delle ascisse, rispettivamente \verb|2010| e \verb|2019| registrano dei valori bassi di recensioni. Questo comportamento è dovuto al fatto che probabilmente la campionatura non è rappresentativa di tutto l'annata; pertanto è bene non considerare l'andamento del grafico nei pressi dei due valori.
+		A questo punto all'interno di ogni categoria abbiamo creato tre diversi gruppi formati da tutte le recensioni positive per il primo, tutte quelle negative per il secondo e infine neutre per il terzo. Per ogni gruppo di una stessa categoria si è studiata la distribuzione nel corso degli anni tramite un grafico, in cui sull'asse delle ordinate è rappresentato il numero delle recensioni; su quelle delle ascisse gli intervalli temporali. Si noti che i due valori posti agli estremi sull'asse delle ascisse, rispettivamente \verb|2010| e \verb|2019| registrano dei valori bassi di recensioni. Questo comportamento è dovuto al fatto che probabilmente la campionatura non è rappresentativa di tutto l'annata; pertanto è bene non considerare l'andamento del grafico nei pressi dei due valori.
 		
 		\subsection{Distribuzione del sentiment negli anni: Libri}
 			Dalla Figura \ref{fig:sent_year_books} è chiaro che il numero di recensioni positive negli anni è stato sempre molto più elevato rispetto a quello delle recensioni negative o neutre, fino a essere quasi il quintuplo più grande intorno al \verb|2018|. 
@@ -44,7 +44,7 @@
 		
 		
 			\subsection{Sentiment negli anni: Musica}
-				Il gruppo in esame è quello che registra meno recensioni positive, solamente \verb|2500|. L'andamento inoltre presenta un'irregolarità; nel \verb|2014|, infatti, si registra un massimo locale, mentre il massimo globale si riscontra nel \verb|2018|, anticipato nel \verb|2015| da un minimo locale. Per le altre tipologie di recensioni andiamo un andamento crescente fino al \verb|2016|, dopodiché raggiunge la stazionarietà negli annate successive.
+				Il gruppo in esame è quello che registra meno recensioni positive, solamente \verb|2500|. L'andamento inoltre presenta un'irregolarità; nel \verb|2014|, infatti, si registra un massimo locale, mentre il massimo globale si riscontra nel \verb|2018|, anticipato nel \verb|2015| da un minimo locale. Per le altre tipologie di recensioni andiamo un andamento crescente fino al \verb|2016|, dopodiché raggiunge la stazionarietà nelle annate successive.
 				
 				\begin{figure} [h]
 					\includegraphics[width=\textwidth]{Figure/sent_year_music}
@@ -62,15 +62,15 @@
 			\label{fig:pie_category}
 		\end{figure}
 		
-		Dalla figura è possibile notare che, in percentuale, i prodotti più recensiti appartengono alla categoria dei videogiochi (\verb|45%|), seguiti dai libri (\verb|27.5%|), dai dvd (\verb|21%|) e dalla musica (\verb|6.5%|). Quest'ultima categoria è davvero esigua perché delle analisi diano risultati consistenti e si possano ricavare informazioni utili; inoltre poiché lo studio su cui abbiamo posto l'attenzione riguardava i più popolari, non aveva senso esaminare dei prodotti quasi privi di recensioni. Da questa considerazione è derivata la scelta di escludere \verb|music| e procedere ad analizzare l'intrattenimento solo sulle tre migliori categorie, quindi \verb|videogames|, \verb|books| e \verb|dvd|. Arrivati a questo punto il nostro studio è stato diviso in due diversi passaggi, durante i quali abbiamo cercato di rispondere a due domande ovvero quali siano i prodotti più recensiti e perché proprio loro. 
+		Dalla figura è possibile notare che, in percentuale, i prodotti più recensiti appartengono alla categoria dei videogiochi (\verb|45%|), seguiti dai libri (\verb|27.5%|), dai dvd (\verb|21%|) e dalla musica (\verb|6.5%|). Quest'ultima categoria è davvero esigua perché delle analisi diano risultati consistenti e si possano ricavare informazioni utili; inoltre poiché lo studio su cui abbiamo posto l'attenzione riguardava i più popolari, non aveva senso esaminare dei prodotti quasi privi di recensioni. Da questa considerazione è derivata la scelta di escludere \verb|music| e procedere ad analizzare l'intrattenimento solo sulle tre categorie più popolari, quindi \verb|videogames|, \verb|books| e \verb|dvd|. Arrivati a questo punto il nostro studio è stato diviso in due diversi passaggi, durante i quali abbiamo cercato di rispondere a due domande ovvero quali siano i prodotti più recensiti e perché proprio loro. 
 			
 		\begin{description}
 		\item [Primo passaggio:] distribuzione del sentiment\\
-			Come già accennato, per poter valutare la polarità di una recensione è necessario calcolare il \textit{sentiment}. Abbiamo visto che questo calcolo può essere eseguito secondo diverse metodologie, tuttavia il nostro \textit{dataset} relativo ai prodotti, presentava al suo interno un campo che ben si prestava a questo tipo di analisi. L'attributo in questione è quello delle stelle. \textit{Amazon} infatti per ogni recensione riferita a un determinato prodotto associa una valutazione in stelle da \verb|0| a \verb|5|. Questo ha permesso di effettuare un conteggio per ogni prodotto di tutte le sue recensioni, dividendole in positive negative e neutre, secondo lo schema di seguito.
+			Come già accennato, per poter valutare la polarità di una recensione è necessario calcolare il \textit{sentiment}. Abbiamo visto che questo calcolo può essere eseguito secondo diverse metodologie, tuttavia il nostro \textit{dataset} relativo ai prodotti, presentava al suo interno un campo che ben si prestava a questo tipo di analisi. L'attributo in questione è quello delle stelle. \textit{Amazon} infatti per ogni recensione riferita a un determinato prodotto associa una valutazione in stelle da \verb|0| a \verb|5|. Questo ha permesso di effettuare un conteggio per ogni prodotto di tutte le sue recensioni, dividendole in positive neutre e negative, secondo lo schema di seguito.
 			
 			\begin{itemize}
 				\item \textbf{positive:} la recensione aveva un punteggio di maggiore di tre stelle.
-				\item \textbf{neuter:} la recensione aveva un punteggio uguale a tre stelle.
+				\item \textbf{neutre:} la recensione aveva un punteggio uguale a tre stelle.
 				\item \textbf{negative:} la recensione aveva un punteggio minore di tre stelle.
 			\end{itemize}
 			
@@ -120,7 +120,7 @@
 			Avendo risposto al primo quesito ci siamo potuti soffermare sulla seconda interrogazione, ovvero perché fossero risultati proprio questi prodotti. Siamo così andati alla ricerca delle parole più utilizzate all'interno delle recensioni (negative e positive), cercando una corrispondenza tra queste e i prodotti migliori. Tuttavia per poter eseguire questo confronto sono state necessarie delle operazioni atte a uniformare il \textit{dataset}; i dati infatti non sempre sono puliti, in essi sono presenti errori di battitura, intere frasi scritte in maiuscolo, eccessiva punteggiatura, etc. Ecco dunque il motivo del termine "uniformare", intendiamo con esso il processo di riscrittura delle frasi seguendo degli specifici passaggi, che saranno descritti nel seguito.
 		
 			\begin{description}
-				\item[tokenizzazione:] suddivide un testo in singole parole, i\textit{token}), che saranno utilizzati per altri tipi di analisi o attività.
+				\item[tokenizzazione:] suddivide un testo in singole parole, i \textit{token}, che saranno utilizzati per altri tipi di analisi o attività.
 				\item[standardizzazione:] riscrittura delle parole da \textit{upper case} a \textit{lower case}. 
 				\item[rimozione delle \textit{stopwords},] parole comuni prive di significato, ma che ricorrono spesso all'interno della frasi.
 				\item[rimozione delle cifre numeriche]
@@ -128,7 +128,7 @@
 				\item [stemming:] processo di riduzione delle parole flesse (o talvolta derivate) alla loro forma di origine, base o radice.
 			\end{description}
 			
-			Al termine del processo, l'\textit{output} risultante era composto da un elenco di parole scritte Italiano corretto, privo di segni di punteggiatura o numeri, scritto in forma minuscola, ridotto alla radice. A questo punto è stato quindi possibile effettuare un'operazione di visualizzazioni delle parole più usate all'interno delle recensioni, per comprendere il motivo per cui proprio quei prodotti presenti nella lista rientrino nei migliori, per entrambe le polarità. La tecnica visiva utilizzata è quella dei \verb|wordclouds|, che consiste nella raccolta delle parole più usate nelle recensioni (\verb|word|), rappresentate per mezzo di \verb|cloud|, ha permesso di confrontare le recensioni positive e negative per ogni categoria e di comprendere che cosa determinava l'appartenenza dei prodotti all'insieme dei "migliori" o dei peggiori. 
+			Al termine del processo, l'\textit{output} risultante era composto da un elenco di parole scritte in Italiano corretto, privo di segni di punteggiatura o numeri, scritto in forma minuscola, ridotto alla radice. A questo punto è stato quindi possibile effettuare un'operazione di visualizzazione delle parole più usate all'interno delle recensioni, per comprendere il motivo per cui proprio quei prodotti presenti nella lista rientrino nei migliori, per entrambe le polarità. La tecnica visiva utilizzata è quella dei \verb|wordclouds|, che consiste nella raccolta delle parole più usate nelle recensioni (\verb|word|), rappresentate per mezzo di \verb|cloud|, ha permesso di confrontare le recensioni positive e negative per ogni categoria e di comprendere che cosa determinava l'appartenenza dei prodotti all'insieme dei "migliori" o dei peggiori. 
 			\end{description}
 
 	
@@ -152,14 +152,14 @@
 				
 				\begin{description}
 					\item[Recensioni positive:]
-					 nello schema sono rappresentate con dimensione maggiore le parole \verb|libr|, \verb|stori|, \verb|legg|, a dimostrazione del fatto che queste sono in assoluto le parole più frequenti all'interno delle recensioni degli utenti. Non sorprende che i tre termini si riferiscano alla categoria selezionata, nel caso attuale quella dei libri; vedremo che questo comportamento ricorrerà sempre durante l'analisi tramite textit{wordclouds}. Concentriamoci invece sulle parole che racchiudono informazioni, ricordando che l'obiettivo primario è comprendere perché i libri di Figura \ref{fig:top_pos_book_table} siano risultati i migliori.
+					 nello schema sono rappresentate con dimensione maggiore le parole \verb|libr|, \verb|stori|, \verb|legg|, a dimostrazione del fatto che queste sono in assoluto le parole più frequenti all'interno delle recensioni degli utenti. Non sorprende che i tre termini si riferiscano alla categoria selezionata, nel caso attuale quella dei libri; vedremo che questo comportamento ricorrerà sempre durante l'analisi tramite \textit{wordclouds}. Concentriamoci invece sulle parole che racchiudono informazioni, ricordando che l'obiettivo primario è comprendere perché i libri di Figura \ref{fig:top_pos_book_table} siano risultati i migliori.
 					\begin{itemize}
 						\item \texttt{ricc}, \texttt{figl}, \texttt{falcon},  \texttt{giovann}, \texttt{"emozion"}, \texttt{pop up}: \\
 						sono tutte parole presenti in alcuni dei titoli della lista dei migliori, in ordine \textit{"Per questo mi chiamo Giovanni. da un padre a un figlio il racconto della vita di Giovanni Falcone"}, \textit{"I colori delle emozioni (pop-up)"}, "\textit{25 grammi di felicità - Come un piccolo riccio può cambiarti la vita}". 
 						\item \texttt{maf}: \\
 						termine che se esteso indica la mafia, riferito quindi al primo libro dell'elenco.
 						\item \texttt{illustr}, \texttt{bambin}, \texttt{color}, \texttt{semplic},  \texttt{disegn}, \texttt{raccont}, \texttt{animal} : \\
-						sono tutti termini riguardanti l'infanzia. Da questa informazioni comprendiamo che la maggior parte delle recensioni commenta positivamente i libri per bambini, che sono semplici, colorati, ricchi di disegni e di racconti basati sugli animali. Quindi questi vocaboli sono riferiti per lo più al secondo e al terzo libro dell'elenco dei migliori; tuttavia l'ultimo termine può essere esteso anche quarto prodotto. 
+						sono tutti termini riguardanti l'infanzia. Da queste informazioni comprendiamo che la maggior parte delle recensioni commenta positivamente i libri per bambini, che sono semplici, colorati, ricchi di disegni e di racconti basati sugli animali. Quindi questi vocaboli sono riferiti per lo più al secondo e al terzo libro dell'elenco dei migliori; tuttavia l'ultimo termine può essere esteso anche al quarto prodotto. 
 						\item \texttt{insegn}, \texttt{scuol}: \\
 						sono vocaboli riferiti all'ambiente scolastico; quindi probabilmente riferito all'ultimo libro, criticato positivamente poiché insegna tematiche relative alla scuola.
 						\item \texttt{acquist}, \texttt{regal}: \\
