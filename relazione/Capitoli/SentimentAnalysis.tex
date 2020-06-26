@@ -1,6 +1,6 @@
 \chapter{Sentiment Analysis}   
 \label{cap:SentimentAnalysis}
-	Nel corso del capitolo verranno mostrate tutte le analisi effettuate relative al \textit{sentiment}; in particolare quali siano le informazioni ricavate durante questo studio. La parte mostrata nel seguito sarà così strutturata; inizialmente verrà eseguita un'analisi esplorativa su uno dei due \textit{dataset}, per comprendere la distribuzione del sentiment nel corso degli anni e si procederà poi con l'indicazione e la rappresentazione delle informazioni ricavate sempre sulla base del \textit{sentiment}.
+	Nel corso del capitolo verranno mostrate tutte le analisi effettuate relative al \textit{sentiment}; in particolare quali siano le informazioni ricavate durante questo studio. La parte mostrata nel seguito sarà così strutturata; inizialmente verrà eseguita un'analisi esplorativa su uno dei due \textit{dataset}, per comprendere la distribuzione del sentiment nel corso degli anni, si procederà poi con l'indicazione e la rappresentazione delle informazioni ricavate sempre sulla base del \textit{sentiment} e infine il confronto dei valori di \textit{sentiment} dati in \textit{input} con quelli ottenuti dall'addestramento di alcuni modelli appartenenti al mondo del \textit{Machine Learning}.
 	
 	\section{Analisi esplorativa: distribuzione del sentiment nel corso degli anni}
 		Prima di procedere con un'analisi sui \textit{dataset} per ricavare informazioni circa alcune precise domande, abbiamo scelto di svolgere un'analisi esplorativa atta a visualizzare l'andamento del \textit{sentiment} degli utenti nel corso degli anni. In pratica quindi, partendo da tutte le recensioni assegnate a ogni prodotto, siamo andati a stimare come queste si distribuissero in un dato \textit{range} temporale. 
@@ -377,16 +377,15 @@
 	\section{Utilità delle recensioni per gli utenti}
 		La nostra analisi del \textit{sentiment} è proseguita nella direzioni delle recensioni; in particolare ci siamo chiesti se gli utenti abbiano trovato più utili le recensioni negative rispetto a quelle positive. Lo studio si è concentrato all'interno di ogni categoria, raggruppando per esse l'attributo \verb|sentiment|, del \textit{dataset} sulle recensioni in due diversi gruppi, uno per ogni polarità (esclusa quella neutra). Il risultato di questa operazione erano otto diversi gruppi, due per ogni categoria. 
 		
-		Definita questa divisione siamo andati a calcolare per ognuno degli otto insiemi il valore di utilità complessivo per ogni categoria. In particolare per il calcolo del valore abbiamo inizialmente calcolato i valori su diverse metriche: utilità massima, minima, media e il calcolo della varianza.
+		Definita questa divisione siamo andati a calcolare per ognuno degli otto insiemi il valore di utilità complessivo per ogni categoria. In particolare per il calcolo del valore abbiamo calcolato i valori su diverse metriche: utilità massima, minima e media.
 		
 		\begin{description}
-			\item[minimo:] valore di utilità minimo raggiunto dalle recensioni.
-			\item[massimo:] valore di utilità massimo raggiunto dalle recensioni.
-			\item[media:] valore di utilità medio raggiunto dalle recensioni.
-			\item[varianza:] dispersione dei valori di utilità intorno al valor medio.
+			\item[Minimo:] valore di utilità minimo raggiunto dalle recensioni.
+			\item[Massimo:] valore di utilità massimo raggiunto dalle recensioni.
+			\item[Media:] valore di utilità medio raggiunto dalle recensioni.
 		\end{description}
 	
-		Di tutte le misure prese in considerazione, quella che più ci è sembrata utile nella nostra descrizione è stata la media, in quanto esprime l'andamento generico di utilità. Calcolare, invece, l'utilità minima non portava alcun informazione alla nostra analisi; in quanto per tutte le categorie il valore minimo era sempre uguale a zero. Ragionamento più o meno simile è quello seguito per il valore massimo a livello informativo; non è infatti di alcun interesse conoscere il valore massimo, questo potrebbe essere l'unico a fronte di altri valori tutti minimi. Di più interesse è stata la varianza che come abbiamo detto, misura il grado di variabilità di una distribuzione. Abbiamo scelto di non considerare questo ultimo valore in quanto molto meno immediato rispetto all'intuibile calcolo della media.
+		Di tutte le misure prese in considerazione, quella che più ci è sembrata utile per la rappresentazione è stata la media, in quanto esprime l'andamento generico di utilità. Calcolare, invece, l'utilità minima non portava alcun informazione alla nostra analisi; in quanto per tutte le categorie il valore minimo era sempre uguale a zero. Ragionamento più o meno simile è quello seguito per il valore massimo a livello informativo; non è infatti di alcun interesse conoscere il valore massimo, questo potrebbe essere l'unico a fronte di altri valori tutti minimi. 
 		
 		\subsection{Analisi dei risultati tramite box plot}
 			Avendo scelto la metrica per il calcolo dei risultati, siamo andati a visualizzarli tramite un \textit{boxplot}. Il box plot è un metodo per rappresentare graficamente i gruppi di dati numerici attraverso i loro quartili. In particolare la rappresentazione prevede la visualizzazione di cinque valori: minimo, massimo, mediana, primo quantile e terzo quantile.
@@ -407,8 +406,14 @@
 				\label{fig:boxplot-ratingVShelpful}
 			\end{figure}
 			
-			Dalla Figura \ref{fig:boxplot-ratingVShelpful} si può osservare come per ogni categoria ci siano moltissimi valori sparsi; la "box" del \textit{box plot} si nota a malapena. Tuttavia la considerazione più importante che si può sollevare è la superiorità di utiità delle recensioni negative su quelle positive; questo a significare che gli utenti trovano molto più utile le critiche negative mosse contro i prodotti rispetto che quelle positive.
+			Dalla Figura \ref{fig:boxplot-ratingVShelpful} si può osservare come per ogni categoria ci siano moltissimi valori sparsi; la "box" del \textit{box plot} si nota a malapena. Tuttavia la considerazione più importante che si può sollevare è la superiorità di utilità delle recensioni negative su quelle positive; questo a significare che gli utenti trovano molto più utile le critiche negative mosse contro i prodotti rispetto che quelle positive.
 			
-		
+	\section{Analisi tramite modelli supervisionati}
+		Per terminare la nostra analisi, abbiamo scelto di allenare determinati modelli sui dati in \textit{input} per fare delle previsioni sul \textit{sentiment} e confrontare i valori ottenuti con quelli effettivi del \textit{dataset}. Prima di entrare nei dettagli implementativi rimandiamo all'attenzione del lettore alcuni richiami teorici circa i modelli da noi utilizzati: \textit{Logistic Regression}, \textit{Support Vector Machine}, \textit{Neural Network}.
+			
+			\subsection{Logistic Regression}
+				La regressione logistica è un algoritmo di classificazione di \textit{Machine Learning} che viene utilizzato per prevedere la probabilità di una variabile dipendente categoriale. Nella regressione logistica, la variabile dipendente è una variabile binaria che contiene dati codificati come \verb|1| (sì, esito positivo) O \verb|0| (no, esito negativo). La regressione logistica binaria richiede che: la variabile dipendente sia binaria, che le variabili indipendenti siano indipendenti l'una dall'altra;e variabili indipendenti sono linearmente correlate alle probabilità del registro.
+				La regressione logistica richiede campioni di dimensioni piuttosto grandi.
+				Tenendo presenti i presupposti di cui sopra, diamo un'occhiata al nostro set di dati.
 		
 		

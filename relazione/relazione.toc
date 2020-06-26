@@ -20,8 +20,10 @@
 \contentsline {subsection}{\numberline {2.3.4}Categoria musica}{22}{subsection.2.3.4}% 
 \contentsline {section}{\numberline {2.4}Utilit\IeC {\`a} delle recensioni per gli utenti}{22}{section.2.4}% 
 \contentsline {subsection}{\numberline {2.4.1}Analisi dei risultati tramite box plot}{23}{subsection.2.4.1}% 
-\contentsline {chapter}{\numberline {3}Network Analysis}{25}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}title}{25}{section.3.1}% 
-\contentsline {chapter}{\numberline {4}Conclusioni}{26}{chapter.4}% 
-\contentsline {chapter}{\numberline {5}TODO}{27}{chapter.5}% 
-\contentsline {chapter}{Bibliografia}{28}{chapter*.24}% 
+\contentsline {section}{\numberline {2.5}Analisi tramite modelli supervisionati}{24}{section.2.5}% 
+\contentsline {subsection}{\numberline {2.5.1}Logistic Regression}{25}{subsection.2.5.1}% 
+\contentsline {chapter}{\numberline {3}Network Analysis}{26}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}title}{26}{section.3.1}% 
+\contentsline {chapter}{\numberline {4}Conclusioni}{27}{chapter.4}% 
+\contentsline {chapter}{\numberline {5}TODO}{28}{chapter.5}% 
+\contentsline {chapter}{Bibliografia}{29}{chapter*.24}% 
