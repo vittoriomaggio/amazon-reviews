@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.11)  26 JUN 2020 16:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.11)  27 JUN 2020 10:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -879,56 +879,57 @@ LaTeX Info: Redefining \selectfont on input line 25.
  (./Capitoli/Titolo.tex [1
 
 {c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./relazione.t
-oc)
+ocpdfTeX warning (ext4): destination with the same identifier (name{page.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.30 ...apter}{\numberline {5}TODO}{29}{chapter.5}
+                                                  % [1
+
+])
 \tf@toc=\write4
 \openout4 = `relazione.toc'.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.30 	\listoftables
-                    [1
-
-] (./relazione.lot)
+ [2] (./relazione.lot)
 \tf@lot=\write5
 \openout5 = `relazione.lot'.
 
- [2
+
+[3
 
 ] (./relazione.lof)
 \tf@lof=\write6
 \openout6 = `relazione.lof'.
 
+ (./Capitoli/Introduzione.tex [4
 
-(./Capitoli/Introduzione.tex [3
-
-]) (./Capitoli/Teoria.tex [4
+]) (./Capitoli/Teoria.tex
+[5
 
 ]
 Capitolo 1.
-) (./Capitoli/SentimentAnalysis.tex [5
+) (./Capitoli/SentimentAnalysis.tex [6
 
-] [6]
+] [7]
 Capitolo 2.
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 10.
 (c:/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [7
+) [8
 
 ]
-<Figure/sent_year_books.jpeg, id=215, 702.625pt x 501.875pt>
+<Figure/sent_year_books.jpeg, id=239, 702.625pt x 501.875pt>
 File: Figure/sent_year_books.jpeg Graphic file (type jpg)
 <use Figure/sent_year_books.jpeg>
 Package pdftex.def Info: Figure/sent_year_books.jpeg  used on input line 22.
 (pdftex.def)             Requested size: 360.0pt x 257.1475pt.
- [8 <./Figure/sent_year_books.jpeg>]
-<Figure/sent_year_dvd.jpeg, id=222, 702.625pt x 501.875pt>
+ [9 <./Figure/sent_year_books.jpeg>]
+<Figure/sent_year_dvd.jpeg, id=246, 702.625pt x 501.875pt>
 File: Figure/sent_year_dvd.jpeg Graphic file (type jpg)
 <use Figure/sent_year_dvd.jpeg>
 Package pdftex.def Info: Figure/sent_year_dvd.jpeg  used on input line 31.
 (pdftex.def)             Requested size: 360.0pt x 257.1475pt.
-<Figure/sent_year_videogames.jpeg, id=224, 702.625pt x 501.875pt>
+<Figure/sent_year_videogames.jpeg, id=248, 702.625pt x 501.875pt>
 File: Figure/sent_year_videogames.jpeg Graphic file (type jpg)
 <use Figure/sent_year_videogames.jpeg>
 Package pdftex.def Info: Figure/sent_year_videogames.jpeg  used on input line 4
@@ -938,7 +939,7 @@ Package pdftex.def Info: Figure/sent_year_videogames.jpeg  used on input line 4
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figure/sent_year_music.jpeg, id=225, 702.625pt x 501.875pt>
+<Figure/sent_year_music.jpeg, id=249, 702.625pt x 501.875pt>
 File: Figure/sent_year_music.jpeg Graphic file (type jpg)
 <use Figure/sent_year_music.jpeg>
 Package pdftex.def Info: Figure/sent_year_music.jpeg  used on input line 50.
@@ -946,23 +947,23 @@ Package pdftex.def Info: Figure/sent_year_music.jpeg  used on input line 50.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9 <./Figure/sent_year_dvd.jpeg>]
-<Figure/pie_category.jpg, id=231, 511.31026pt x 308.352pt>
-File: Figure/pie_category.jpg Graphic file (type jpg)
-<use Figure/pie_category.jpg>
-Package pdftex.def Info: Figure/pie_category.jpg  used on input line 60.
-(pdftex.def)             Requested size: 360.0pt x 217.11058pt.
+[10 <./Figure/sent_year_dvd.jpeg>]
+<Figure/pie_category.jpeg, id=255, 702.625pt x 501.875pt>
+File: Figure/pie_category.jpeg Graphic file (type jpg)
+<use Figure/pie_category.jpeg>
+Package pdftex.def Info: Figure/pie_category.jpeg  used on input line 60.
+(pdftex.def)             Requested size: 360.0pt x 257.1475pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10 <./Figure/sent_year_videogames.jpeg>] [11 <./Figure/sent_year_music.jpeg>]
-<Figure/top_pos_book_table.png, id=246, 791.45688pt x 241.90375pt>
+[11 <./Figure/sent_year_videogames.jpeg>] [12 <./Figure/sent_year_music.jpeg>]
+<Figure/top_pos_book_table.png, id=271, 791.45688pt x 241.90375pt>
 File: Figure/top_pos_book_table.png Graphic file (type png)
 <use Figure/top_pos_book_table.png>
 Package pdftex.def Info: Figure/top_pos_book_table.png  used on input line 84.
 (pdftex.def)             Requested size: 360.0pt x 110.03314pt.
-<Figure/top_neg_book_table.png, id=248, 761.34438pt x 248.42813pt>
+<Figure/top_neg_book_table.png, id=273, 761.34438pt x 248.42813pt>
 File: Figure/top_neg_book_table.png Graphic file (type png)
 <use Figure/top_neg_book_table.png>
 Package pdftex.def Info: Figure/top_neg_book_table.png  used on input line 90.
@@ -971,7 +972,7 @@ Package pdftex.def Info: Figure/top_neg_book_table.png  used on input line 90.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figure/top_pos_film_table.png, id=249, 535.50063pt x 164.615pt>
+<Figure/top_pos_film_table.png, id=274, 535.50063pt x 164.615pt>
 File: Figure/top_pos_film_table.png Graphic file (type png)
 <use Figure/top_pos_film_table.png>
 Package pdftex.def Info: Figure/top_pos_film_table.png  used on input line 96.
@@ -979,7 +980,7 @@ Package pdftex.def Info: Figure/top_pos_film_table.png  used on input line 96.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figure/top_neg_film_table.png, id=250, 537.00626pt x 173.14688pt>
+<Figure/top_neg_film_table.png, id=275, 537.00626pt x 173.14688pt>
 File: Figure/top_neg_film_table.png Graphic file (type png)
 <use Figure/top_neg_film_table.png>
 Package pdftex.def Info: Figure/top_neg_film_table.png  used on input line 102.
@@ -988,7 +989,7 @@ Package pdftex.def Info: Figure/top_neg_film_table.png  used on input line 102.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figure/top_pos_videogames_table.png, id=251, 503.38063pt x 172.645pt>
+<Figure/top_pos_videogames_table.png, id=276, 503.38063pt x 172.645pt>
 File: Figure/top_pos_videogames_table.png Graphic file (type png)
 <use Figure/top_pos_videogames_table.png>
 Package pdftex.def Info: Figure/top_pos_videogames_table.png  used on input lin
@@ -997,7 +998,7 @@ e 108.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figure/top_neg_videogames_table.png, id=252, 521.95pt x 174.6525pt>
+<Figure/top_neg_videogames_table.png, id=277, 521.95pt x 174.6525pt>
 File: Figure/top_neg_videogames_table.png Graphic file (type png)
 <use Figure/top_neg_videogames_table.png>
 Package pdftex.def Info: Figure/top_neg_videogames_table.png  used on input lin
@@ -1006,15 +1007,15 @@ e 114.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12 <./Figure/pie_category.jpg> <./Figure/top_pos_book_table.PNG>] [13 <./Figur
-e/top_neg_book_table.PNG> <./Figure/top_pos_film_table.PNG>]
-<Figure/top_positive_books.png, id=267, 567.11874pt x 287.0725pt>
+[13 <./Figure/pie_category.jpeg> <./Figure/top_pos_book_table.PNG>] [14 <./Figu
+re/top_neg_book_table.PNG> <./Figure/top_pos_film_table.PNG>]
+<Figure/top_positive_books.png, id=291, 567.11874pt x 287.0725pt>
 File: Figure/top_positive_books.png Graphic file (type png)
 <use Figure/top_positive_books.png>
 Package pdftex.def Info: Figure/top_positive_books.png  used on input line 141.
 
 (pdftex.def)             Requested size: 172.79846pt x 87.46718pt.
-<Figure/top_negative_books.png, id=268, 567.11874pt x 287.0725pt>
+<Figure/top_negative_books.png, id=292, 567.11874pt x 287.0725pt>
 File: Figure/top_negative_books.png Graphic file (type png)
 <use Figure/top_negative_books.png>
 Package pdftex.def Info: Figure/top_negative_books.png  used on input line 146.
@@ -1030,21 +1031,21 @@ Overfull \hbox (3.25105pt too wide) in paragraph at lines 155--156
 -
  []
 
-[14 <./Figure/top_neg_film_table.PNG> <./Figure/top_pos_videogames_table.PNG>]
-[15 <./Figure/top_neg_videogames_table.PNG> <./Figure/top_positive_books.png> <
+[15 <./Figure/top_neg_film_table.PNG> <./Figure/top_pos_videogames_table.PNG>]
+[16 <./Figure/top_neg_videogames_table.PNG> <./Figure/top_positive_books.png> <
 ./Figure/top_negative_books.png>]
 Overfull \hbox (6.29317pt too wide) in paragraph at lines 170--171
 []\T1/cmr/m/n/10.95 nello sche-ma so-no rap-pre-sen-ta-te con di-men-sio-ne mag
 -
  []
 
-[16]
-<Figure/top_positive_dvd.png, id=290, 567.11874pt x 287.0725pt>
+[17]
+<Figure/top_positive_dvd.png, id=315, 567.11874pt x 287.0725pt>
 File: Figure/top_positive_dvd.png Graphic file (type png)
 <use Figure/top_positive_dvd.png>
 Package pdftex.def Info: Figure/top_positive_dvd.png  used on input line 195.
 (pdftex.def)             Requested size: 172.79846pt x 87.46718pt.
-<Figure/top_negative_dvd.png, id=291, 567.11874pt x 287.0725pt>
+<Figure/top_negative_dvd.png, id=316, 567.11874pt x 287.0725pt>
 File: Figure/top_negative_dvd.png Graphic file (type png)
 <use Figure/top_negative_dvd.png>
 Package pdftex.def Info: Figure/top_negative_dvd.png  used on input line 200.
@@ -1055,14 +1056,14 @@ Overfull \hbox (3.25105pt too wide) in paragraph at lines 209--210
 -
  []
 
-[17 <./Figure/top_positive_dvd.png> <./Figure/top_negative_dvd.png>]
-<Figure/top_positive_videogames.png, id=301, 567.11874pt x 287.0725pt>
+[18 <./Figure/top_positive_dvd.png> <./Figure/top_negative_dvd.png>]
+<Figure/top_positive_videogames.png, id=327, 567.11874pt x 287.0725pt>
 File: Figure/top_positive_videogames.png Graphic file (type png)
 <use Figure/top_positive_videogames.png>
 Package pdftex.def Info: Figure/top_positive_videogames.png  used on input line
  238.
 (pdftex.def)             Requested size: 172.79846pt x 87.46718pt.
-<Figure/top_negative_videogames.png, id=302, 567.11874pt x 287.0725pt>
+<Figure/top_negative_videogames.png, id=328, 567.11874pt x 287.0725pt>
 File: Figure/top_negative_videogames.png Graphic file (type png)
 <use Figure/top_negative_videogames.png>
 Package pdftex.def Info: Figure/top_negative_videogames.png  used on input line
@@ -1074,49 +1075,49 @@ Overfull \hbox (3.25105pt too wide) in paragraph at lines 252--253
 -
  []
 
-[18 <./Figure/top_positive_videogames.png> <./Figure/top_negative_videogames.pn
-g>] [19] [20]
-<Figure/pie_books.jpeg, id=323, 702.625pt x 501.875pt>
+[19 <./Figure/top_positive_videogames.png> <./Figure/top_negative_videogames.pn
+g>] [20] [21]
+<Figure/pie_books.jpeg, id=347, 702.625pt x 501.875pt>
 File: Figure/pie_books.jpeg Graphic file (type jpg)
 <use Figure/pie_books.jpeg>
 Package pdftex.def Info: Figure/pie_books.jpeg  used on input line 305.
 (pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
-<Figure/priceVSrating_books.jpeg, id=324, 702.625pt x 501.875pt>
+<Figure/priceVSrating_books.jpeg, id=348, 702.625pt x 501.875pt>
 File: Figure/priceVSrating_books.jpeg Graphic file (type jpg)
 <use Figure/priceVSrating_books.jpeg>
 Package pdftex.def Info: Figure/priceVSrating_books.jpeg  used on input line 31
 0.
 (pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
-<Figure/pie_dvd.jpeg, id=327, 702.625pt x 501.875pt>
+<Figure/pie_dvd.jpeg, id=351, 702.625pt x 501.875pt>
 File: Figure/pie_dvd.jpeg Graphic file (type jpg)
 <use Figure/pie_dvd.jpeg>
 Package pdftex.def Info: Figure/pie_dvd.jpeg  used on input line 325.
 (pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
-<Figure/priceVSrating_dvd.jpeg, id=328, 702.625pt x 501.875pt>
+<Figure/priceVSrating_dvd.jpeg, id=352, 702.625pt x 501.875pt>
 File: Figure/priceVSrating_dvd.jpeg Graphic file (type jpg)
 <use Figure/priceVSrating_dvd.jpeg>
 Package pdftex.def Info: Figure/priceVSrating_dvd.jpeg  used on input line 330.
 
 (pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
- [21 <./Figure/pie_books.jpeg> <./Figure/priceVSrating_books.jpeg> <./Figure/pi
+ [22 <./Figure/pie_books.jpeg> <./Figure/priceVSrating_books.jpeg> <./Figure/pi
 e_dvd.jpeg> <./Figure/priceVSrating_dvd.jpeg>]
-<Figure/pie_videogames.jpeg, id=335, 702.625pt x 501.875pt>
+<Figure/pie_videogames.jpeg, id=359, 702.625pt x 501.875pt>
 File: Figure/pie_videogames.jpeg Graphic file (type jpg)
 <use Figure/pie_videogames.jpeg>
 Package pdftex.def Info: Figure/pie_videogames.jpeg  used on input line 345.
 (pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
-<Figure/priceVSrating_videogames.jpeg, id=336, 702.625pt x 501.875pt>
+<Figure/priceVSrating_videogames.jpeg, id=360, 702.625pt x 501.875pt>
 File: Figure/priceVSrating_videogames.jpeg Graphic file (type jpg)
 <use Figure/priceVSrating_videogames.jpeg>
 Package pdftex.def Info: Figure/priceVSrating_videogames.jpeg  used on input li
 ne 350.
 (pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
-<Figure/pie_music.jpeg, id=339, 702.625pt x 501.875pt>
+<Figure/pie_music.jpeg, id=363, 702.625pt x 501.875pt>
 File: Figure/pie_music.jpeg Graphic file (type jpg)
 <use Figure/pie_music.jpeg>
 Package pdftex.def Info: Figure/pie_music.jpeg  used on input line 364.
 (pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
-<Figure/priceVSrating_music.jpeg, id=340, 702.625pt x 501.875pt>
+<Figure/priceVSrating_music.jpeg, id=364, 702.625pt x 501.875pt>
 File: Figure/priceVSrating_music.jpeg Graphic file (type jpg)
 <use Figure/priceVSrating_music.jpeg>
 Package pdftex.def Info: Figure/priceVSrating_music.jpeg  used on input line 36
@@ -1126,90 +1127,84 @@ Package pdftex.def Info: Figure/priceVSrating_music.jpeg  used on input line 36
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22 <./Figure/pie_videogames.jpeg> <./Figure/priceVSrating_videogames.jpeg>]
-[23 <./Figure/pie_music.jpeg> <./Figure/priceVSrating_music.jpeg>]
+[23 <./Figure/pie_videogames.jpeg> <./Figure/priceVSrating_videogames.jpeg>]
+[24 <./Figure/pie_music.jpeg> <./Figure/priceVSrating_music.jpeg>]
 Underfull \hbox (badness 10000) in paragraph at lines 401--402
 
  []
 
-<Figure/boxplot-ratingVShelpful.png, id=349, 702.625pt x 451.6875pt>
+<Figure/boxplot-ratingVShelpful.png, id=374, 702.625pt x 451.6875pt>
 File: Figure/boxplot-ratingVShelpful.png Graphic file (type png)
 <use Figure/boxplot-ratingVShelpful.png>
 Package pdftex.def Info: Figure/boxplot-ratingVShelpful.png  used on input line
  404.
 (pdftex.def)             Requested size: 360.0pt x 231.43275pt.
-) (./Capitoli/NetworkAnalysis.tex [24 <./Figure/boxplot-ratingVShelpful.png>]
-[25]
+[25 <./Figure/boxplot-ratingVShelpful.png>]) (./Capitoli/NetworkAnalysis.tex
+[26]
 Capitolo 3.
 
-LaTeX Warning: Reference `cap:NetworkAnalysis' on page 26 undefined on input li
+LaTeX Warning: Reference `cap:NetworkAnalysis' on page 27 undefined on input li
 ne 2.
 
-) (./Capitoli/Conclusioni.tex [26
+) (./Capitoli/Conclusioni.tex [27
 
 ]
 Capitolo 4.
-) (./Capitoli/TODO.tex [27
+) (./Capitoli/TODO.tex [28
 
 ]
 Capitolo 5.
-) [28
+) [29
 
 ] (./relazione.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 10.
 
-) [29
+) [30
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
- (./relazione.aux
-
-Package mparhack Warning: Marginpars may have changed.
-(mparhack)                Rerun to get them right.
-
-)
+ (./relazione.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 50.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 50.
+Package rerunfilecheck Info: File `relazione.out' has not changed.
+(rerunfilecheck)             Checksum: 6FFDB0BF0D0CB196E2C738E6CD7C18F5;2070.
 
-
-Package rerunfilecheck Warning: File `relazione.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `relazione.out':
-(rerunfilecheck)             Before: 392EA385FA0DF43B325B0AB906D0186C;1770
-(rerunfilecheck)             After:  D28D58D9DC2EA33BD42B50AB697F1EE5;1928.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 21603 strings out of 492609
- 404062 string characters out of 6132818
- 452171 words of memory out of 5000000
- 25199 multiletter control sequences out of 15000+600000
- 548467 words of font info for 58 fonts, out of 8000000 for 9000
+ 21633 strings out of 492609
+ 404411 string characters out of 6132818
+ 452178 words of memory out of 5000000
+ 25216 multiletter control sequences out of 15000+600000
+ 553067 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,7n,63p,1175b,879s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
-ive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/
-texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb><c:/texlive/2019/texmf-dist
-/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2019/texmf-dist/fonts/typ
-e1/public/cm-super/sfbx1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/
-cm-super/sfbx1440.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/s
-fbx2074.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pf
-b><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texl
-ive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2019/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2019/texmf-dist/
-fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2019/texmf-dist/fonts/type
-1/public/cm-super/sfti1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/c
-m-super/sftt1095.pfb>
-Output written on relazione.pdf (30 pages, 4224340 bytes).
+ 40i,8n,63p,1175b,888s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
+st, replaced by a fixed one
+
+{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texliv
+e/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/te
+xmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb><c:/texlive/2019/texmf-dist/f
+onts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1
+/public/cm-super/sfbx1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm
+-super/sfbx1440.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfb
+x2074.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb>
+<c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texliv
+e/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2019/tex
+mf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2019/texmf-dist/fo
+nts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/
+public/cm-super/sfrm1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-
+super/sfrm1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm
+1728.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><
+c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on relazione.pdf (31 pages, 4262123 bytes).
 PDF statistics:
- 441 PDF objects out of 1000 (max. 8388607)
- 354 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
- 331 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 479 PDF objects out of 1000 (max. 8388607)
+ 388 compressed objects within 4 object streams
+ 82 named destinations out of 1000 (max. 500000)
+ 363 words of extra memory for PDF output out of 10000 (max. 10000000)
 

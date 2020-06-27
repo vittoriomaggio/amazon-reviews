@@ -412,8 +412,19 @@
 		Per terminare la nostra analisi, abbiamo scelto di allenare determinati modelli sui dati in \textit{input} per fare delle previsioni sul \textit{sentiment} e confrontare i valori ottenuti con quelli effettivi del \textit{dataset}. Prima di entrare nei dettagli implementativi rimandiamo all'attenzione del lettore alcuni richiami teorici circa i modelli da noi utilizzati: \textit{Logistic Regression}, \textit{Support Vector Machine}, \textit{Neural Network}.
 			
 			\subsection{Logistic Regression}
-				La regressione logistica è un algoritmo di classificazione di \textit{Machine Learning} che viene utilizzato per prevedere la probabilità di una variabile dipendente categoriale. Nella regressione logistica, la variabile dipendente è una variabile binaria che contiene dati codificati come \verb|1| (sì, esito positivo) O \verb|0| (no, esito negativo). La regressione logistica binaria richiede che: la variabile dipendente sia binaria, che le variabili indipendenti siano indipendenti l'una dall'altra;e variabili indipendenti sono linearmente correlate alle probabilità del registro.
-				La regressione logistica richiede campioni di dimensioni piuttosto grandi.
-				Tenendo presenti i presupposti di cui sopra, diamo un'occhiata al nostro set di dati.
+				La regressione logistica è un algoritmo di classificazione di \textit{Machine Learning} che viene utilizzato per prevedere la probabilità di una variabile dipendente categoriale. Nella regressione logistica, la variabile dipendente è una variabile binaria che contiene dati codificati come \verb|1| (sì, esito positivo) O \verb|0| (no, esito negativo). La regressione logistica binaria richiede che: la variabile dipendente sia binaria; le variabili indipendenti siano indipendenti l'una dall'altra elinearmente correlate alle probabilità del registro; la regressione logistica richiede campioni di dimensioni piuttosto grandi.
+				
+			\subsection{Support Vector Machine}
+				Nell'apprendimento automatico , le \textit{Support Vector Machine} \footnote{SVM:macchine di supporto vettoriale}, sono modelli di apprendimento supervisionato con algoritmi di apprendimento associati che analizzano i dati utilizzati per l'analisi di classificazione e regressione. Dato un insieme di esempi di addestramento, ognuno segnato come appartenente all'una o all'altra di due categorie, un algoritmo di addestramento SVM costruisce un modello che assegna nuovi esempi a una categoria o all'altra, rendendolo un classificatore lineare binario non probabilistico. Un modello SVM è una rappresentazione degli esempi come punti nello spazio, mappati in modo tale che gli esempi delle categorie separate siano divisi da uno spazio vuoto il più ampio possibile. Nuovi esempi vengono quindi mappati nello stesso spazio e previsti per appartenere a una categoria in base al lato dello spazio su cui cadono.
+				
+			\subsection{Reti neurali}
+				Una rete neurale è un sistema computazionale che crea previsioni basate su dati esistenti. In altre parole esegue calcoli per rilevare le caratteristiche e decide se un input appartiene o meno ad una specifica classe.\\			
+				Una rete neurale è composta da tre parti principali:
+				\begin{itemize}
+					\item \textbf{Livelli di input}: accettano input in base a dati esistenti. Nel nostro caso ???? neurone per ogni feature.
+					\item \textbf{Livelli nascosti}: utilizzano la \textit{backpropagation} per ottimizzare i pesi delle variabili di input al fine di migliorare la potenza predittiva del modello. Il nostro progetto ha previsto ???? neuroni.
+					\item \textbf{Livelli di output}: \textit{output} di previsioni basate sui dati dell'input e dei livelli nascosti. Nel nostro caso tre neuroni, uno per la polarità del sentiment.
+				\end{itemize}
+				
 		
 		

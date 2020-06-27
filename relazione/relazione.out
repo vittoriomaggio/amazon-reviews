@@ -20,8 +20,10 @@
 \BOOKMARK [2][-]{subsection.2.4.1}{Analisi dei risultati tramite box plot}{section.2.4}% 20
 \BOOKMARK [1][-]{section.2.5}{Analisi tramite modelli supervisionati}{chapter.2}% 21
 \BOOKMARK [2][-]{subsection.2.5.1}{Logistic Regression}{section.2.5}% 22
-\BOOKMARK [0][-]{chapter.3}{Network Analysis}{}% 23
-\BOOKMARK [1][-]{section.3.1}{title}{chapter.3}% 24
-\BOOKMARK [0][-]{chapter.4}{Conclusioni}{}% 25
-\BOOKMARK [0][-]{chapter.5}{TODO}{}% 26
-\BOOKMARK [0][-]{chapter*.24}{Bibliografia}{}% 27
+\BOOKMARK [2][-]{subsection.2.5.2}{Support Vector Machine}{section.2.5}% 23
+\BOOKMARK [2][-]{subsection.2.5.3}{Reti neurali}{section.2.5}% 24
+\BOOKMARK [0][-]{chapter.3}{Network Analysis}{}% 25
+\BOOKMARK [1][-]{section.3.1}{title}{chapter.3}% 26
+\BOOKMARK [0][-]{chapter.4}{Conclusioni}{}% 27
+\BOOKMARK [0][-]{chapter.5}{TODO}{}% 28
+\BOOKMARK [0][-]{chapter*.24}{Bibliografia}{}% 29
