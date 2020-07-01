@@ -8,7 +8,15 @@
 	
 	
 	\section{Analisi sulla rete: videogiochi}
-		Il nostro approccio alla rete ha riguardato il \textit{dataset} prodotti; in particolare abbiamo scelto di rappresentare un grafo per la categoria "videogiochi", in cui i nodi fossero rappresentati dagli identificativi dei prodotti e gli archi dall'attributo \verb|also viewed|.	Il fine del nostro studio è quello di rispondere a due principali domande: 
+		Il nostro approccio alla rete ha riguardato il \textit{dataset} prodotti; in particolare abbiamo scelto di rappresentare un grafo per la categoria "videogiochi". L'approfondimento di questa categoria rispetto alle altre, viste nei capitoli scorsi, è stata determinata dall'intento di porre maggiormente l'attenzione su quei prodotti che avessero registrato più recensioni in assoluto, i videogiochi. Abbiamo scelto una rappresentazione a grafo in cui i nodi fossero rappresentati dagli identificativi dei prodotti e gli archi dall'attributo \verb|also viewed| (Figura \ref{fig:network}).  
+		
+		\begin{figure} [h]
+			\includegraphics[width=\textwidth]{Figure/network}
+			\caption{Visualizzazione della rete.}
+			\label{fig:network}
+		\end{figure}
+		
+		Il fine del nostro studio è quello di rispondere a due principali domande: 
 		\begin{itemize}
 			\item \textit{Quali sono i prodotti più visti all'interno della categoria videogiochi?}
 			Il primo quesito che ci siamo posti voleva essere una sorta di confronto con quanto è stato svolto durante la prima analisi, al termine della quale abbiamo ricavato una \textit{top-five} dei prodotti più recensiti, quindi nel nostro caso più popolari. Il nostro obiettivo è stato quello di andare a osservare se i prodotti più visti dagli utenti coincidano con quelli più recensiti; può infatti accadere che un prodotto, benché abbia un valore di visualizzazione molto alto, non venga poi effettivamente comprato.
@@ -41,13 +49,14 @@
 			Confrontando i risultati possiamo affermare che i prodotti più recensiti nella maggior parte dei casi coincidono con quelli più recensiti, eliminando alcune eccezioni rappresentate dai giochi \textit{Jurassic World} e \textit{Lego Marvel Super Heroes 2}, visti per la prima volta tra i più rilevanti. Un'altra considerazione può essere fatta circa la posizione dei prodotti. Alcuni prodotti, infatti, slittano di qualche posizione, in alto per il caso di \textit{Mario Kart 8 Deluxe}, verso il basso per \textit{Super Mario Odyssey}.
 		
 		\subsection{Prodotti più rilevanti durante l'acquisito da parte di utenti}
-			A questo punto abbiamo proceduto con la rilevazione delle comunità tramite il metodo \verb|Louvian|, che sarà approfondito nella sezione seguente.
+		\label{cap:rilevantProducts}
+			In questa sezione ci occuperemo di rispondere alla seconda domanda proposta. Per procedere con la nostra analisi, è stato prima di tutto necessario individuare l'insieme di tutte le sotto categorie appartenenti ai videogiochi, utilizzando il metodo \verb|Louvian|, che sarà approfondito nella sezione seguente.
 		
-			\textbf{Metodo Louvain}
-				Il metodo \textit{Louvain} per il rilevamento di comunità è un metodo per estrarre comunità da grandi reti. L'ispirazione per questo metodo di rilevamento della comunità è l'ottimizzazione della modularità man mano che l'algoritmo progredisce. La modularità è un valore di scala compreso tra -0,5 (clustering non modulare) e 1 (clustering completamente modulare) che misura la densità relativa dei bordi all'interno delle comunità rispetto ai bordi esterni alle comunità. L'ottimizzazione di questo valore si traduce teoricamente nel migliore raggruppamento possibile dei nodi di una determinata rete, tuttavia passare attraverso tutte le possibili iterazioni dei nodi in gruppi non è pratico, quindi vengono utilizzati algoritmi euristici. Nel metodo \textit{Louvain} di rilevamento della comunità, le prime piccole comunità vengono trovate ottimizzando localmente la modularità su tutti i nodi, quindi ogni piccola comunità viene raggruppata in un nodo e il primo passaggio viene ripetuto. Il metodo è simile al metodo precedente di Clauset, Newman e Moore [3] che collega le comunità la cui fusione produce il maggiore aumento della modularità.
-		
-		\section{Identificazione comunità}
-			Lo scenario che si presentava era composto da quasi \verb|100| comunità; numero ancora troppo elevato per le nostre analisi. La nostra scelta è stata quindi quella di raggruppare nuovamente le comunità in base al parametro \verb|console|. L'operazione ha portato all'identificazione delle seguenti \textit{community}
+			\begin{description}
+				\item [Metodo Louvain:] per il rilevamento di comunità è un metodo per estrarre comunità da grandi reti. L'ispirazione per questo metodo di rilevamento della comunità è l'ottimizzazione della modularità man mano che l'algoritmo progredisce. La modularità è un valore di scala compreso tra -0,5 (clustering non modulare) e 1 (clustering completamente modulare) che misura la densità relativa dei bordi all'interno delle comunità rispetto ai bordi esterni alle comunità. L'ottimizzazione di questo valore si traduce teoricamente nel migliore raggruppamento possibile dei nodi di una determinata rete, tuttavia passare attraverso tutte le possibili iterazioni dei nodi in gruppi non è pratico, quindi vengono utilizzati algoritmi euristici. Nel metodo \textit{Louvain} di rilevamento della comunità, le prime piccole comunità vengono trovate ottimizzando localmente la modularità su tutti i nodi, quindi ogni piccola comunità viene raggruppata in un nodo e il primo passaggio viene ripetuto. Il metodo è simile al metodo precedente di Clauset, Newman e Moore [3] che collega le comunità la cui fusione produce il maggiore aumento della modularità.
+			\end{description}
+
+			In seguito a questa operazione di riduzione, lo scenario che ci si presentava era composto da quasi \verb|100| comunità; numero ancora troppo elevato per rispondere al nostro quesito. La nostra scelta è stata quindi quella di raggruppare nuovamente le comunità in base al parametro \verb|console|. L'operazione ha portato all'identificazione delle seguenti \textit{community}, visibili nella Figura \ref{fig:communities}
 			\begin{itemize}			
 				\item Altro
 				\item Nintento Switch
@@ -60,4 +69,12 @@
 				\item Nintento Wii
 				\item Xbox 360
 			\end{itemize}
+		
+			\begin{figure} [h]
+				\includegraphics[width=\textwidth]{Figure/communities}
+				\caption{Visualizzazione delle comunità.}
+				\label{fig:communities}
+			\end{figure} 
+		
+			All'interno di queste sotto reti abbiamo cercato il prodotto su cui gli utenti si imbattono più spesso, durante la loro procedura di acquisto. Operazione ben diversa dall'individuare quale sia il prodotto più visto in assoluto per ogni sotto insieme. Per ognuna delle nove comunità abbiamo ottenuto delle liste relative a \textit{top-five} di prodotti; queste sono visibili all'interno dell'Appendice \ref{cap:Tabelle}.  
 			
