@@ -1,283 +1,50 @@
 \chapter{Analisi tramite modelli supervisionati}
-		Per terminare la nostra analisi, abbiamo scelto di allenare determinati modelli sui dati in \textit{input} per fare delle previsioni sul \textit{sentiment} e confrontare i valori ottenuti con quelli effettivi del \textit{dataset}. Prima di entrare nei dettagli implementativi rimandiamo all'attenzione del lettore alcuni richiami teorici circa i modelli da noi utilizzati: \textit{Logistic Regression}, \textit{Support Vector Machine}, \textit{Neural Network}. Per tutti questi saranno calcolate le misure associate a ogni modello. Si noti che dei tre modelli, quello che risulta avere accuratezza migliore è la \textit{Logistic Regression}, seguita dalla \textit{Support Vector Machine} e  infine dalla \textit{Neural Network}.
+		Per terminare la nostra analisi, abbiamo scelto di allenare determinati modelli sui dati in \textit{input} per fare delle previsioni sul \textit{sentiment} e confrontare i valori ottenuti con quelli effettivi del \textit{dataset}. Prima di entrare nei dettagli implementativi rimandiamo all'attenzione del lettore alcuni richiami teorici circa i modelli da noi utilizzati: \textit{Logistic Regression}, \textit{Support Vector Machine}, \textit{Neural Network}e le misure associate a ogni modello; queste ultime saranno visibili in Appendice \ref{cap:Misure}. Si noti che dei tre modelli, quello che risulta avere accuratezza migliore è la \textit{Logistic Regression}, seguita dalla \textit{Support Vector Machine} e  infine dalla \textit{Neural Network}. 
 		
 			
 		\section{Logistic Regression}
 			La regressione logistica è un algoritmo di classificazione di \textit{Machine Learning} che viene utilizzato per prevedere la probabilità di una variabile dipendente categoriale. Nella regressione logistica, la variabile dipendente è una variabile binaria che contiene dati codificati come \verb|1| (sì, esito positivo) O \verb|0| (no, esito negativo). La regressione logistica binaria richiede che: la variabile dipendente sia binaria; le variabili indipendenti siano indipendenti l'una dall'altra e linearmente correlate alle probabilità del registro; la regressione logistica richiede campioni di dimensioni piuttosto grandi.
 			
-			\begin{itemize}
-				\item \textbf{Matrice di confusione}: restituisce una rappresentazione dell'accuratezza di una classificazione statistica. In particolare ogni colonna della matrice rappresenta i valori reali, mentre ogni riga rappresenta i valori predetti.
-				
-					\begin{table} [H]
-						\caption{Logistic Regression: Matrice di confusione}
-						\label{tab:matriceConfusioneLogisticRegression}
-						\centering
-						\begin{tabular}{lccc}
-							\toprule 
-							& \textbf{Act Negative} & \textbf{Act Neuter}	& \textbf{Act Positive}\\
-							\midrule
-							\textbf{Pred Negative}  & 850 & 90 & 809\\
-							\textbf{Pred Neuter} & 210 & 122 & 1010\\
-							\textbf{Pred Positive} & 226 & 148 & 20522\\
-							\bottomrule
-						\end{tabular}
-					\end{table}
-			
-				\item \textbf{Precision}: capacità di un modello di classificazione di identificare solo i dati pertinenti). Essa è data dal rapporto tra veri positivi(TP) e la somma di veri positivi(TP) e falsi positivi(FP).
-					\begin{equation}
-					\text{Precision} = \frac{\text{TP}}{\text{TP} + \text{FP}} \\
-					\end{equation}
-					
-					\begin{table} [H]
-						\caption{Logistic Regression: Precision}
-						\label{tab:precisionLogisticRegression}
-						\centering
-						\begin{tabular}{llp{0.5\textwidth}}
-							\toprule 
-							\textbf{Precision}	\\
-							\midrule
-							Negative & 0.66096423 & Questo dimostra che tra i dati predetti ben più del \verb|60%| risultano essere veri negativi.\\
-							Neuter & 0.33888889 & Anche in questo caso solamente il \verb|33%| dei dati predetti sono effettivamente neutri.\\
-							Positive & 0.91858019 & Abbiamo più del \verb|90%| di predetti veri positivi.\\
-							\bottomrule
-						\end{tabular}
-					\end{table}
-				
-				\item \textbf{Accuratezza}: capacità di un modello di trovare tutti i casi veritieri, ovvero quante istanze vengano classificate correttamente. Questa è la somma dei veri positivi più i veri negativi diviso il totale dei dati.
-					\begin{equation}
-					\text{Accuratezza} = \frac{\text{TP} + \text{TN}}{\text{TP} + \text{TN} + \text{FP} + \text{FN}} \\
-					\end{equation}
-					
-					\begin{table} [H]
-						\caption{Logistic Regression: Accuratezza}
-						\label{tab:accLogisticRegression}
-						\centering
-						\begin{tabular}{llp{0.5\textwidth}}
-							\toprule 
-							\textbf{Accuratezza}	\\
-							\midrule
-							LogisticR & 0.89606870 & Il modello ha classificato correttamente quasi il \verb|90%| delle istanze.\\
-							\bottomrule
-						\end{tabular}
-					\end{table}
-				
-				\item \textbf{Recall/Sensitività/TPR}: capacità di un modello di trovare tutti i casi pertinenti all’interno di una serie di dati; quindi l'abilità nell'identificare i positivi. Matematicamente la sua definizione è data dal rapporto tra veri positivi (TP) e la somma di veri positivi (TP) e falsi negativi (FN).
-					\begin{equation}
-					\text{Recall} = \frac{\text{TP}}{\text{TP} + \text{FN}} \\
-					\end{equation}
-					
-					\begin{table} [H]
-						\caption{Logistic Regression: Recall}
-						\label{tab:RecallLogisticRegression}
-						\centering
-						\begin{tabular}{llp{0.5\textwidth}}
-							\toprule 
-							\textbf{Recall}	\\
-							\midrule
-							Negative  & 0.485992  & Questo dato evidenzia che non si riesce a identificare correttamente nemmeno la metà dei negativi effettivi.\\
-							Neuter & 0.09090909 & In questo caso il valore è ancora peggio di quello dei negativi\\
-							Positive & 0.98210184 & Contrariamente agli altri, il modello identifica correttamente quasi la totalità dei positivi.\\
-							\bottomrule
-						\end{tabular}
-					\end{table}
-				
-				\item \textbf{F1-measure}: media armonica di precisione e richiamo, prese entrambe le metriche. Un punteggio di F1 è considerato perfetto quando è pari a \verb|1|, mentre un fallimento se pari a \verb|0|. 
-				\begin{table} [H]
-					\caption{Logistic Regression: F1-measure} 
-					\label{tab:F1-measureLogisticRegression}
-					\centering
-					\begin{tabular}{llp{0.5\textwidth}}
-						\toprule 
-						\textbf{F1-measure}	\\
-						\midrule
-						Negative  & 0.5601318  & Il valore è metà di \verb|1|; il modello sta classificando in maniera neutra i dati negativi.\\
-						Neuter & 0.14336075 & In questo caso il modello sta classificando in modo pessimo i dati neutri.\\
-						Positive & 0.94927955 & Il valore è vicino a \verb|1|, il modello nel complesso sta classificando bene i dati positivi.\\
-						\bottomrule
-					\end{tabular}
-				\end{table} 			
-			\end{itemize}
 			
 
 		\section{Support Vector Machine}
 			Nell'apprendimento automatico , le \textit{Support Vector Machine} \footnote{SVM:macchine di supporto vettoriale}, sono modelli di apprendimento supervisionato con algoritmi di apprendimento associati che analizzano i dati utilizzati per l'analisi di classificazione e regressione. Dato un insieme di esempi di addestramento, ognuno segnato come appartenente all'una o all'altra di due categorie, un algoritmo di addestramento SVM costruisce un modello che assegna nuovi esempi a una categoria o all'altra, rendendolo un classificatore lineare binario non probabilistico. Un modello SVM è una rappresentazione degli esempi come punti nello spazio, mappati in modo tale che gli esempi delle categorie separate siano divisi da uno spazio vuoto il più ampio possibile. Nuovi esempi vengono quindi mappati nello stesso spazio e previsti per appartenere a una categoria in base al lato dello spazio su cui cadono.
-			
-			\begin{itemize}
-				\item \textbf{Matrice di confusione}
-				
-				\begin{table} [H]
-					\caption{SVM: Matrice di confusione}
-					\label{tab:matriceConfusioneSVM}
-					\centering
-					\begin{tabular}{lccc}
-						\toprule 
-						& \textbf{Act Negative} & \textbf{Act Neuter}	& \textbf{Act Positive}\\
-						\midrule
-						\textbf{Pred Negative}  & 889 & 92 & 768\\
-						\textbf{Pred Neuter} & 243 & 95 & 1004\\
-						\textbf{Pred Positive} & 272 & 131 & 20493\\
-						\bottomrule
-					\end{tabular}
-				\end{table}
-				
-				\item \textbf{Precision}:				
-				\begin{table} [H]
-					\caption{SVM: Precision}
-					\label{tab:precisionSVM}
-					\centering
-					\begin{tabular}{llp{0.5\textwidth}}
-						\toprule 
-						\textbf{Precision}	\\
-						\midrule
-						Negative  & 0.63319088  & Questo dimostra che tra i dati predetti ben più del \verb|60%| risultano essere veri negativi.\\
-						Neuter & 0.29874214 & Anche in questo caso solamente meno del \verb|30%| dei dati predetti sono effettivamente neutri.\\
-						Positive & 0.9204132 & Abbiamo più del \verb|90%| di predetti veri positivi.\\
-						\bottomrule
-					\end{tabular}
-				\end{table}
-				
-				\item \textbf{Accuratezza}: 
-								
-				\begin{table}[H]
-					\caption{SVM: Accuratezza}
-					\label{tab:accSVM}
-					\centering
-					\begin{tabular}{llp{0.5\textwidth}}
-						\toprule 
-						\textbf{Accuratezza}	\\
-						\midrule
-						SVM  & 0.8953599866594405 & Il modello ha classificato correttamente quasi il \verb|90%| delle istanze.\\
-						\bottomrule
-					\end{tabular}
-				\end{table}
-				
-				\item \textbf{Recall/Sensitività/TP}:
-				
-				\begin{table}[H]
-					\caption{SVM: Recall}
-					\label{tab:RecallSVM}
-					\centering
-					\begin{tabular}{llp{0.5\textwidth}}
-						\toprule 
-						\textbf{Recall}	\\
-						\midrule
-						Negative  & 0.50829045  & Questo dato evidenzia che non si riesce a identificare poco più della metà dei negativi effettivi.\\
-						Neuter & 0.07078987 & In questo caso il valore è ancora peggio di quello dei negativi\\
-						Positive & 0.98071401 & Contrariamente agli altri, il modello identifica correttamente quasi la totalità dei positivi.\\
-						\bottomrule
-					\end{tabular}
-				\end{table}
-			
-			\item \textbf{F1-measure}:
-			
-			\begin{table} [H]
-				\caption{SVM: F1-measure}
-				\label{tab:F1-measureSVM}
-				\centering
-				\begin{tabular}{llp{0.5\textwidth}}
-					\toprule 
-					\textbf{F1-measure}	\\
-					\midrule
-					Negative  & 0.56390739  & Il valore è metà di \verb|1|; il modello sta classificando in maniera neutra i dati negativi.\\
-					Neuter & 0.11445783 & In questo caso il modello sta classificando in modo pessimo i dati neutri.\\
-					Positive & 0.94960728 & Il valore è vicino a \verb|1|, il modello nel complesso sta classificando bene i dati posotivi.\\
-					\bottomrule
-				\end{tabular}
-			\end{table}
-				
-		\end{itemize}
+		
 				
 		\section{Reti neurali}
 			Una rete neurale è un sistema computazionale che crea previsioni basate su dati esistenti. In altre parole esegue calcoli per rilevare le caratteristiche e decide se un input appartiene o meno ad una specifica classe.\\			
 			Una rete neurale è composta da tre parti principali:
 			\begin{description}
-				\item[] \texttt{Livelli di input}: accettano input in base a dati esistenti. Nel nostro caso \verb|5000| neuroni per ogni \textit{feature}.
-				\item[] \texttt{Livelli nascosti}: utilizzano la \textit{backpropagation} per ottimizzare i pesi delle variabili di input al fine di migliorare la potenza predittiva del modello. Il nostro progetto ha previsto \verb|3| livelli composti rispettivamente da \verb|700|, \verb|400| e \verb|100| neuroni.
-				\item[] \texttt{Livelli di output}: \textit{output} di previsioni basate sui dati dell'input e dei livelli nascosti. Nel nostro caso \verb|5| neuroni, uno per ogni punteggio delle stelle di \textit{amazon} (da \verb|1| a \verb|5|)
+				\item[] \textbf{Livelli di input}: accettano input in base a dati esistenti. Nel nostro caso \verb|5000| neuroni per ogni \textit{feature}.
+				\item[] \textbf{Livelli nascosti}: utilizzano la \textit{backpropagation} per ottimizzare i pesi delle variabili di input al fine di migliorare la potenza predittiva del modello. Il nostro progetto ha previsto \verb|3| livelli composti rispettivamente da \verb|700|, \verb|400| e \verb|100| neuroni.
+				\item[] \textbf{Livelli di output}: \textit{output} di previsioni basate sui dati dell'input e dei livelli nascosti. Nel nostro caso \verb|5| neuroni, uno per ogni punteggio delle stelle di \textit{amazon} (da \verb|1| a \verb|5|)
 			\end{description}
-		
+				
+	
+	
+		\section{Calcolo della misure di performance}
+			In questa breve sezione verrà fornito un ripasso teorico delle misure di \textit{performance}. I valori calcolati per ogni modello sono visibili nell'Appendice \ref{cap:Misure}.
 			\begin{itemize}
-				\item \textbf{Matrice di confusione}
+				\item \textbf{Matrice di confusione}: restituisce una rappresentazione dell'accuratezza di una classificazione statistica. In particolare ogni colonna della matrice rappresenta i valori reali, mentre ogni riga rappresenta i valori predetti.
+					
+				\item \textbf{Precision}: capacità di un modello di classificazione di identificare solo i dati pertinenti). Essa è data dal rapporto tra veri positivi(TP) e la somma di veri positivi(TP) e falsi positivi(FP).	
+					\begin{equation}
+					\text{Precision} = \frac{\text{TP}}{\text{TP} + \text{FP}} \\
+					\end{equation}
 				
-				\begin{table} [H]
-					\caption{NN: Matrice di confusione}
-					\label{tab:matriceConfusioneNN}
-					\centering
-					\begin{tabular}{lccc}
-						\toprule 
-						& \textbf{Act Negative} & \textbf{Act Neuter}	& \textbf{Act Positive}\\
-						\midrule
-						\textbf{Pred Negative}  & 895 & 220 & 634\\
-						\textbf{Pred Neuter} & 213 & 180 & 949\\
-						\textbf{Pred Positive} & 286 & 301 & 20309\\
-						\bottomrule
-					\end{tabular}
-				\end{table}
+				\item \textbf{Accuratezza}: capacità di un modello di trovare tutti i casi veritieri, ovvero quante istanze vengano classificate correttamente. Questa è la somma dei veri positivi più i veri negativi diviso il totale dei dati.
+					\begin{equation}
+					\text{Accuratezza} = \frac{\text{TP} + \text{TN}}{\text{TP} + \text{TN} + \text{FP} + \text{FN}} \\
+					\end{equation}
 				
-				\item \textbf{Precision}:				
-				\begin{table} [H]
-					\caption{NN: Precision}
-					\label{tab:precisionNN}
-					\centering
-					\begin{tabular}{llp{0.5\textwidth}}
-						\toprule 
-						\textbf{Precision}	\\
-						\midrule
-						Negative  & 0.6420373  & Questo dimostra che tra i dati predetti ben più del \verb|60%| risultano essere veri negativi.\\
-						Neuter & 0.25677603 & Anche in questo caso solamente il \verb|25%| dei dati predetti sono effettivamente neutri.\\
-						Positive & 0.92769048 & Abbiamo più del \verb|90%| di predetti veri positivi.\\
-						\bottomrule
-					\end{tabular}
-				\end{table}
+				\item \textbf{Recall/Sensitività/TPR}: capacità di un modello di trovare tutti i casi pertinenti all’interno di una serie di dati; quindi l'abilità nell'identificare i positivi. Matematicamente la sua definizione è data dal rapporto tra veri positivi (TP) e la somma di veri positivi (TP) e falsi negativi (FN).
+					\begin{equation}
+					\text{Recall} = \frac{\text{TP}}{\text{TP} + \text{FN}} \\
+					\end{equation}
 				
-				\item \textbf{Accuratezza}: 
-				
-				\begin{table} [H]
-					\caption{NN: Accuratezza}
-					\label{tab:accNN}
-					\centering
-					\begin{tabular}{llp{0.5\textwidth}}
-						\toprule 
-						\textbf{Accuratezza}	\\
-						\midrule
-						NN  & 0.8914828865635552 & Il modello ha classificato correttamente quasi il \verb|90%| delle istanze.\\
-						\bottomrule
-					\end{tabular}
-				\end{table}
-				
-				\item \textbf{Recall/Sensitività/TP}:
-				
-				\begin{table} [H]
-					\caption{NN: Recall}
-					\label{tab:RecallNN}
-					\centering
-					\begin{tabular}{llp{0.5\textwidth}}
-						\toprule 
-						\textbf{Recall}	\\
-						\midrule
-						Negative  & 0.51172098  & Questo dato evidenzia che non si riesce a identificare poco più della metà dei negativi effettivi.\\
-						Neuter & 0.13412817 & In questo caso il valore è ancora peggio di quello dei negativi\\
-						Positive & 0.9719085 & Contrariamente agli altri, il modello identifica correttamente quasi la totalità dei positivi.\\
-						\bottomrule
-					\end{tabular}
-				\end{table}
-				\item \textbf{F1-measure}:
-				
-				\begin{table} [H]
-					\caption{NN: F1-measure}
-					\label{tab:F1-measureNN}
-					\centering
-					\begin{tabular}{llp{0.5\textwidth}}
-						\toprule 
-						\textbf{F1-measure}	\\
-						\midrule
-						Negative  & 0.56951957  & Il valore è metà di \verb|1|; il modello sta classificando in maniera neutra i dati negativi.\\
-						Neuter & 0.17621145 & In questo caso il modello sta classificando in modo pessimo i dati neutri.\\
-						Positive & 0.94928485 & Il valore è molto vicino a \verb|1|, il modello nel complesso sta classificando bene i dati positivi.\\
-						\bottomrule
-					\end{tabular}
-				\end{table}
-		\end{itemize}
+				\item \textbf{F1-measure}: media armonica di precisione e richiamo, prese entrambe le metriche. Un punteggio di F1 è considerato perfetto quando è pari a \verb|1|, mentre un fallimento se pari a \verb|0|. 		
+			\end{itemize}
+	
 	
 
 

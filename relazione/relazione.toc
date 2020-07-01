@@ -22,13 +22,19 @@
 \contentsline {subsection}{\numberline {2.4.1}Analisi dei risultati tramite box plot}{24}{subsection.2.4.1}% 
 \contentsline {chapter}{\numberline {3}Analisi tramite modelli supervisionati}{26}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Logistic Regression}{26}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Support Vector Machine}{28}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Reti neurali}{30}{section.3.3}% 
-\contentsline {chapter}{\numberline {4}Network Analysis}{33}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Analisi sulla rete: videogiochi}{33}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}Prodotti pi\IeC {\`u} popolari}{34}{subsection.4.1.1}% 
-\contentsline {subsection}{\numberline {4.1.2}Prodotti pi\IeC {\`u} rilevanti durante l'acquisito da parte di utenti}{34}{subsection.4.1.2}% 
-\contentsline {section}{\numberline {4.2}Identificazione comunit\IeC {\`a}}{35}{section.4.2}% 
-\contentsline {chapter}{\numberline {5}Conclusioni}{36}{chapter.5}% 
-\contentsline {chapter}{\numberline {6}TODO}{37}{chapter.6}% 
-\contentsline {chapter}{Bibliografia}{38}{chapter*.40}% 
+\contentsline {section}{\numberline {3.2}Support Vector Machine}{26}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}Reti neurali}{27}{section.3.3}% 
+\contentsline {section}{\numberline {3.4}Calcolo della misure di performance}{27}{section.3.4}% 
+\contentsline {chapter}{\numberline {4}Network Analysis}{29}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Analisi sulla rete: videogiochi}{29}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Prodotti pi\IeC {\`u} popolari}{30}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Prodotti pi\IeC {\`u} rilevanti durante l'acquisito da parte di utenti}{31}{subsection.4.1.2}% 
+\contentsline {chapter}{\numberline {5}Conclusioni}{33}{chapter.5}% 
+\contentsline {chapter}{\numberline {6}TODO}{34}{chapter.6}% 
+\contentsline {part}{Appendice}{34}{chapter.6}% 
+\contentsline {chapter}{\numberline {A}Misure di performance}{35}{appendix.Alph1}% 
+\contentsline {section}{\numberline {A.1}Logistic Regression}{35}{section.Alph1.1}% 
+\contentsline {section}{\numberline {A.2}Support Vector Machine}{36}{section.Alph1.2}% 
+\contentsline {section}{\numberline {A.3}Reti neurali}{38}{section.Alph1.3}% 
+\contentsline {chapter}{\numberline {B}Tabelle prodotti rilevanti}{40}{appendix.Alph2}% 
+\contentsline {chapter}{Bibliografia}{41}{appendix*.42}% 

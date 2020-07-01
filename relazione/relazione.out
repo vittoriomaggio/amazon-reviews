@@ -22,11 +22,17 @@
 \BOOKMARK [1][-]{section.3.1}{Logistic Regression}{chapter.3}% 22
 \BOOKMARK [1][-]{section.3.2}{Support Vector Machine}{chapter.3}% 23
 \BOOKMARK [1][-]{section.3.3}{Reti neurali}{chapter.3}% 24
-\BOOKMARK [0][-]{chapter.4}{Network Analysis}{}% 25
-\BOOKMARK [1][-]{section.4.1}{Analisi sulla rete: videogiochi}{chapter.4}% 26
-\BOOKMARK [2][-]{subsection.4.1.1}{Prodotti pi\371 popolari}{section.4.1}% 27
-\BOOKMARK [2][-]{subsection.4.1.2}{Prodotti pi\371 rilevanti durante l'acquisito da parte di utenti}{section.4.1}% 28
-\BOOKMARK [1][-]{section.4.2}{Identificazione comunit\340}{chapter.4}% 29
+\BOOKMARK [1][-]{section.3.4}{Calcolo della misure di performance}{chapter.3}% 25
+\BOOKMARK [0][-]{chapter.4}{Network Analysis}{}% 26
+\BOOKMARK [1][-]{section.4.1}{Analisi sulla rete: videogiochi}{chapter.4}% 27
+\BOOKMARK [2][-]{subsection.4.1.1}{Prodotti pi\371 popolari}{section.4.1}% 28
+\BOOKMARK [2][-]{subsection.4.1.2}{Prodotti pi\371 rilevanti durante l'acquisito da parte di utenti}{section.4.1}% 29
 \BOOKMARK [0][-]{chapter.5}{Conclusioni}{}% 30
 \BOOKMARK [0][-]{chapter.6}{TODO}{}% 31
-\BOOKMARK [0][-]{chapter*.40}{Bibliografia}{}% 32
+\BOOKMARK [-1][-]{chapter.6}{Appendice}{}% 32
+\BOOKMARK [0][-]{appendix.Alph1}{Misure di performance}{chapter.6}% 33
+\BOOKMARK [1][-]{section.Alph1.1}{Logistic Regression}{appendix.Alph1}% 34
+\BOOKMARK [1][-]{section.Alph1.2}{Support Vector Machine}{appendix.Alph1}% 35
+\BOOKMARK [1][-]{section.Alph1.3}{Reti neurali}{appendix.Alph1}% 36
+\BOOKMARK [0][-]{appendix.Alph2}{Tabelle prodotti rilevanti}{chapter.6}% 37
+\BOOKMARK [0][-]{appendix*.42}{Bibliografia}{chapter.6}% 38
