@@ -24,11 +24,11 @@
 \contentsline {section}{\numberline {3.1}Logistic Regression}{26}{section.3.1}% 
 \contentsline {section}{\numberline {3.2}Support Vector Machine}{28}{section.3.2}% 
 \contentsline {section}{\numberline {3.3}Reti neurali}{30}{section.3.3}% 
-\contentsline {section}{\numberline {3.4}Analisi dei risultati}{32}{section.3.4}% 
 \contentsline {chapter}{\numberline {4}Network Analysis}{33}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Analisi sulla rete: videogiochi}{33}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}Metodo Louvain}{33}{subsection.4.1.1}% 
-\contentsline {section}{\numberline {4.2}Identificazione comunit\IeC {\`a}}{34}{section.4.2}% 
-\contentsline {chapter}{\numberline {5}Conclusioni}{35}{chapter.5}% 
-\contentsline {chapter}{\numberline {6}TODO}{36}{chapter.6}% 
-\contentsline {chapter}{Bibliografia}{37}{chapter*.39}% 
+\contentsline {subsection}{\numberline {4.1.1}Prodotti pi\IeC {\`u} popolari}{34}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Prodotti pi\IeC {\`u} rilevanti durante l'acquisito da parte di utenti}{34}{subsection.4.1.2}% 
+\contentsline {section}{\numberline {4.2}Identificazione comunit\IeC {\`a}}{35}{section.4.2}% 
+\contentsline {chapter}{\numberline {5}Conclusioni}{36}{chapter.5}% 
+\contentsline {chapter}{\numberline {6}TODO}{37}{chapter.6}% 
+\contentsline {chapter}{Bibliografia}{38}{chapter*.40}% 
