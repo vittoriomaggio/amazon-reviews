@@ -49,12 +49,12 @@
 					\end{equation}
 					
 					\begin{table} [H]
-						\caption{Accuratezza}
+						\caption{Logistic Regression: Accuratezza}
 						\label{tab:accLogisticRegression}
 						\centering
 						\begin{tabular}{llp{0.5\textwidth}}
 							\toprule 
-							\textbf{Logistic Regression: Accuratezza}	\\
+							\textbf{Accuratezza}	\\
 							\midrule
 							LogisticR  & 0.896068703881269 & Il modello ha classificato correttamente quasi il \verb|90%| delle istanze.\\
 							\bottomrule
@@ -67,12 +67,12 @@
 					\end{equation}
 					
 					\begin{table} [H]
-						\caption{Recall}
+						\caption{Logistic Regression: Recall}
 						\label{tab:RecallLogisticRegression}
 						\centering
 						\begin{tabular}{llp{0.5\textwidth}}
 							\toprule 
-							\textbf{Logistic Regression: Recall}	\\
+							\textbf{Recall}	\\
 							\midrule
 							Negative  & 0.485992  & Questo dato evidenzia che non si riesce a identificare correttamente nemmeno la metà dei negativi effettivi.\\
 							Neuter & 0.09090909 & In questo caso il valore è ancora peggio di quello dei negativi\\
@@ -81,14 +81,14 @@
 						\end{tabular}
 					\end{table}
 				
-				\item \textbf{F1-mesaure}: media armonica di precisione e richiamo, prese entrambe le metriche. Un punteggio di F1 è considerato perfetto quando è pari a \verb|1|, mentre un fallimento se pari a \verb|0|. 
+				\item \textbf{F1-measure}: media armonica di precisione e richiamo, prese entrambe le metriche. Un punteggio di F1 è considerato perfetto quando è pari a \verb|1|, mentre un fallimento se pari a \verb|0|. 
 				\begin{table} [H]
-					\caption{Logistic Regression: F1-mesaure} 
-					\label{tab:F1-mesaureLogisticRegression}
+					\caption{Logistic Regression: F1-measure} 
+					\label{tab:F1-measureLogisticRegression}
 					\centering
 					\begin{tabular}{llp{0.5\textwidth}}
 						\toprule 
-						\textbf{F1-mesaure}	\\
+						\textbf{F1-measure}	\\
 						\midrule
 						Negative  & 0.5601318  & Il valore è metà di \verb|1|; il modello sta classificando in maniera neutra i dati negativi.\\
 						Neuter & 0.14336075 & In questo caso il modello sta classificando in modo pessimo i dati neutri.\\
@@ -169,15 +169,15 @@
 					\end{tabular}
 				\end{table}
 			
-			\item \textbf{F1-mesaure}:
+			\item \textbf{F1-measure}:
 			
 			\begin{table} [H]
-				\caption{SVM: F1-mesaure}
-				\label{tab:F1-mesaureSVM}
+				\caption{SVM: F1-measure}
+				\label{tab:F1-measureSVM}
 				\centering
 				\begin{tabular}{llp{0.5\textwidth}}
 					\toprule 
-					\textbf{F1-mesaure}	\\
+					\textbf{F1-measure}	\\
 					\midrule
 					Negative  & 0.56390739  & Il valore è metà di \verb|1|; il modello sta classificando in maniera neutra i dati negativi.\\
 					Neuter & 0.11445783 & In questo caso il modello sta classificando in modo pessimo i dati neutri.\\
@@ -217,12 +217,12 @@
 				
 				\item \textbf{Precision}:				
 				\begin{table} [H]
-					\caption{Precision}
+					\caption{NN: Precision}
 					\label{tab:precisionNN}
 					\centering
 					\begin{tabular}{llp{0.5\textwidth}}
 						\toprule 
-						\textbf{NN: Precision}	\\
+						\textbf{Precision}	\\
 						\midrule
 						Negative  & 0.6420373  & Questo dimostra che tra i dati predetti ben più del \verb|60%| risultano essere veri negativi.\\
 						Neuter & 0.25677603 & Anche in questo caso solamente il \verb|25%| dei dati predetti sono effettivamente neutri.\\
@@ -262,21 +262,47 @@
 						\bottomrule
 					\end{tabular}
 				\end{table}
-				\item \textbf{F1-mesaure}:
+				\item \textbf{F1-measure}:
 				
 				\begin{table} [H]
-					\caption{NN: F1-mesaure}
-					\label{tab:F1-mesaureNN}
+					\caption{NN: F1-measure}
+					\label{tab:F1-measureNN}
 					\centering
 					\begin{tabular}{llp{0.5\textwidth}}
 						\toprule 
-						\textbf{F1-mesaure}	\\
+						\textbf{F1-measure}	\\
 						\midrule
 						Negative  & 0.56951957  & Il valore è metà di \verb|1|; il modello sta classificando in maniera neutra i dati negativi.\\
 						Neuter & 0.17621145 & In questo caso il modello sta classificando in modo pessimo i dati neutri.\\
-						Positive & 0.94928485 & Il valore è molto vicino a \verb|1|, il modello nel complesso sta classificando bene i dati posotivi.\\
+						Positive & 0.94928485 & Il valore è molto vicino a \verb|1|, il modello nel complesso sta classificando bene i dati positivi.\\
 						\bottomrule
 					\end{tabular}
 				\end{table}
 		\end{itemize}
-		
+	
+	\section {Analisi dei risultati}
+		Per ogni misura i risultati si discostano di non più di qualche unità, eccezione fatta per la matrice di confusione. In generale possiamo però concludere 
+		PRECISION
+		logistic precision: [0.66096423 0.33888889 0.91858019]
+		svm		 precision: [0.63319088 0.29874214 0.92041320]
+		nn		 precision: [0.6420373  0.25677603 0.92769048]
+								log 	    log		     nn
+								
+		RECALL
+		logistic recall: [0.485992   0.09090909 0.98210184]
+		svm		 recall: [0.50829045 0.07078987 0.98071401]
+		nn		 recall: [0.51172098 0.13412817 0.9719085 ]
+							nn 	    	nn		     log
+		ACCURATEZZA
+		logistic acc: 0.896068703881269
+		svm		 acc: 0.8953599866594405
+		nn		 acc: 0.8914828865635552
+							log			
+							
+		F1-MEASURE
+		logistic measure: [0.5601318  0.14336075 0.94927955]
+		svm		 measure: [0.56390739 0.11445783 0.94960728]
+		nn		 measure: [0.56951957 0.17621145 0.94928485]
+								nn			nn			nn
+							
+							
