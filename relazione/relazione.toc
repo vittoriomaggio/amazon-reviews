@@ -29,12 +29,21 @@
 \contentsline {section}{\numberline {4.1}Analisi sulla rete: videogiochi}{29}{section.4.1}% 
 \contentsline {subsection}{\numberline {4.1.1}Prodotti pi\IeC {\`u} popolari}{30}{subsection.4.1.1}% 
 \contentsline {subsection}{\numberline {4.1.2}Prodotti pi\IeC {\`u} rilevanti durante l'acquisito da parte di utenti}{31}{subsection.4.1.2}% 
-\contentsline {chapter}{\numberline {5}Conclusioni}{33}{chapter.5}% 
-\contentsline {chapter}{\numberline {6}TODO}{34}{chapter.6}% 
-\contentsline {part}{Appendice}{34}{chapter.6}% 
-\contentsline {chapter}{\numberline {A}Misure di performance}{35}{appendix.Alph1}% 
-\contentsline {section}{\numberline {A.1}Logistic Regression}{35}{section.Alph1.1}% 
-\contentsline {section}{\numberline {A.2}Support Vector Machine}{36}{section.Alph1.2}% 
-\contentsline {section}{\numberline {A.3}Reti neurali}{38}{section.Alph1.3}% 
-\contentsline {chapter}{\numberline {B}Tabelle prodotti rilevanti}{40}{appendix.Alph2}% 
-\contentsline {chapter}{Bibliografia}{41}{appendix*.42}% 
+\contentsline {chapter}{\numberline {5}Conclusioni}{34}{chapter.5}% 
+\contentsline {chapter}{\numberline {6}TODO}{35}{chapter.6}% 
+\contentsline {part}{Appendice}{35}{chapter.6}% 
+\contentsline {chapter}{\numberline {A}Misure di performance}{36}{appendix.Alph1}% 
+\contentsline {section}{\numberline {A.1}Logistic Regression}{36}{section.Alph1.1}% 
+\contentsline {section}{\numberline {A.2}Support Vector Machine}{37}{section.Alph1.2}% 
+\contentsline {section}{\numberline {A.3}Reti neurali}{39}{section.Alph1.3}% 
+\contentsline {chapter}{\numberline {B}Tabelle dei prodotti rilevanti}{41}{appendix.Alph2}% 
+\contentsline {section}{\numberline {B.1}Nintendo Switch}{41}{section.Alph2.1}% 
+\contentsline {section}{\numberline {B.2}Play Station 4}{41}{section.Alph2.2}% 
+\contentsline {section}{\numberline {B.3}XBox One}{42}{section.Alph2.3}% 
+\contentsline {section}{\numberline {B.4}Nientendo DS}{42}{section.Alph2.4}% 
+\contentsline {section}{\numberline {B.5}Play Station 3}{42}{section.Alph2.5}% 
+\contentsline {section}{\numberline {B.6}Play Station Vita}{43}{section.Alph2.6}% 
+\contentsline {section}{\numberline {B.7}Nintendo Classic Mini}{43}{section.Alph2.7}% 
+\contentsline {section}{\numberline {B.8}Nintendo Wii}{43}{section.Alph2.8}% 
+\contentsline {section}{\numberline {B.9}XBox 360}{44}{section.Alph2.9}% 
+\contentsline {chapter}{Bibliografia}{45}{appendix*.51}% 
