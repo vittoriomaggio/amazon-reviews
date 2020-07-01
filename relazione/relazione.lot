@@ -3,5 +3,21 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Logistic Regression: Matrice di confusione\relax }}{27}{table.caption.24}% 
+\contentsline {table}{\numberline {3.2}{\ignorespaces Logistic Regression: Precision\relax }}{27}{table.caption.25}% 
+\contentsline {table}{\numberline {3.3}{\ignorespaces Accuratezza\relax }}{27}{table.caption.26}% 
+\contentsline {table}{\numberline {3.4}{\ignorespaces Recall\relax }}{28}{table.caption.27}% 
+\contentsline {table}{\numberline {3.5}{\ignorespaces Logistic Regression: F1-mesaure\relax }}{28}{table.caption.28}% 
+\contentsline {table}{\numberline {3.6}{\ignorespaces SVM: Matrice di confusione\relax }}{29}{table.caption.29}% 
+\contentsline {table}{\numberline {3.7}{\ignorespaces SVM: Precision\relax }}{29}{table.caption.30}% 
+\contentsline {table}{\numberline {3.8}{\ignorespaces SVM: Accuratezza\relax }}{29}{table.caption.31}% 
+\contentsline {table}{\numberline {3.9}{\ignorespaces SVM: Recall\relax }}{30}{table.caption.32}% 
+\contentsline {table}{\numberline {3.10}{\ignorespaces SVM: F1-mesaure\relax }}{30}{table.caption.33}% 
+\contentsline {table}{\numberline {3.11}{\ignorespaces NN: Matrice di confusione\relax }}{31}{table.caption.34}% 
+\contentsline {table}{\numberline {3.12}{\ignorespaces Precision\relax }}{31}{table.caption.35}% 
+\contentsline {table}{\numberline {3.13}{\ignorespaces NN: Accuratezza\relax }}{31}{table.caption.36}% 
+\contentsline {table}{\numberline {3.14}{\ignorespaces NN: Recall\relax }}{32}{table.caption.37}% 
+\contentsline {table}{\numberline {3.15}{\ignorespaces NN: F1-mesaure\relax }}{32}{table.caption.38}% 
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

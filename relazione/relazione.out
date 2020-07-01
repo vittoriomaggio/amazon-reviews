@@ -18,14 +18,14 @@
 \BOOKMARK [2][-]{subsection.2.3.4}{Categoria musica}{section.2.3}% 18
 \BOOKMARK [1][-]{section.2.4}{Utilit\340 delle recensioni per gli utenti}{chapter.2}% 19
 \BOOKMARK [2][-]{subsection.2.4.1}{Analisi dei risultati tramite box plot}{section.2.4}% 20
-\BOOKMARK [1][-]{section.2.5}{Analisi tramite modelli supervisionati}{chapter.2}% 21
-\BOOKMARK [2][-]{subsection.2.5.1}{Logistic Regression}{section.2.5}% 22
-\BOOKMARK [2][-]{subsection.2.5.2}{Support Vector Machine}{section.2.5}% 23
-\BOOKMARK [2][-]{subsection.2.5.3}{Reti neurali}{section.2.5}% 24
-\BOOKMARK [0][-]{chapter.3}{Network Analysis}{}% 25
-\BOOKMARK [1][-]{section.3.1}{Analisi sulla rete: videogiochi}{chapter.3}% 26
-\BOOKMARK [2][-]{subsection.3.1.1}{Metodo Louvain}{section.3.1}% 27
-\BOOKMARK [1][-]{section.3.2}{Identificazione comunit\340}{chapter.3}% 28
-\BOOKMARK [0][-]{chapter.4}{Conclusioni}{}% 29
-\BOOKMARK [0][-]{chapter.5}{TODO}{}% 30
-\BOOKMARK [0][-]{chapter*.24}{Bibliografia}{}% 31
+\BOOKMARK [0][-]{chapter.3}{Analisi tramite modelli supervisionati}{}% 21
+\BOOKMARK [1][-]{section.3.1}{Logistic Regression}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.2}{Support Vector Machine}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.3}{Reti neurali}{chapter.3}% 24
+\BOOKMARK [0][-]{chapter.4}{Network Analysis}{}% 25
+\BOOKMARK [1][-]{section.4.1}{Analisi sulla rete: videogiochi}{chapter.4}% 26
+\BOOKMARK [2][-]{subsection.4.1.1}{Metodo Louvain}{section.4.1}% 27
+\BOOKMARK [1][-]{section.4.2}{Identificazione comunit\340}{chapter.4}% 28
+\BOOKMARK [0][-]{chapter.5}{Conclusioni}{}% 29
+\BOOKMARK [0][-]{chapter.6}{TODO}{}% 30
+\BOOKMARK [0][-]{chapter*.39}{Bibliografia}{}% 31
