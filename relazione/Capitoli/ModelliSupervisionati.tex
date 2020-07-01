@@ -1,5 +1,5 @@
 \chapter{Analisi tramite modelli supervisionati}
-		Per terminare la nostra analisi, abbiamo scelto di allenare determinati modelli sui dati in \textit{input} per fare delle previsioni sul \textit{sentiment} e confrontare i valori ottenuti con quelli effettivi del \textit{dataset}. Prima di entrare nei dettagli implementativi rimandiamo all'attenzione del lettore alcuni richiami teorici circa i modelli da noi utilizzati: \textit{Logistic Regression}, \textit{Support Vector Machine}, \textit{Neural Network}. Per tutti questi saranno calcolate le misure associate a ogni modello.
+		Per terminare la nostra analisi, abbiamo scelto di allenare determinati modelli sui dati in \textit{input} per fare delle previsioni sul \textit{sentiment} e confrontare i valori ottenuti con quelli effettivi del \textit{dataset}. Prima di entrare nei dettagli implementativi rimandiamo all'attenzione del lettore alcuni richiami teorici circa i modelli da noi utilizzati: \textit{Logistic Regression}, \textit{Support Vector Machine}, \textit{Neural Network}. Per tutti questi saranno calcolate le misure associate a ogni modello. Si noti che dei tre modelli, quello che risulta avere accuratezza migliore è la \textit{Logistic Regression}, seguita dalla \textit{Support Vector Machine} e  infine dalla \textit{Neural Network}.
 		
 			
 		\section{Logistic Regression}
@@ -95,8 +95,7 @@
 						Positive & 0.94927955 & Il valore è vicino a \verb|1|, il modello nel complesso sta classificando bene i dati positivi.\\
 						\bottomrule
 					\end{tabular}
-				\end{table} 
-				
+				\end{table} 			
 			\end{itemize}
 			
 
@@ -280,29 +279,29 @@
 				\end{table}
 		\end{itemize}
 	
-	\section {Analisi dei risultati}
-		Per ogni misura i risultati si discostano di non più di qualche unità, eccezione fatta per la matrice di confusione. In generale possiamo però concludere 
-		PRECISION
-		logistic precision: [0.66096423 0.33888889 0.91858019]
-		svm		 precision: [0.63319088 0.29874214 0.92041320]
-		nn		 precision: [0.6420373  0.25677603 0.92769048]
-								log 	    log		     nn
-								
-		RECALL
-		logistic recall: [0.485992   0.09090909 0.98210184]
-		svm		 recall: [0.50829045 0.07078987 0.98071401]
-		nn		 recall: [0.51172098 0.13412817 0.9719085 ]
-							nn 	    	nn		     log
-		ACCURATEZZA
-		logistic acc: 0.896068703881269
-		svm		 acc: 0.8953599866594405
-		nn		 acc: 0.8914828865635552
-							log			
-							
-		F1-MEASURE
-		logistic measure: [0.5601318  0.14336075 0.94927955]
-		svm		 measure: [0.56390739 0.11445783 0.94960728]
-		nn		 measure: [0.56951957 0.17621145 0.94928485]
-								nn			nn			nn
+
+
+%		PRECISION
+%		logistic precision: [0.66096423 0.33888889 0.91858019]
+%		svm		 precision: [0.63319088 0.29874214 0.92041320]
+%		nn		 precision: [0.6420373  0.25677603 0.92769048]
+%								log 	    log		     nn
+%								
+%		RECALL
+%		logistic recall: [0.485992   0.09090909 0.98210184]
+%		svm		 recall: [0.50829045 0.07078987 0.98071401]
+%		nn		 recall: [0.51172098 0.13412817 0.9719085 ]
+%							nn 	    	nn		     log
+%		ACCURATEZZA
+%		logistic acc: 0.896068703881269
+%		svm		 acc: 0.8953599866594405
+%		nn		 acc: 0.8914828865635552
+%							log			
+%							
+%		F1-MEASURE
+%		logistic measure: [0.5601318  0.14336075 0.94927955]
+%		svm		 measure: [0.56390739 0.11445783 0.94960728]
+%		nn		 measure: [0.56951957 0.17621145 0.94928485]
+%								nn			nn			nn
 							
 							
