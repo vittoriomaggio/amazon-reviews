@@ -1,0 +1,233 @@
+\chapter{Misure di performance}
+\label{cap:Misure}
+	In questa sezione saranno presentati i valori di performance calcolati per ogni modello.
+	
+	\section{Logistic Regression}
+		\begin{table} [H]
+			\caption{Logistic Regression: Matrice di confusione}
+			\label{tab:matriceConfusioneLogisticRegression}
+			\centering
+			\begin{tabular}{lccc}
+				\toprule 
+				& \textbf{Act Negative} & \textbf{Act Neuter}	& \textbf{Act Positive}\\
+				\midrule
+				\textbf{Pred Negative}  & 850 & 90 & 809\\
+				\textbf{Pred Neuter} & 210 & 122 & 1010\\
+				\textbf{Pred Positive} & 226 & 148 & 20522\\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+	
+		
+		\begin{table} [H]
+			\caption{Logistic Regression: Precision}
+			\label{tab:precisionLogisticRegression}
+			\centering
+			\begin{tabular}{llp{0.5\textwidth}}
+				\toprule 
+				\textbf{Precision}	\\
+				\midrule
+				Negative & 0.66096423 & Questo dimostra che tra i dati predetti ben più del \verb|60%| risultano essere veri negativi.\\
+				Neuter & 0.33888889 & Anche in questo caso solamente il \verb|33%| dei dati predetti sono effettivamente neutri.\\
+				Positive & 0.91858019 & Abbiamo più del \verb|90%| di predetti veri positivi.\\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+	
+		\begin{table} [H]
+			\caption{Logistic Regression: Accuratezza}
+			\label{tab:accLogisticRegression}
+			\centering
+			\begin{tabular}{llp{0.5\textwidth}}
+				\toprule 
+				\textbf{Accuratezza}	\\
+				\midrule
+				LogisticR & 0.89606870 & Il modello ha classificato correttamente quasi il \verb|90%| delle istanze.\\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+	
+		
+		\begin{table} [H]
+			\caption{Logistic Regression: Recall}
+			\label{tab:RecallLogisticRegression}
+			\centering
+			\begin{tabular}{llp{0.5\textwidth}}
+				\toprule 
+				\textbf{Recall}	\\
+				\midrule
+				Negative  & 0.485992  & Questo dato evidenzia che non si riesce a identificare correttamente nemmeno la metà dei negativi effettivi.\\
+				Neuter & 0.09090909 & In questo caso il valore è ancora peggio di quello dei negativi\\
+				Positive & 0.98210184 & Contrariamente agli altri, il modello identifica correttamente quasi la totalità dei positivi.\\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+	
+	
+		\begin{table} [H]
+			\caption{Logistic Regression: F1-measure} 
+			\label{tab:F1-measureLogisticRegression}
+			\centering
+			\begin{tabular}{llp{0.5\textwidth}}
+				\toprule 
+				\textbf{F1-measure}	\\
+				\midrule
+				Negative  & 0.5601318  & Il valore è metà di \verb|1|; il modello sta classificando in maniera neutra i dati negativi.\\
+				Neuter & 0.14336075 & In questo caso il modello sta classificando in modo pessimo i dati neutri.\\
+				Positive & 0.94927955 & Il valore è vicino a \verb|1|, il modello nel complesso sta classificando bene i dati positivi.\\
+				\bottomrule
+			\end{tabular}
+		\end{table} 
+	
+	
+	\section{Support Vector Machine}
+		\begin{table} [H]
+			\caption{SVM: Matrice di confusione}
+			\label{tab:matriceConfusioneSVM}
+			\centering
+			\begin{tabular}{lccc}
+				\toprule 
+				& \textbf{Act Negative} & \textbf{Act Neuter}	& \textbf{Act Positive}\\
+				\midrule
+				\textbf{Pred Negative}  & 889 & 92 & 768\\
+				\textbf{Pred Neuter} & 243 & 95 & 1004\\
+				\textbf{Pred Positive} & 272 & 131 & 20493\\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+		
+		\begin{table} [H]
+			\caption{SVM: Precision}
+			\label{tab:precisionSVM}
+			\centering
+			\begin{tabular}{llp{0.5\textwidth}}
+				\toprule 
+				\textbf{Precision}	\\
+				\midrule
+				Negative  & 0.63319088  & Questo dimostra che tra i dati predetti ben più del \verb|60%| risultano essere veri negativi.\\
+				Neuter & 0.29874214 & Anche in questo caso solamente meno del \verb|30%| dei dati predetti sono effettivamente neutri.\\
+				Positive & 0.9204132 & Abbiamo più del \verb|90%| di predetti veri positivi.\\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+		
+		\begin{table}[H]
+			\caption{SVM: Accuratezza}
+			\label{tab:accSVM}
+			\centering
+			\begin{tabular}{llp{0.5\textwidth}}
+				\toprule 
+				\textbf{Accuratezza}	\\
+				\midrule
+				SVM  & 0.895359 & Il modello ha classificato correttamente quasi il \verb|90%| delle istanze.\\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+		
+		\begin{table}[H]
+			\caption{SVM: Recall}
+			\label{tab:RecallSVM}
+			\centering
+			\begin{tabular}{llp{0.5\textwidth}}
+				\toprule 
+				\textbf{Recall}	\\
+				\midrule
+				Negative  & 0.50829045  & Questo dato evidenzia che non si riesce a identificare poco più della metà dei negativi effettivi.\\
+				Neuter & 0.07078987 & In questo caso il valore è ancora peggio di quello dei negativi\\
+				Positive & 0.98071401 & Contrariamente agli altri, il modello identifica correttamente quasi la totalità dei positivi.\\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+		
+		\begin{table} [H]
+			\caption{SVM: F1-measure}
+			\label{tab:F1-measureSVM}
+			\centering
+			\begin{tabular}{llp{0.5\textwidth}}
+				\toprule 
+				\textbf{F1-measure}	\\
+				\midrule
+				Negative  & 0.56390739  & Il valore è metà di \verb|1|; il modello sta classificando in maniera neutra i dati negativi.\\
+				Neuter & 0.11445783 & In questo caso il modello sta classificando in modo pessimo i dati neutri.\\
+				Positive & 0.94960728 & Il valore è vicino a \verb|1|, il modello nel complesso sta classificando bene i dati posotivi.\\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+
+
+	
+	\section{Reti neurali}
+		\begin{table} [H]
+			\caption{NN: Matrice di confusione}
+			\label{tab:matriceConfusioneNN}
+			\centering
+			\begin{tabular}{lccc}
+				\toprule 
+				& \textbf{Act Negative} & \textbf{Act Neuter}	& \textbf{Act Positive}\\
+				\midrule
+				\textbf{Pred Negative}  & 895 & 220 & 634\\
+				\textbf{Pred Neuter} & 213 & 180 & 949\\
+				\textbf{Pred Positive} & 286 & 301 & 20309\\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+		
+		\begin{table} [H]
+			\caption{NN: Precision}
+			\label{tab:precisionNN}
+			\centering
+			\begin{tabular}{llp{0.5\textwidth}}
+				\toprule 
+				\textbf{Precision}	\\
+				\midrule
+				Negative  & 0.6420373  & Questo dimostra che tra i dati predetti ben più del \verb|60%| risultano essere veri negativi.\\
+				Neuter & 0.25677603 & Anche in questo caso solamente il \verb|25%| dei dati predetti sono effettivamente neutri.\\
+				Positive & 0.92769048 & Abbiamo più del \verb|90%| di predetti veri positivi.\\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+		
+		\begin{table} [H]
+			\caption{NN: Accuratezza}
+			\label{tab:accNN}
+			\centering
+			\begin{tabular}{llp{0.5\textwidth}}
+				\toprule 
+				\textbf{Accuratezza}	\\
+				\midrule
+				NN  & 0.89148288 & Il modello ha classificato correttamente quasi il \verb|90%| delle istanze.\\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+		
+		\begin{table} [H]
+			\caption{NN: Recall}
+			\label{tab:RecallNN}
+			\centering
+			\begin{tabular}{llp{0.5\textwidth}}
+				\toprule 
+				\textbf{Recall}	\\
+				\midrule
+				Negative  & 0.51172098  & Questo dato evidenzia che non si riesce a identificare poco più della metà dei negativi effettivi.\\
+				Neuter & 0.13412817 & In questo caso il valore è ancora peggio di quello dei negativi\\
+				Positive & 0.9719085 & Contrariamente agli altri, il modello identifica correttamente quasi la totalità dei positivi.\\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+		
+		\begin{table} [H]
+			\caption{NN: F1-measure}
+			\label{tab:F1-measureNN}
+			\centering
+			\begin{tabular}{llp{0.5\textwidth}}
+				\toprule 
+				\textbf{F1-measure}	\\
+				\midrule
+				Negative  & 0.56951957  & Il valore è metà di \verb|1|; il modello sta classificando in maniera neutra i dati negativi.\\
+				Neuter & 0.17621145 & In questo caso il modello sta classificando in modo pessimo i dati neutri.\\
+				Positive & 0.94928485 & Il valore è molto vicino a \verb|1|, il modello nel complesso sta classificando bene i dati positivi.\\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+		
+		
