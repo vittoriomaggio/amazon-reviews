@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.11)  2 JUL 2020 18:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.11)  2 JUL 2020 19:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1102,13 +1102,13 @@ g>] [19]
 <Figure/pie_books.jpeg, id=489, 702.625pt x 501.875pt>
 File: Figure/pie_books.jpeg Graphic file (type jpg)
 <use Figure/pie_books.jpeg>
-Package pdftex.def Info: Figure/pie_books.jpeg  used on input line 319.
+Package pdftex.def Info: Figure/pie_books.jpeg  used on input line 318.
 (pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
 <Figure/priceVSrating_books.jpeg, id=490, 702.625pt x 501.875pt>
 File: Figure/priceVSrating_books.jpeg Graphic file (type jpg)
 <use Figure/priceVSrating_books.jpeg>
 Package pdftex.def Info: Figure/priceVSrating_books.jpeg  used on input line 32
-4.
+3.
 (pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
 
 
@@ -1118,50 +1118,50 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figure/pie_dvd.jpeg, id=497, 702.625pt x 501.875pt>
 File: Figure/pie_dvd.jpeg Graphic file (type jpg)
 <use Figure/pie_dvd.jpeg>
-Package pdftex.def Info: Figure/pie_dvd.jpeg  used on input line 339.
+Package pdftex.def Info: Figure/pie_dvd.jpeg  used on input line 338.
 (pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
 <Figure/priceVSrating_dvd.jpeg, id=498, 702.625pt x 501.875pt>
 File: Figure/priceVSrating_dvd.jpeg Graphic file (type jpg)
 <use Figure/priceVSrating_dvd.jpeg>
-Package pdftex.def Info: Figure/priceVSrating_dvd.jpeg  used on input line 344.
+Package pdftex.def Info: Figure/priceVSrating_dvd.jpeg  used on input line 343.
 
 (pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
  [21 <./Figure/pie_books.jpeg> <./Figure/priceVSrating_books.jpeg> <./Figure/pi
 e_dvd.jpeg> <./Figure/priceVSrating_dvd.jpeg>]
-<Figure/pie_videogames.jpeg, id=505, 702.625pt x 501.875pt>
+<Figure/pie_videogames.jpeg, id=506, 702.625pt x 501.875pt>
 File: Figure/pie_videogames.jpeg Graphic file (type jpg)
 <use Figure/pie_videogames.jpeg>
-Package pdftex.def Info: Figure/pie_videogames.jpeg  used on input line 359.
+Package pdftex.def Info: Figure/pie_videogames.jpeg  used on input line 358.
 (pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
-<Figure/priceVSrating_videogames.jpeg, id=506, 702.625pt x 501.875pt>
+<Figure/priceVSrating_videogames.jpeg, id=507, 702.625pt x 501.875pt>
 File: Figure/priceVSrating_videogames.jpeg Graphic file (type jpg)
 <use Figure/priceVSrating_videogames.jpeg>
 Package pdftex.def Info: Figure/priceVSrating_videogames.jpeg  used on input li
-ne 364.
+ne 363.
 (pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
-<Figure/pie_music.jpeg, id=509, 702.625pt x 501.875pt>
+<Figure/pie_music.jpeg, id=510, 702.625pt x 501.875pt>
 File: Figure/pie_music.jpeg Graphic file (type jpg)
 <use Figure/pie_music.jpeg>
-Package pdftex.def Info: Figure/pie_music.jpeg  used on input line 378.
+Package pdftex.def Info: Figure/pie_music.jpeg  used on input line 377.
 (pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
-<Figure/priceVSrating_music.jpeg, id=510, 702.625pt x 501.875pt>
+<Figure/priceVSrating_music.jpeg, id=511, 702.625pt x 501.875pt>
 File: Figure/priceVSrating_music.jpeg Graphic file (type jpg)
 <use Figure/priceVSrating_music.jpeg>
 Package pdftex.def Info: Figure/priceVSrating_music.jpeg  used on input line 38
-3.
+2.
 (pdftex.def)             Requested size: 172.79846pt x 123.42375pt.
  [22 <./Figure/pie_videogames.jpeg> <./Figure/priceVSrating_videogames.jpeg> <.
 /Figure/pie_music.jpeg> <./Figure/priceVSrating_music.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 415--416
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
 
  []
 
 [23]
-<Figure/boxplot-ratingVShelpful.png, id=519, 702.625pt x 451.6875pt>
+<Figure/boxplot-ratingVShelpful.png, id=520, 702.625pt x 451.6875pt>
 File: Figure/boxplot-ratingVShelpful.png Graphic file (type png)
 <use Figure/boxplot-ratingVShelpful.png>
 Package pdftex.def Info: Figure/boxplot-ratingVShelpful.png  used on input line
- 418.
+ 417.
 (pdftex.def)             Requested size: 360.0pt x 231.43275pt.
 ) (./Capitoli/ModelliSupervisionati.tex [24 <./Figure/boxplot-ratingVShelpful.p
 ng>]
@@ -1173,13 +1173,13 @@ Capitolo 3.
 [28
 
 ]
-<Figure/network.png, id=555, 1285.17877pt x 578.8418pt>
+<Figure/network.png, id=556, 1285.17877pt x 578.8418pt>
 File: Figure/network.png Graphic file (type png)
 <use Figure/network.png>
 Package pdftex.def Info: Figure/network.png  used on input line 23.
 (pdftex.def)             Requested size: 360.0pt x 162.14525pt.
  [29 <./Figure/network.PNG>] [30]
-<Figure/communities.png, id=571, 1283.81519pt x 595.20482pt>
+<Figure/communities.png, id=572, 1283.81519pt x 595.20482pt>
 File: Figure/communities.png Graphic file (type png)
 <use Figure/communities.png>
 Package pdftex.def Info: Figure/communities.png  used on input line 73.
@@ -1242,11 +1242,11 @@ Package rerunfilecheck Info: File `relazione.out' has not changed.
 (rerunfilecheck)             Checksum: 351328B24ECB1EFAA87AE030B48B0A33;3583.
  ) 
 Here is how much of TeX's memory you used:
- 21821 strings out of 492609
- 407431 string characters out of 6132818
- 457524 words of memory out of 5000000
- 25333 multiletter control sequences out of 15000+600000
- 553067 words of font info for 70 fonts, out of 8000000 for 9000
+ 21823 strings out of 492609
+ 407453 string characters out of 6132818
+ 457688 words of memory out of 5000000
+ 25334 multiletter control sequences out of 15000+600000
+ 553753 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,10n,63p,1477b,879s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
@@ -1266,12 +1266,13 @@ nts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2019/texmf-dist/fonts/type1/
 public/cm-super/sfrm1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-
 super/sfrm1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm
 1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><
-c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive
-/2019/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on relazione.pdf (46 pages, 4695462 bytes).
+c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive
+/2019/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2019/texm
+f-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on relazione.pdf (46 pages, 4708893 bytes).
 PDF statistics:
- 731 PDF objects out of 1000 (max. 8388607)
- 617 compressed objects within 7 object streams
+ 735 PDF objects out of 1000 (max. 8388607)
+ 620 compressed objects within 7 object streams
  146 named destinations out of 1000 (max. 500000)
  517 words of extra memory for PDF output out of 10000 (max. 10000000)
 
