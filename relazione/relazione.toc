@@ -47,4 +47,3 @@
 \contentsline {subsection}{\numberline {B.2.7}Nintendo Classic Mini}{44}{subsection.Alph2.2.7}% 
 \contentsline {subsection}{\numberline {B.2.8}Nintendo Wii}{44}{subsection.Alph2.2.8}% 
 \contentsline {subsection}{\numberline {B.2.9}XBox 360}{45}{subsection.Alph2.2.9}% 
-\contentsline {chapter}{Bibliografia}{46}{appendix*.53}% 
