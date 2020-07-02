@@ -1,5 +1,5 @@
 \chapter{Network Analysis}
-\ref{cap:NetworkAnalysis}
+\label{cap:NetworkAnalysis}
 	In questo capitolo inizia la seconda parte di analisi, quella relativa alla rete. L’analisi delle reti sociali (o Network Analysis) rappresenta un insieme di strumenti finalizzati a descrivere le principali caratteristiche di una struttura di nodi e connessioni rifacendosi alla teoria dei grafi. Un grafo è definito come un insieme di coppie ordinate: \\
 	\verb|G=(V,A)|, \\
 	dove con \verb|V| si indicano l'insieme di vertici e con \verb|A| l'insieme di archi. Un grafo può essere orientato (directed) o non orientato (non-directed). Nel primo caso, i legami che connettono i nodi hanno una direzionalità (in uscita da un nodo e in entrata in un altro nodo), mentre nel secondo la relazione non ha un orientamento definito. 
@@ -22,7 +22,7 @@
 			Il primo quesito che ci siamo posti voleva essere una sorta di confronto con quanto è stato svolto durante la prima analisi, al termine della quale abbiamo ricavato una \textit{top-five} dei prodotti più recensiti, quindi nel nostro caso più popolari. Il nostro obiettivo è stato quello di andare a osservare se i prodotti più visti dagli utenti coincidano con quelli più recensiti; può infatti accadere che un prodotto, benché abbia un valore di visualizzazione molto alto, non venga poi effettivamente comprato.
 			
 			\item \textit{Quale prodotto per ogni sotto categoria dei videogiochi è più rilevante?}
-			Durante questa analisi introduciamo il concetto di comunità, ovvero un sottoinsieme del grafo di partenza formato da nodi dalle caratteristiche simili. In particolare abbiamo deciso di raggruppare tutti i videogiochi secondo questo criterio, per comprendere sia il prodotto su cui gli utenti finisco più spesso, mentre procedono nei loro acquisiti.
+			Durante questa analisi introduciamo il concetto di comunità, ovvero un sottoinsieme del grafo di partenza formato da nodi dalle caratteristiche simili. In particolare abbiamo deciso di raggruppare tutti i videogiochi secondo questo criterio, per comprendere sia il prodotto su cui gli utenti finisco più spesso, mentre procedono nelle loro visualizzazioni.
 		\end{itemize}
 	
 	
@@ -38,17 +38,17 @@
 					\textbf{Nome} & \textbf{Sotto categoria} \\
 					\midrule
 					Mario Kart 8 Deluxe & Nintendo Switch \\
+					LEGO Jurassic World & PlayStation 4 \\
 					Super Mario Odyssey & Nintendo Switch \\
-					Jurassic World & PlayStation 4 \\
-					Lego Marvel Super Heroes 2 & PlayStation 4 \\
-					New Super Mario Bros. U Deluxe & Nintendo Switch \\
+					Nacon Revolution Pro Controller & PlayStation 4 \\
+					PlayStationCamera & PlayStation 4 \\
 					\bottomrule
 				\end{tabular}
 			\end{table}
 			
-			Confrontando i risultati possiamo affermare che i prodotti più recensiti nella maggior parte dei casi coincidono con quelli più recensiti, eliminando alcune eccezioni rappresentate dai giochi \textit{Jurassic World} e \textit{Lego Marvel Super Heroes 2}, visti per la prima volta tra i più rilevanti. Un'altra considerazione può essere fatta circa la posizione dei prodotti. Alcuni prodotti, infatti, slittano di qualche posizione, in alto per il caso di \textit{Mario Kart 8 Deluxe}, verso il basso per \textit{Super Mario Odyssey}.
+			Confrontando i risultati possiamo affermare che i prodotti più recensiti nella maggior parte dei casi coincidono con quelli più recensiti, eliminando l'eccezione di \textit{Lego Jurassic World}, che compare per la prima volta tra i più rilevanti. Un'altra considerazione può essere fatta circa la posizione dei prodotti. Alcuni prodotti, infatti, slittano di qualche posizione, in alto per il caso di \textit{Mario Kart 8 Deluxe}, verso il basso per \textit{Super Mario Odyssey}. Una nota importante è che in questa nuova classifica troviamo i più prodotti con più recensioni positivi assieme a quelli con più recensioni negative; \textit{Nacon Revolution Pro Controller}, infatti, compariva nella Figura \ref{fig:top_neg_videogames_table}. 
 		
-		\subsection{Prodotti più rilevanti durante l'acquisito da parte di utenti}
+		\subsection{Prodotti più rilevanti durante la fase di ricerca da parte di utenti}
 		\label{cap:rilevantProducts}
 			In questa sezione ci occuperemo di rispondere alla seconda domanda proposta. Per procedere con la nostra analisi, è stato prima di tutto necessario individuare l'insieme di tutte le sotto categorie appartenenti ai videogiochi, utilizzando il metodo \verb|Louvian|, che sarà approfondito nella sezione seguente.
 		
@@ -76,5 +76,5 @@
 				\label{fig:communities}
 			\end{figure} 
 		
-			All'interno di queste sotto reti abbiamo cercato il prodotto su cui gli utenti si imbattono più spesso, durante la loro procedura di acquisto. Operazione ben diversa dall'individuare quale sia il prodotto più visto in assoluto per ogni sotto insieme. Per ognuna delle nove comunità abbiamo ottenuto delle liste relative a \textit{top-five} di prodotti; queste sono visibili all'interno dell'Appendice \ref{cap:Tabelle}. L'\textit{output} ricavato è derivato dal calcolo \textit{betweness} e misura il numero di volte che un nodo agisce come ponte lungo il cammino minimo tra due nodi.
+			All'interno di queste sotto reti abbiamo cercato il prodotto su cui gli utenti si imbattono più spesso, durante la loro procedura di ricerca. Operazione ben diversa dall'individuare quale sia il prodotto più visto in assoluto per ogni sotto insieme. Per ognuna delle nove comunità abbiamo ottenuto delle liste relative a \textit{top-five} di prodotti; queste sono visibili all'interno dell'Appendice \ref{cap:Tabelle}. L'\textit{output} ricavato è derivato dal calcolo \textit{betweness} e misura il numero di volte che un nodo agisce come ponte lungo il cammino minimo tra due nodi.
 			

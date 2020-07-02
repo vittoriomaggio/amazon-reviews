@@ -2,48 +2,49 @@
 \babel@toc {italian}{}
 \contentsline {chapter}{Elenco delle tabelle}{3}{chapter*.2}% 
 \contentsline {chapter}{Elenco delle figure}{4}{chapter*.3}% 
-\contentsline {chapter}{\numberline {1}Richiami teorici alla sentiment analysis}{6}{chapter.1}% 
-\contentsline {chapter}{\numberline {2}Sentiment Analysis}{8}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Analisi esplorativa: distribuzione del sentiment nel corso degli anni}{8}{section.2.1}% 
-\contentsline {subsection}{\numberline {2.1.1}Distribuzione del sentiment negli anni: Libri}{9}{subsection.2.1.1}% 
-\contentsline {subsection}{\numberline {2.1.2}Sentiment negli anni: Dvd}{9}{subsection.2.1.2}% 
-\contentsline {subsection}{\numberline {2.1.3}Sentiment negli anni: Videogiochi}{10}{subsection.2.1.3}% 
-\contentsline {subsection}{\numberline {2.1.4}Sentiment negli anni: Musica}{10}{subsection.2.1.4}% 
-\contentsline {section}{\numberline {2.2}Studio sull'intrattenimento}{11}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}Wordclouds libri}{15}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}Wordclouds dvd}{18}{subsection.2.2.2}% 
-\contentsline {subsection}{\numberline {2.2.3}Wordclouds videogiochi}{19}{subsection.2.2.3}% 
-\contentsline {section}{\numberline {2.3}Correlazione tra prezzo e sentiment}{20}{section.2.3}% 
-\contentsline {subsection}{\numberline {2.3.1}Categoria libri}{21}{subsection.2.3.1}% 
-\contentsline {subsection}{\numberline {2.3.2}Categoria dvd}{22}{subsection.2.3.2}% 
-\contentsline {subsection}{\numberline {2.3.3}Categoria videogiochi}{23}{subsection.2.3.3}% 
-\contentsline {subsection}{\numberline {2.3.4}Categoria musica}{23}{subsection.2.3.4}% 
-\contentsline {section}{\numberline {2.4}Utilit\IeC {\`a} delle recensioni per gli utenti}{23}{section.2.4}% 
-\contentsline {subsection}{\numberline {2.4.1}Analisi dei risultati tramite box plot}{24}{subsection.2.4.1}% 
-\contentsline {chapter}{\numberline {3}Analisi tramite modelli supervisionati}{26}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Logistic Regression}{26}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Support Vector Machine}{26}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Reti neurali}{27}{section.3.3}% 
-\contentsline {section}{\numberline {3.4}Calcolo della misure di performance}{27}{section.3.4}% 
-\contentsline {chapter}{\numberline {4}Network Analysis}{29}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Analisi sulla rete: videogiochi}{29}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}Prodotti pi\IeC {\`u} popolari}{30}{subsection.4.1.1}% 
-\contentsline {subsection}{\numberline {4.1.2}Prodotti pi\IeC {\`u} rilevanti durante l'acquisito da parte di utenti}{31}{subsection.4.1.2}% 
-\contentsline {chapter}{\numberline {5}Conclusioni}{34}{chapter.5}% 
-\contentsline {chapter}{\numberline {6}TODO}{35}{chapter.6}% 
-\contentsline {part}{Appendice}{35}{chapter.6}% 
-\contentsline {chapter}{\numberline {A}Misure di performance}{36}{appendix.Alph1}% 
-\contentsline {section}{\numberline {A.1}Logistic Regression}{36}{section.Alph1.1}% 
-\contentsline {section}{\numberline {A.2}Support Vector Machine}{37}{section.Alph1.2}% 
-\contentsline {section}{\numberline {A.3}Reti neurali}{39}{section.Alph1.3}% 
-\contentsline {chapter}{\numberline {B}Tabelle dei prodotti rilevanti}{41}{appendix.Alph2}% 
-\contentsline {section}{\numberline {B.1}Nintendo Switch}{41}{section.Alph2.1}% 
-\contentsline {section}{\numberline {B.2}Play Station 4}{41}{section.Alph2.2}% 
-\contentsline {section}{\numberline {B.3}XBox One}{42}{section.Alph2.3}% 
-\contentsline {section}{\numberline {B.4}Nientendo DS}{42}{section.Alph2.4}% 
-\contentsline {section}{\numberline {B.5}Play Station 3}{42}{section.Alph2.5}% 
-\contentsline {section}{\numberline {B.6}Play Station Vita}{43}{section.Alph2.6}% 
-\contentsline {section}{\numberline {B.7}Nintendo Classic Mini}{43}{section.Alph2.7}% 
-\contentsline {section}{\numberline {B.8}Nintendo Wii}{43}{section.Alph2.8}% 
-\contentsline {section}{\numberline {B.9}XBox 360}{44}{section.Alph2.9}% 
-\contentsline {chapter}{Bibliografia}{45}{appendix*.51}% 
+\contentsline {chapter}{\numberline {1}Sentiment Analysis}{6}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Richiami teorici alla sentiment analysis}{6}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}Analisi esplorativa: distribuzione del sentiment nel corso degli anni}{7}{section.1.2}% 
+\contentsline {subsection}{\numberline {1.2.1}Distribuzione del sentiment negli anni: Libri}{7}{subsection.1.2.1}% 
+\contentsline {subsection}{\numberline {1.2.2}Sentiment negli anni: Dvd}{7}{subsection.1.2.2}% 
+\contentsline {subsection}{\numberline {1.2.3}Sentiment negli anni: Videogiochi}{8}{subsection.1.2.3}% 
+\contentsline {subsection}{\numberline {1.2.4}Sentiment negli anni: Musica}{8}{subsection.1.2.4}% 
+\contentsline {section}{\numberline {1.3}Studio sull'intrattenimento}{8}{section.1.3}% 
+\contentsline {subsection}{\numberline {1.3.1}Wordclouds libri}{13}{subsection.1.3.1}% 
+\contentsline {subsection}{\numberline {1.3.2}Wordclouds dvd}{16}{subsection.1.3.2}% 
+\contentsline {subsection}{\numberline {1.3.3}Wordclouds videogiochi}{17}{subsection.1.3.3}% 
+\contentsline {section}{\numberline {1.4}Correlazione tra prezzo e sentiment}{19}{section.1.4}% 
+\contentsline {subsection}{\numberline {1.4.1}Categoria libri}{20}{subsection.1.4.1}% 
+\contentsline {subsection}{\numberline {1.4.2}Categoria dvd}{20}{subsection.1.4.2}% 
+\contentsline {subsection}{\numberline {1.4.3}Categoria videogiochi}{21}{subsection.1.4.3}% 
+\contentsline {subsection}{\numberline {1.4.4}Categoria musica}{22}{subsection.1.4.4}% 
+\contentsline {section}{\numberline {1.5}Utilit\IeC {\`a} delle recensioni per gli utenti}{22}{section.1.5}% 
+\contentsline {subsection}{\numberline {1.5.1}Analisi dei risultati tramite box plot}{23}{subsection.1.5.1}% 
+\contentsline {chapter}{\numberline {2}Analisi tramite modelli supervisionati}{25}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Logistic Regression}{25}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}Support Vector Machine}{25}{section.2.2}% 
+\contentsline {section}{\numberline {2.3}Reti neurali}{26}{section.2.3}% 
+\contentsline {section}{\numberline {2.4}Calcolo della misure di performance}{26}{section.2.4}% 
+\contentsline {chapter}{\numberline {3}Network Analysis}{28}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Analisi sulla rete: videogiochi}{28}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Prodotti pi\IeC {\`u} popolari}{29}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}Prodotti pi\IeC {\`u} rilevanti durante la fase di ricerca da parte di utenti}{30}{subsection.3.1.2}% 
+\contentsline {chapter}{\numberline {4}Conclusioni}{33}{chapter.4}% 
+\contentsline {part}{Appendice}{34}{chapter.4}% 
+\contentsline {chapter}{\numberline {A}Misure di performance}{35}{appendix.Alph1}% 
+\contentsline {section}{\numberline {A.1}Logistic Regression}{35}{section.Alph1.1}% 
+\contentsline {section}{\numberline {A.2}Support Vector Machine}{36}{section.Alph1.2}% 
+\contentsline {section}{\numberline {A.3}Reti neurali}{38}{section.Alph1.3}% 
+\contentsline {chapter}{\numberline {B}Elenco di tutte le tabelle}{40}{appendix.Alph2}% 
+\contentsline {section}{\numberline {B.1}Elenco degli attributi}{40}{section.Alph2.1}% 
+\contentsline {section}{\numberline {B.2}Tabelle dei prodotti rilevanti}{41}{section.Alph2.2}% 
+\contentsline {subsection}{\numberline {B.2.1}Nintendo Switch}{41}{subsection.Alph2.2.1}% 
+\contentsline {subsection}{\numberline {B.2.2}Play Station 4}{42}{subsection.Alph2.2.2}% 
+\contentsline {subsection}{\numberline {B.2.3}XBox One}{42}{subsection.Alph2.2.3}% 
+\contentsline {subsection}{\numberline {B.2.4}Nientendo DS}{42}{subsection.Alph2.2.4}% 
+\contentsline {subsection}{\numberline {B.2.5}Play Station 3}{43}{subsection.Alph2.2.5}% 
+\contentsline {subsection}{\numberline {B.2.6}Play Station Vita}{44}{subsection.Alph2.2.6}% 
+\contentsline {subsection}{\numberline {B.2.7}Nintendo Classic Mini}{44}{subsection.Alph2.2.7}% 
+\contentsline {subsection}{\numberline {B.2.8}Nintendo Wii}{44}{subsection.Alph2.2.8}% 
+\contentsline {subsection}{\numberline {B.2.9}XBox 360}{45}{subsection.Alph2.2.9}% 
+\contentsline {chapter}{Bibliografia}{46}{appendix*.53}% 

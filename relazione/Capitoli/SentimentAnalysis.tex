@@ -1,6 +1,21 @@
 \chapter{Sentiment Analysis}   
 \label{cap:SentimentAnalysis}
-	Nel corso del capitolo verranno mostrate tutte le analisi effettuate relative al \textit{sentiment}; in particolare quali siano le informazioni ricavate durante questo studio. La parte mostrata nel seguito sarà così strutturata; inizialmente verrà eseguita un'analisi esplorativa su uno dei due \textit{dataset}, per comprendere la distribuzione del sentiment nel corso degli anni, si procederà poi con l'indicazione e la rappresentazione delle informazioni ricavate sempre sulla base del \textit{sentiment} e infine il confronto dei valori di \textit{sentiment} dati in \textit{input} con quelli ottenuti dall'addestramento di alcuni modelli appartenenti al mondo del \textit{Machine Learning}.
+	Nel corso del capitolo verranno mostrate tutte le analisi effettuate relative al \textit{sentiment}; in particolare quali siano le informazioni ricavate durante questo studio. La parte mostrata nel seguito sarà così strutturata; inizialmente verrà eseguita un'analisi esplorativa su uno dei due \textit{dataset}, per comprendere la distribuzione del sentiment nel corso degli anni, si procederà poi con l'indicazione e la rappresentazione delle informazioni ricavate sempre sulla base del \textit{sentiment} e infine il confronto dei valori di \textit{sentiment} dati in \textit{input} con quelli ottenuti dall'addestramento di alcuni modelli appartenenti al mondo del \textit{Machine Learning}. Prima di procedere nei dettagli implementativi richiamiamo all'attenzione del lettore alcuni richiami teorici.
+	
+	\section{Richiami teorici alla sentiment analysis}
+		L'analisi del \textit{sentiment} o \textit{sentiment} \textit{analysis} (nota anche come \textit{opinion} \textit{mining}) è un campo dell'elaborazione del linguaggio naturale che si occupa di costruire sistemi per l'identificazione ed estrazione di opinioni dal testo, basandosi sui principali metodi di linguistica computazionale e di analisi testuale. Per identificare le informazioni soggettive che denotano opinioni, è necessario determinare la polarità insita in esse. Questa può essere di tre tipi: positiva, negativa o neutra.
+		
+		\begin{description}
+			\item [polarità positiva:] l'informazione che ricaviamo è positiva.	
+			\item [polarità negativa:] l'informazione che ricaviamo è negativa.
+			\item [polarità neutra:] non ricaviamo alcuna informazione sulla polarità. Questo può avvenire per due diversi motivi:
+			
+			\begin{itemize}
+				\item le opinioni positive sono bilanciate da quelle negative;
+				\item non si manifesta alcun sentimento.
+			\end{itemize}
+			
+	\end{description}
 	
 	\section{Analisi esplorativa: distribuzione del sentiment nel corso degli anni}
 		Prima di procedere con un'analisi sui \textit{dataset} per ricavare informazioni circa alcune precise domande, abbiamo scelto di svolgere un'analisi esplorativa atta a visualizzare l'andamento del \textit{sentiment} degli utenti nel corso degli anni. In pratica quindi, partendo da tutte le recensioni assegnate a ogni prodotto, siamo andati a stimare come queste si distribuissero in un dato \textit{range} temporale. 
@@ -66,7 +81,7 @@
 			
 		\begin{description}
 		\item [Primo passaggio:] distribuzione del sentiment\\
-			Come già accennato, per poter valutare la polarità di una recensione è necessario calcolare il \textit{sentiment}. Abbiamo visto che questo calcolo può essere eseguito secondo diverse metodologie, tuttavia il nostro \textit{dataset} relativo ai prodotti, presentava al suo interno un campo che ben si prestava a questo tipo di analisi. L'attributo in questione è quello delle stelle. \textit{Amazon} infatti per ogni recensione riferita a un determinato prodotto associa una valutazione in stelle da \verb|0| a \verb|5|. Questo ha permesso di effettuare un conteggio per ogni prodotto di tutte le sue recensioni, dividendole in positive neutre e negative, secondo lo schema di seguito.
+			Come già accennato, per poter valutare la polarità di una recensione è necessario calcolare il \textit{sentiment}. Abbiamo visto che questo calcolo può essere eseguito secondo diverse metodologie, tuttavia il nostro \textit{dataset} relativo ai prodotti, presentava al suo interno un campo che ben si prestava a questo tipo di analisi. L'attributo in questione è quello delle stelle. Amazon infatti per ogni recensione riferita a un determinato prodotto associa una valutazione in stelle da \verb|0| a \verb|5|. Questo ha permesso di effettuare un conteggio per ogni prodotto di tutte le sue recensioni, dividendole in positive neutre e negative, secondo lo schema di seguito.
 			
 			\begin{itemize}
 				\item \textbf{positive:} la recensione aveva un punteggio di maggiore di tre stelle.

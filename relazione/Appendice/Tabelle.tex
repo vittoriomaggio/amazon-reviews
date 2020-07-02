@@ -1,171 +1,223 @@
-\chapter{Tabelle dei prodotti rilevanti}		
+\chapter{Elenco di tutte le tabelle}	
 \label{cap:Tabelle}
-	All'interno di questo capitolo sarà possibile visualizzare le tabelle relative ai prodotti più rilevanti per ogni sotto categoria all'interno dell'insieme dei videogiochi (Sezione \ref{cap:rilevantProducts}) Si noti che alcuni prodotti non avevano indicazione del nome nel dataset, ma veniva fornito solo un \textit{link}, per questi abbiamo eseguito personalmente la ricerca del nome.
+	All'interno di questa sezione sarà possibile visualizzare tutte le tabelle incontrate durannte la nostra fase di ricerca.
 	
-	\section{Nintendo Switch}
+	\section{Elenco degli attributi}
+		Saranno ora presentati tutti gli attributi all'interno del nostro dataset. In particolare la Tabella \ref{tab:prodotti} si riferisce al \textit{dataset} relativo ai prodotti; mentre la Tabella \ref{tab:recensioni} alle recensioni.
 		\begin{table}[H]
-			\caption{Nintendo Switch: betweeness}
-			\label{tab:nintendoswitch}
+			\caption{\textit{Dataset} prodotti}
+			\label{tab:prodotti}
 			\centering
 			\begin{tabular}{ll}
 				\toprule 
-				\textbf{Nome} & \textbf{Betweness} \\
-				\midrule
-				Mario Kart 8 Deluxe  & 0.064 \\
-				Super Mario Odyssey  & 0.059 \\
-				Super Smash Bros Ultimate  & 0.035 \\
-				Blu/Rosso Neon  & 0.029 \\
-				PRO Controller  & 0.029 \\		
+				\_id  & identificatore univoco del prodotto\\
+				title  & titolo del prodotto \\
+				category  & categoria del prodotto \\
+				price  & prezzo del prodotto \\
+				avg\_rating  & media dei voti delle recensioni (in stelle, da 1 a 5) \\
+				reviews\_number  & numero di recensioni \\
+				questions\_number  & numero di domande poste riguardo al prodotto \\
+				pictures  & array di url delle immagini del prodotto \\
+				description  & descrizione del prodotto \\
+				features  & array di caratteristiche del prodotto \\
+				versions  & array contente altre versioni dello stesso prodotto \\
+				bought\_together  & array di prodotti spesso acquistati insieme \\
+				also\_bought  & rray di prodotti spesso comprati da gente che ha acquistato il prodotto \\
+				also\_viewed  & array di prodotti spesso visti da gente che ha visto il prodotto \\	
 				\bottomrule
 			\end{tabular}
 		\end{table}
 	
-	\section{Play Station 4}
 		\begin{table}[H]
-			\caption{Play Station 4: betweeness}
-			\label{tab:ps4}
-			\centering
-			\begin{tabular}{ll}
-				\toprule
-				\textbf{Nome} & \textbf{Betweness} \\
-				\midrule
-				World Rally Championship 5  & 0.005 \\
-				Assetto Corsa  & 0.004 \\
-				Horizon Zero Dawn  & 0.004 \\
-				\textbf{Valentino Rossi: The Game}  & 0.004 \\
-				God of War  & 0.004 \\		
-				\bottomrule
-			\end{tabular}
-		\end{table}
-	
-	
-	\section{XBox One}
-		\begin{table}[H]
-			\caption{XBox One: betweeness}
-			\label{tab:xbox}
-			\centering
-			\begin{tabular}{ll}
-				\toprule 
-				\textbf{Nome} & \textbf{Betweness} \\
-				\midrule
-				EasySMX Controller Joystick  & 0.025 \\
-				Wireless Controller, Rosso  & 0.023 \\
-				Controller Bluetooth + Cavo per PC  & 0.019 \\
-				Caricabatterie per controller bianco & 0.019 \\
-				Wireless Controller da gioco & 0.016 \\		
-				\bottomrule
-			\end{tabular}
-		\end{table}
-		
-	\section{Nientendo DS}
-		\begin{table}[H]
-			\caption{Nientendo DS: betweeness}
-			\label{tab:nientendoDS}
-			\centering
-			\begin{tabular}{ll}
-				\toprule 
-				\textbf{Nome} & \textbf{Betweness} \\
-				\midrule
-				New Nintendo 2DS XL Poké Ball  & 0.190 \\
-				Pokémon Ultrasole  & 0.110 \\
-				New Nintendo 2DS XL  & 0.070 \\
-				Custodia 2DSXL & 0.070 \\
-				Mario e Luigi: & 0.052 \\		
-				\bottomrule
-			\end{tabular}
-		\end{table}
-	
-	\section{Play Station 3}
-		\begin{table}[H]
-			\caption{Play Station 3: betweeness}
-			\label{tab:ps3}
-			\centering
-			\begin{tabular}{ll}
-				\toprule 
-				\textbf{Nome} & \textbf{Betweness} \\
-				\midrule
-				Minecraft & 0.142 \\
-				Xtreme 90300 Joypad & 0.142 \\
-				\textbf{Minecraft}  & 0.0 \\
-				\textbf{Minecraft} & 0.0 \\
-				\textbf{Minecraft} & 0.0 \\		
-				\bottomrule
-			\end{tabular}
-		\end{table}
-	
-\pagebreak
+		\caption{\textit{Dataset} delle recensioni}
+		\label{tab:recensioni}
+		\centering
+		\begin{tabular}{ll}
+			\toprule 
+			\_id  & identificatore univoco della recensione\\
+			product  & identificatore del prodotto a cui fa riferimento la recensione \\
+			title  & titolo della recensione\\
+			author-id  & identificatore univoco dell'autore della recensione \\
+			author-name  & nome dell'autore della recensione \\
+			date  & data in cui la recensione è stata scritta \\
+			rating  & valutazione (in stelle, da 1 a 5) della recensione \\
+			helpful  & numero di persone che hanno trovato utile la recensione \\
+			verified  & indica se l'acquisto è stato verificato o meno \\
+			body  & contenuto della recensione \\
+			\bottomrule
+		\end{tabular}
+	\end{table}
 
-	\section{Play Station Vita}
-		Questa sezione a differenza delle altre, presenta solamente 4 prodotti per community.
-		\begin{table}[H]
-			\caption{Play Station Vita: betweeness}
-			\label{tab:psvita}
-			\centering
-			\begin{tabular}{ll}
-				\toprule 
-				\textbf{Nome} & \textbf{Betweness} \\
-				\midrule
-				Minecraft & 1.0 \\
-				\textbf{Sony Minecraft} & 0.0 \\
-				\textbf{Minecraft, ed Germania} & 0.0 \\
-				\textbf{Minecraft, ed Regno Unito} & 0.0 \\
-				\bottomrule
-			\end{tabular}
-		\end{table}
+
+
 	
-	\section{Nintendo Classic Mini}
-		\begin{table}[H]
-			\caption{Nintendo Classic Mini: betweeness}
-			\label{tab:nintendoclassicmini}
-			\centering
-			\begin{tabular}{ll}
-				\toprule 
-				\textbf{Nome} & \textbf{Betweness} \\
-				\midrule
-				Nintendo Entertainment System & 0.600\\
-				Console di gioco Mini Family & 0.287 \\
-				THEC64 Mini & 0.274 \\
-				NES Controller & 0.183 \\
-			    Console + 2 Controller & 0.155 \\		
-				\bottomrule
-			\end{tabular}
-		\end{table}
-			
-		\section{Nintendo Wii}
+	\section{Tabelle dei prodotti rilevanti}	
+		All'interno di questo capitolo sarà possibile visualizzare le tabelle relative ai prodotti più rilevanti per ogni sotto categoria all'interno dell'insieme dei videogiochi (Sezione \ref{cap:rilevantProducts}) Si noti che alcuni prodotti non avevano indicazione del nome nel dataset, ma veniva fornito solo un \textit{link}, per questi abbiamo eseguito personalmente la ricerca del nome.
+		
+		\subsection{Nintendo Switch}
 			\begin{table}[H]
-				\caption{Nintendo Wii: betweeness}
-				\label{tab:wii}
+				\caption{Nintendo Switch: betweeness}
+				\label{tab:nintendoswitch}
 				\centering
 				\begin{tabular}{ll}
 					\toprule 
 					\textbf{Nome} & \textbf{Betweness} \\
 					\midrule
-					Let's Sing 2018 + 1 Mic & 0.054 \\
-					Nintendo Wii Console & 0.054 \\
-					Just Dance 2016 & 0.0 \\
-					Just Dance 2018 & 0.0 \\
-					Just Dance 2019 & 0.0 \\		
+					Mario Kart 8 Deluxe  & 0.064 \\
+					Super Mario Odyssey  & 0.059 \\
+					Super Smash Bros Ultimate  & 0.035 \\
+					Blu/Rosso Neon  & 0.029 \\
+					PRO Controller  & 0.029 \\		
 					\bottomrule
 				\end{tabular}
 			\end{table}
 		
-\pagebreak
-
-		\section{XBox 360}
+		\subsection{Play Station 4}
+			\begin{table}[H]
+				\caption{Play Station 4: betweeness}
+				\label{tab:ps4}
+				\centering
+				\begin{tabular}{ll}
+					\toprule
+					\textbf{Nome} & \textbf{Betweness} \\
+					\midrule
+					World Rally Championship 5  & 0.005 \\
+					Assetto Corsa  & 0.004 \\
+					Horizon Zero Dawn  & 0.004 \\
+					\textbf{Valentino Rossi: The Game}  & 0.004 \\
+					God of War  & 0.004 \\		
+					\bottomrule
+				\end{tabular}
+			\end{table}
+		
+		
+		\subsection{XBox One}
+			\begin{table}[H]
+				\caption{XBox One: betweeness}
+				\label{tab:xbox}
+				\centering
+				\begin{tabular}{ll}
+					\toprule 
+					\textbf{Nome} & \textbf{Betweness} \\
+					\midrule
+					EasySMX Controller Joystick  & 0.025 \\
+					Wireless Controller, Rosso  & 0.023 \\
+					Controller Bluetooth + Cavo per PC  & 0.019 \\
+					Caricabatterie per controller bianco & 0.019 \\
+					Wireless Controller da gioco & 0.016 \\		
+					\bottomrule
+				\end{tabular}
+			\end{table}
+			
+		\subsection{Nientendo DS}
+			\begin{table}[H]
+				\caption{Nientendo DS: betweeness}
+				\label{tab:nientendoDS}
+				\centering
+				\begin{tabular}{ll}
+					\toprule 
+					\textbf{Nome} & \textbf{Betweness} \\
+					\midrule
+					New Nintendo 2DS XL Poké Ball  & 0.190 \\
+					Pokémon Ultrasole  & 0.110 \\
+					New Nintendo 2DS XL  & 0.070 \\
+					Custodia 2DSXL & 0.070 \\
+					Mario e Luigi: & 0.052 \\		
+					\bottomrule
+				\end{tabular}
+			\end{table}
+		
+		\subsection{Play Station 3}
+			\begin{table}[H]
+				\caption{Play Station 3: betweeness}
+				\label{tab:ps3}
+				\centering
+				\begin{tabular}{ll}
+					\toprule 
+					\textbf{Nome} & \textbf{Betweness} \\
+					\midrule
+					Minecraft & 0.142 \\
+					Xtreme 90300 Joypad & 0.142 \\
+					\textbf{Minecraft}  & 0.0 \\
+					\textbf{Minecraft} & 0.0 \\
+					\textbf{Minecraft} & 0.0 \\		
+					\bottomrule
+				\end{tabular}
+			\end{table}
+		
+	\pagebreak
+	
+		\subsection{Play Station Vita}
 			Questa sezione a differenza delle altre, presenta solamente 4 prodotti per community.
 			\begin{table}[H]
-				\caption{XBox 360: betweeness}
-				\label{tab:xbox360}
+				\caption{Play Station Vita: betweeness}
+				\label{tab:psvita}
 				\centering
 				\begin{tabular}{ll}
 					\toprule 
 					\textbf{Nome} & \textbf{Betweness} \\
 					\midrule
-					FIFA 19 & 1.0 \\
-					\textbf{FIFA 18} & 0.0 \\
-					\textbf{FIFA 19}  & 0.0 \\
-					\textbf{FIFA 19} & 0.0 \\
+					Minecraft & 1.0 \\
+					\textbf{Sony Minecraft} & 0.0 \\
+					\textbf{Minecraft, ed Germania} & 0.0 \\
+					\textbf{Minecraft, ed Regno Unito} & 0.0 \\
 					\bottomrule
 				\end{tabular}
 			\end{table}
 		
+		\subsection{Nintendo Classic Mini}
+			\begin{table}[H]
+				\caption{Nintendo Classic Mini: betweeness}
+				\label{tab:nintendoclassicmini}
+				\centering
+				\begin{tabular}{ll}
+					\toprule 
+					\textbf{Nome} & \textbf{Betweness} \\
+					\midrule
+					Nintendo Entertainment System & 0.600\\
+					Console di gioco Mini Family & 0.287 \\
+					THEC64 Mini & 0.274 \\
+					NES Controller & 0.183 \\
+				    Console + 2 Controller & 0.155 \\		
+					\bottomrule
+				\end{tabular}
+			\end{table}
+				
+			\subsection{Nintendo Wii}
+				\begin{table}[H]
+					\caption{Nintendo Wii: betweeness}
+					\label{tab:wii}
+					\centering
+					\begin{tabular}{ll}
+						\toprule 
+						\textbf{Nome} & \textbf{Betweness} \\
+						\midrule
+						Let's Sing 2018 + 1 Mic & 0.054 \\
+						Nintendo Wii Console & 0.054 \\
+						Just Dance 2016 & 0.0 \\
+						Just Dance 2018 & 0.0 \\
+						Just Dance 2019 & 0.0 \\		
+						\bottomrule
+					\end{tabular}
+				\end{table}
+			
+	\pagebreak
+	
+			\subsection{XBox 360}
+				Questa sezione a differenza delle altre, presenta solamente 4 prodotti per community.
+				\begin{table}[H]
+					\caption{XBox 360: betweeness}
+					\label{tab:xbox360}
+					\centering
+					\begin{tabular}{ll}
+						\toprule 
+						\textbf{Nome} & \textbf{Betweness} \\
+						\midrule
+						FIFA 19 & 1.0 \\
+						\textbf{FIFA 18} & 0.0 \\
+						\textbf{FIFA 19}  & 0.0 \\
+						\textbf{FIFA 19} & 0.0 \\
+						\bottomrule
+					\end{tabular}
+				\end{table}
+			
