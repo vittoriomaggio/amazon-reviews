@@ -18,7 +18,7 @@
 	\end{description}
 	
 	\section{Analisi esplorativa: distribuzione del sentiment nel corso degli anni}
-		Prima di procedere con un'analisi sui \textit{dataset} per ricavare informazioni circa alcune precise domande, abbiamo scelto di svolgere un'analisi esplorativa atta a visualizzare l'andamento del \textit{sentiment} degli utenti nel corso degli anni. In pratica quindi, partendo da tutte le recensioni assegnate a ogni prodotto, siamo andati a stimare come queste si distribuissero in un dato \textit{range} temporale. 
+		Prima di procedere con un'analisi sui \textit{dataset} per ricavare informazioni circa alcune precise domande, abbiamo scelto di svolgere un'analisi esplorativa, atta a visualizzare l'andamento del \textit{sentiment} degli utenti nel corso degli anni. In pratica quindi, partendo da tutte le recensioni assegnate a ogni prodotto, siamo andati a stimare come queste si distribuissero in un dato \textit{range} temporale. 
 		
 		Come primo passaggio abbiamo creato un \textit{dataset}, sottoinsieme di quello relativo a tutte le recensioni, e in questo abbiamo scelto di mantenere solamente quattro categorie:
 		\begin{itemize}
@@ -28,10 +28,10 @@
 			\item \texttt{music}
 		\end{itemize}
 		
-		A questo punto all'interno di ogni categoria abbiamo creato tre diversi gruppi formati da tutte le recensioni positive per il primo, tutte quelle negative per il secondo e infine neutre per il terzo. Per ogni gruppo di una stessa categoria si è studiata la distribuzione nel corso degli anni tramite un grafico, in cui sull'asse delle ordinate è rappresentato il numero delle recensioni; su quelle delle ascisse gli intervalli temporali. Si noti che i due valori posti agli estremi sull'asse delle ascisse, rispettivamente \verb|2010| e \verb|2019| registrano dei valori bassi di recensioni. Questo comportamento è dovuto al fatto che probabilmente la campionatura non è rappresentativa di tutto l'annata; pertanto è bene non considerare l'andamento del grafico nei pressi dei due valori.
+		A questo punto all'interno di ogni categoria abbiamo creato tre diversi gruppi formati da tutte le recensioni positive per il primo, tutte quelle negative per il secondo e infine neutre per il terzo. Per ogni gruppo di una stessa categoria si è studiata la distribuzione nel corso degli anni tramite un grafico, in cui sull'asse delle ordinate è rappresentato il numero delle recensioni, su quelle delle ascisse gli intervalli temporali. Si noti che i due valori posti agli estremi dell'asse delle ascisse, rispettivamente \verb|2010| e \verb|2019|, registrano dei valori bassi di recensioni. Questo comportamento è dovuto al fatto che probabilmente la campionatura non è rappresentativa di tutto l'annata; pertanto è bene non considerare l'andamento del grafico nei pressi dei due valori.
 		
 		\subsection{Distribuzione del sentiment negli anni: Libri}
-			Dalla Figura \ref{fig:sent_year_books} è chiaro che il numero di recensioni positive negli anni è stato sempre molto più elevato rispetto a quello delle recensioni negative o neutre, fino a essere quasi il quintuplo più grande intorno al \verb|2018|. 
+			Dalla Figura \ref{fig:sent_year_books} è chiaro che il numero di recensioni positive negli anni è stato sempre molto più elevato rispetto a quello delle recensioni negative o neutre, fino a essere quasi il quintuplo più grande intorno al \verb|2018|, rispetto che al \verb|2016|. 
 			
 			\begin{figure} [h]
 				\includegraphics[width=\textwidth]{Figure/sent_year_books}
@@ -39,7 +39,7 @@
 				\label{fig:sent_year_books}
 			\end{figure}
 		
-		\subsection{Sentiment negli anni: Dvd}
+		\subsection{Distribuzione del sentiment negli anni: : Dvd}
 			A differenza del caso precedente, l'andamento delle recensioni positive ha un andamento irregolare (Figura \ref{fig:sent_year_dvd}), registrando, subito dopo un massimo locale, un prima fase di  decrescita e quasi immediata ricrescita. Le recensioni neutre e negative hanno invece valori bassissimi; in entrambe il massimo si registra però sempre nel \verb|2018|, anno di massimo globale per le recensioni positive.
 			
 			\begin{figure} [h]
@@ -48,8 +48,8 @@
 				\label{fig:sent_year_dvd}
 			\end{figure}
 		
-			\subsection{Sentiment negli anni: Videogiochi}
-				La categoria in questione è quella con più esemplari in assoluto (Figura \ref{fig:sent_year_videogames}). Come per i libri, anche in questo caso si ha un andamento quasi esponenziale per le recensioni positive, che raggiungono il loro apice nel \verb|2018|, come del resto anche quelle negative e neutre. Un aspetto interessante è che si registra una forte crescita solamente a partire dal \verb|2014|.
+			\subsection{Distribuzione del sentiment negli anni: Videogiochi}
+				La categoria in questione è quella con più esemplari in assoluto (Figura \ref{fig:sent_year_videogames}). Come per i libri, anche in questo caso si ha un andamento quasi esponenziale per le recensioni positive, che raggiungono il loro apice nel \verb|2018|; apice raggiunto nello stesso periodo, ma con valori nettamente più bassi le recensioni negative e neutre. Un aspetto interessante è che si registra una forte crescita solamente a partire dal \verb|2014|.
 				
 			\begin{figure} [h]
 				\includegraphics[width=\textwidth]{Figure/sent_year_videogames}
@@ -58,8 +58,8 @@
 			\end{figure}
 		
 		
-			\subsection{Sentiment negli anni: Musica}
-				Il gruppo in esame è quello che registra meno recensioni positive, solamente \verb|2500|. L'andamento inoltre presenta un'irregolarità; nel \verb|2014|, infatti, si registra un massimo locale, mentre il massimo globale si riscontra nel \verb|2018|, anticipato nel \verb|2015| da un minimo locale. Per le altre tipologie di recensioni andiamo un andamento crescente fino al \verb|2016|, dopodiché raggiunge la stazionarietà nelle annate successive.
+			\subsection{Distribuzione del sentiment negli anni: Musica}
+				Il gruppo in esame è quello che registra meno recensioni positive, solamente \verb|2500|. L'andamento, inoltre, presenta un'irregolarità; nel \verb|2014|, infatti, si registra un massimo locale, mentre il massimo globale si riscontra nel \verb|2018|, anticipato nel \verb|2015| da un minimo locale. Per le altre tipologie di recensioni abbiamo un andamento crescente fino al \verb|2016|, dopodiché si raggiunge la stazionarietà nelle annate successive.
 				
 				\begin{figure} [h]
 					\includegraphics[width=\textwidth]{Figure/sent_year_music}
@@ -84,15 +84,14 @@
 			Come già accennato, per poter valutare la polarità di una recensione è necessario calcolare il \textit{sentiment}. Abbiamo visto che questo calcolo può essere eseguito secondo diverse metodologie, tuttavia il nostro \textit{dataset} relativo ai prodotti, presentava al suo interno un campo che ben si prestava a questo tipo di analisi. L'attributo in questione è quello delle stelle. Amazon infatti per ogni recensione riferita a un determinato prodotto associa una valutazione in stelle da \verb|0| a \verb|5|. Questo ha permesso di effettuare un conteggio per ogni prodotto di tutte le sue recensioni, dividendole in positive neutre e negative, secondo lo schema di seguito.
 			
 			\begin{itemize}
-				\item \textbf{positive:} la recensione aveva un punteggio di maggiore di tre stelle.
-				\item \textbf{neutre:} la recensione aveva un punteggio uguale a tre stelle.
-				\item \textbf{negative:} la recensione aveva un punteggio minore di tre stelle.
+				\item \textbf{Positive:} la recensione aveva un punteggio di maggiore di tre stelle.
+				\item \textbf{Neutre:} la recensione aveva un punteggio uguale a tre stelle.
+				\item \textbf{Negative:} la recensione aveva un punteggio minore di tre stelle.
 			\end{itemize}
 			
-			Procedendo secondo queste modalità, preso per esempio il prodotto "Zelda", con \verb|200| recensioni, si calcolano quante di queste sono risultate positive negative oppure neutre e un possibile risultato potrebbe essere costituito da \verb|100| recensioni positive, \verb|70| negative e \verb|30| neutre. \\		
-			Ottenuto questo elenco abbiamo calcolato la distribuzione probabilistica associata alle tre diverse polarità. In particolare per ognuna associata a uno specifico prodotto, abbiamo effettuato un rapporto tra il conteggio delle recensioni positive e negative, escludendo le neutre (dato non rilevante per la nostra analisi) e il numero di recensioni totali. 
-			
-			La distribuzione probabilistica della polarità ottenuta è stata quindi combinata al sottoinsieme dei prodotti più recensiti/più popolari e il risultato di questo \textit{match} è stata l'identificazione per ogni categoria dei primi cinque prodotti più popolari suddivisi in due elenchi. Il primo contenente i prodotti valutati più negativamente e nel secondo quelli valutati più positivamente. \\
+			Procedendo secondo queste modalità, preso per esempio il prodotto "\textit{Zelda}", con \verb|200| recensioni, si calcolano quante di queste siano risultate positive negative oppure neutre. Un possibile risultato potrebbe essere costituito da \verb|100| recensioni positive, \verb|70| negative e \verb|30| neutre. 
+					
+			Ottenuto questo elenco abbiamo calcolato la distribuzione probabilistica associata alle tre diverse polarità. In particolare per ognuna associata a uno specifico prodotto, abbiamo effettuato un rapporto tra il conteggio delle recensioni positive e negative, escludendo le neutre (dato non rilevante per la nostra analisi) e il numero di recensioni totali. La distribuzione probabilistica della polarità ottenuta è stata quindi combinata al sottoinsieme dei prodotti più recensiti/più popolari e il risultato di questo \textit{match} è stata l'identificazione per ogni categoria dei primi cinque prodotti più popolari suddivisi in due elenchi. Il primo contenente i prodotti valutati più negativamente e nel secondo quelli valutati più positivamente. \\
 			I risultati ottenuti sono visibili nelle Figure \ref{fig:top_pos_book_table} \ref{fig:top_neg_book_table}, \ref{fig:top_pos_film_table}, \ref{fig:top_neg_film_table}, \ref{fig:top_pos_videogames_table}, \ref{fig:top_neg_videogames_table}.
 			
 			\begin{figure} [h]
@@ -143,7 +142,7 @@
 				\item [stemming:] processo di riduzione delle parole flesse (o talvolta derivate) alla loro forma di origine, base o radice.
 			\end{description}
 			
-			Al termine del processo, l'\textit{output} risultante era composto da un elenco di parole scritte in Italiano corretto, privo di segni di punteggiatura o numeri, scritto in forma minuscola, ridotto alla radice. A questo punto è stato quindi possibile effettuare un'operazione di visualizzazione delle parole più usate all'interno delle recensioni, per comprendere il motivo per cui proprio quei prodotti presenti nella lista rientrino nei migliori, per entrambe le polarità. La tecnica visiva utilizzata è quella dei \verb|wordclouds|, che consiste nella raccolta delle parole più usate nelle recensioni (\verb|word|), rappresentate per mezzo di \verb|cloud|, ha permesso di confrontare le recensioni positive e negative per ogni categoria e di comprendere che cosa determinava l'appartenenza dei prodotti all'insieme dei "migliori" o dei peggiori. 
+			Al termine del processo, l'\textit{output} risultante era composto da un elenco di parole scritte in Italiano corretto, privo di segni di punteggiatura o numeri, scritto in forma minuscola, ridotto alla radice. A questo punto è stato quindi possibile effettuare un'operazione di visualizzazione delle parole più usate all'interno delle recensioni, per comprendere il motivo per cui proprio quei prodotti presenti nella lista rientrino nei migliori, per entrambe le polarità. La tecnica visiva utilizzata è quella dei \verb|wordclouds|, che consiste nella raccolta delle parole più usate nelle recensioni (\verb|word|), rappresentate per mezzo di \verb|cloud|. Questa ci ha permesso di confrontare le recensioni positive e negative per ogni categoria e di comprendere che cosa determinava l'appartenenza dei prodotti all'insieme dei "migliori" o dei "peggiori". 
 			\end{description}
 
 	
@@ -176,13 +175,13 @@
 						\item \texttt{illustr}, \texttt{bambin}, \texttt{color}, \texttt{semplic},  \texttt{disegn}, \texttt{raccont}, \texttt{animal} : \\
 						sono tutti termini riguardanti l'infanzia. Da queste informazioni comprendiamo che la maggior parte delle recensioni commenta positivamente i libri per bambini, che sono semplici, colorati, ricchi di disegni e di racconti basati sugli animali. Quindi questi vocaboli sono riferiti per lo più al secondo e al terzo libro dell'elenco dei migliori; tuttavia l'ultimo termine può essere esteso anche al quarto prodotto. 
 						\item \texttt{insegn}, \texttt{scuol}: \\
-						sono vocaboli riferiti all'ambiente scolastico; quindi probabilmente riferito all'ultimo libro, criticato positivamente poiché insegna tematiche relative alla scuola.
+						sono vocaboli riferiti all'ambiente scolastico; quindi probabilmente che denotano l'ultimo libro, criticato positivamente poiché insegna tematiche relative alla scuola.
 						\item \texttt{acquist}, \texttt{regal}: \\
 						molto probabilmente alcuni libri, acquistati per un regalo, hanno suscitato delle impressioni positive nell'utente, che ha quindi recensito positivamente.
 					\end{itemize}	
 				
 					\item[Recensioni negative:] 
-					nello schema sono rappresentate con dimensione maggiore le parole \verb|libr|, \verb|pagin|, \verb|legg|, a dimostrazione del fatto che queste sono in assoluto le parole più frequenti all'interno delle recensioni degli utenti. Notiamo che due su tre sono parole già trovate all'interno dell'elenco delle parole positive, poiché anche in questo caso sono termini utili a determinare la categoria in questione. Studiamo ora le altre parole in relazione all'elenco già stilato (Figura \ref{fig:top_neg_book_table}).
+					nello schema sono rappresentate con dimensione maggiore le parole \verb|libr|, \verb|pagin|, \verb|legg|, a dimostrazione del fatto che queste sono in assoluto le parole più frequenti all'interno delle recensioni degli utenti. Notiamo che due su tre sono parole già trovate all'interno dell'elenco delle parole positive, poiché, anche in questo caso, sono termini utili a determinare la categoria in questione. Studiamo ora le altre parole in relazione all'elenco già stilato (Figura \ref{fig:top_neg_book_table}).
 					
 					\begin{itemize}
 						\item \texttt{hardin}, \texttt{tess}, \texttt{romanz}: \\
@@ -191,12 +190,12 @@
 						sono parole usate nel secondo prodotto dell'elenco 
 						\item \texttt{scrittor}, \texttt{giall}:\\
 						si riferiscono probabilmente a "\textit{La verità del caso di Harry Quebert}", un giallo che vede protagonista uno scrittore.
-						\texttt{bambin}: \\
+						\item \texttt{bambin}: \\
 						fra tutti i prodotti dell'elenco quello che certamente si adatta alle linee giovanili è sicuramente il quarto libro dell'elenco, pieno di attività creative e non proposte ai più piccini.
-						\texttt{aliment}: \\
-						vocabolo riferito a "\textit{Vivere 120 anni. la verità che nessuno vuole raccontarti}".
-						\texttt{medic}, \texttt{ragazz}, \texttt{interessant}: \\
-						tra i proposti sono quelli che più di tutti racchiudono le possibili cause di una critica. Il libro, presupponibilmente l'ultimo dell'elenco, probabilmente aveva un approccio troppo rivolto alla medicina o forse troppo poco. Il secondo è forse più rivolto ad "\textit{After}", criticato spesso per rivolgersi esclusivamente a un pubblico femminile. Più generico, invece, è il vocabolo \verb|interessante|, che ben si adatta a ognuno dei prodotti proposti.												
+						\item \texttt{aliment}: \\
+						vocabolo riferito a "\textit{Vivere 120 anni. La verità che nessuno vuole raccontarti}".
+						\item \texttt{medic}, \texttt{ragazz}, \texttt{interessant}: \\
+						tra i proposti, sono quelli che più di tutti racchiudono le possibili cause di una critica. Il libro, presupponibilmente l'ultimo dell'elenco, aveva un approccio troppo rivolto alla medicina o forse troppo poco. Il secondo è più probabilmente rivolto ad "\textit{After}", criticato spesso per rivolgersi esclusivamente a un pubblico femminile. Più generico, invece, è il vocabolo \verb|interessante|, che ben si adatta a ognuno dei prodotti proposti.												
 					\end{itemize}
 				\end{description}
 			
@@ -239,7 +238,7 @@
 						\item \texttt{war}, \texttt{marvel}, \texttt{rocky}: \\
 						sono tutti termini utili a identificare il dvd in questione. Come ci aspettavamo, il primo di questi si riferisce al film di "\textit{Star Wars}", il primo peggio criticato, il secondo invece riguarda "\textit{Deadpool}", un film della marvel e il terzo del film "\textit{Rocky}". 
 						\item \texttt{ser}, \texttt{episod}, \texttt{vecc}: \\
-						In queste parole sono racchiuse le cause delle critiche. I primi due probabilmente rivolti a "\textit{Star Wars}", una serie di nove film, ognuno dei quali denominato con il termine di "episodio". Il terzo vocabolo, che molto probabilmente si rifesce a "\textit{Rocky}", criticato invece per l'età.		
+						in queste parole sono racchiuse le cause delle critiche. I primi due probabilmente rivolti a "\textit{Star Wars}", una serie di nove film, ognuno dei quali denominato con il termine di "episodio". Il terzo vocabolo, che molto probabilmente si rifesce a "\textit{Rocky}", criticato invece per l'età.		
 					\end{itemize}
 				\end{description}
 			
@@ -267,23 +266,23 @@
 					nello schema sono rappresentate con dimensione maggiore le parole \verb|gioc|, \verb|grafic|, riferite genericamente alla categoria presa in esame, di cui si apprezza la natura del gioco e la grafica. Per quanto riguarda invece il contenuto informativo, soffermiamoci sulla Figura \ref{fig:top_pos_videogames_table}; dalla quale apprendiamo quali sono i cinque prodotti migliori e cerchiamo di ricostruire cosa li caratterizza.
 					\begin{itemize}
 						\item \texttt{super mar}, \texttt{mar kart}, \texttt{zeld}: \\
-						I termini selezionati rappresentano infatti il podio dei migliori, rispettivamente "\textit{Super Mario Odyssey}", "\textit{The Legend of Zelda}" e \textit{Mario Kart 8 Deluxe}". 
+						i termini selezionati rappresentano infatti il podio dei migliori, rispettivamente "\textit{Super Mario Odyssey}", "\textit{The Legend of Zelda}" e \textit{Mario Kart 8 Deluxe}". 
 						\item \texttt{nint switch}: \\
-						i videogiochi più apprezzati sono quelli per \textit{ninntendo switch}; non a caso infatti i tre migliori sono proprio accomunati da questa caratteristica.
+						i videogiochi più apprezzati sono quelli per \textit{nintendo switch}; non a caso infatti i tre migliori sono proprio accomunati da questa caratteristica.
 						\item \texttt{avventur}, \texttt{online}, \texttt{modalit}, \texttt{open world}, \texttt{livell}, \texttt{gameplay}: \\
-						tutti questi vocaboli sono caratteristiche positive dei giochi; probabilmente apprezzati quindi dalle avventure proposte dalla storia, dalla possibilità di giocare online in più modalità, compresa anche quella esplorativa, organizzate in livelli o dal \textit{gameplay} intuitivo, etc.
-						\item \texttt{prezz}: l'appartenenza dei giochi alla lista dei migliori può anche essere stata determinata dal prezzo, trovato forse dagli utenti accessibile o anche basso.
+						tutti questi vocaboli sono caratteristiche positive dei giochi; probabilmente apprezzati per le avventure proposte dalla storia, per la possibilità di giocare online in più modalità, compresa anche quella esplorativa, per l'organizzazione a livelli o per il \textit{gameplay} intuitivo, etc.
+						\item \texttt{prezz}: \\l'appartenenza dei giochi alla lista dei migliori può anche essere stata determinata dal prezzo, trovato forse dagli utenti accessibile o anche basso.
 					\end{itemize}	
 									
 					\item[Recensioni negative:] 
-					nello schema i termini generici più rilevanti per la categoria sono \verb|gioc|, \verb|prodott|. Concentriamoci ora sulla \textit{top five} dei prodotti negativi (Figura \ref{fig:top_neg_videogames_table}), contrariamente ai casi precedenti abbiamo rappresentati tra i pprimi cinque prodotti ci sono sia videogiochi, sia accessori appartenenti alla categoria in questione.
+					nello schema i termini generici più rilevanti per la categoria sono \verb|gioc|, \verb|prodott|. Concentriamoci ora sulla \textit{top five} dei prodotti negativi (Figura \ref{fig:top_neg_videogames_table}). Contrariamente ai casi precedenti, abbiamo rappresentati tra i primi cinque compaiono sia videogiochi, che accessori appartenenti alla categoria in questione.
 					\begin{itemize}
 						\item \texttt{gran turism}, \texttt{destiny}, \texttt{controller}: \\
 						sono tutti termini appartenenti all'elenco dei primi cinque prodotti con più recensioni negative. 
 						\item \texttt{gt}, \texttt{pedalier}, \texttt{macchin}, \texttt{volant}: \\
-						Sono parole riferite al gioco di corse automobilistiche "\textit{Grand Turism}", apprezzato soprattutto quando si gioca con un volante o una pedaliera. 
-						\item \texttt{grafic}, \texttt{stabil}: 
-						i giochi sono probabilmente apprezzati per la grafica efficace e con il termine \verb|stabile| ci si vuole forse riferire alla qualità da parte del gioco di  mantenere la fluidità dell'immagine priva di scatti, o anche la capacità del gioco di non "\textit{crashare}".
+						sono parole riferite al gioco di corse automobilistiche "\textit{Grand Turism}", apprezzato soprattutto quando si gioca con un volante o una pedaliera. 
+						\item \texttt{grafic}, \texttt{stabil}:\\ 
+						i giochi sono probabilmente apprezzati per la grafica efficace. Con il termine \verb|stabile| ci si vuole forse riferire alla qualità da parte del gioco di  mantenere la fluidità dell'immagine priva di scatti, o anche la capacità del gioco di non "\textit{crashare}".
 						\item \texttt{prezz}: 
 						anche in questo caso il prodotto è stato recensito rispetto al suo prezzo, contrariamente a prima però questa volta trovato troppo alto.
 					\end{itemize}
@@ -305,14 +304,14 @@
 			\end{itemize}
 		
 			Attributo essenziale per la nostra analisi è il campo \verb|avg-rating|, rappresentante la valutazione media di tutte le recensioni relative a ogni prodotto. Tuttavia
-			contrariamente a quanto è stato compiuto per le prime analisi, ora non si è eseguita una campionatura sui prodotti migliori, ma si è stato calcolato il \textit{sentiment} medio di ogni prodotto. Questo \textit{sentiment} è stato poi raccolto in base alle categorie, sviluppando ancora una volta due gruppi di insiemi, per le recensioni positive e negative, questa volta però sull'intero \textit{set} di prodotti. Ad operazione conclusa abbiamo raccolto tutti i possibili prezzi per ogni categoria e li abbiamo suddivisi in intervalli, così che per esempio, per la categoria libri ci fosse, tra i tanti, l'intervallo \verb|[1-10]| che racchiudesse al suo interno tutti i prodotti con un prezzo compreso tra il valore \verb|0| e il valore \verb|10|. 
+			contrariamente a quanto è stato compiuto per le prime analisi, ora non si è eseguita una campionatura sui prodotti migliori, ma si è calcolato il \textit{sentiment} medio di ogni prodotto. Questo \textit{sentiment} è stato poi raccolto in base alle categorie, sviluppando ancora una volta due gruppi di insiemi, per le recensioni positive e negative; questa volta però sull'intero \textit{set} di prodotti. Ad operazione conclusa abbiamo raccolto tutti i possibili prezzi per ogni categoria e li abbiamo suddivisi in intervalli, così che, per esempio, per la categoria libri ci fosse, tra i tanti, l'intervallo \verb|[1-10]| che racchiudesse al suo interno tutti i prodotti con un prezzo compreso tra il valore \verb|0| e il valore \verb|10|. 
 	
-			Una volta ottenuti i sotto-raggruppamenti dei prezzi per ogni categoria, siamo andati a visualizzare la tipologia delle recensioni per ognuno di essi. In particolare, tramite un istogramma, abbiamo rappresentato sull'asse delle ascisse tutti gli intervalli di prezzo per una certa categoria e sull'asse delle ordinate il conteggio dei prodotti in percentuale. Analizziamo i risultati per ogni categoria.
+			Una volta ottenuti i sotto-raggruppamenti dei prezzi per ogni categoria, siamo andati a visualizzare la tipologia delle recensioni per ognuno di essi. In particolare, tramite un istogramma, abbiamo rappresentato sull'asse delle ascisse tutti gli intervalli di prezzo per una certa categoria e sull'asse delle ordinate il conteggio della valutazione media di ogni prodotto. Analizziamo i risultati per ogni categoria.
 			
 			\subsection{Categoria libri}
 				Per la categoria "libri", abbiamo il \verb|98.8%| composto da recensioni positive, mentre le restanti sono negative, come mostrato in Figura \ref{fig:pie_books}
 				Studiamo come queste sono distribuite in base al prezzo, più precisamente all'intervallo di prezzi. \\
-				Dalla Figura \ref{fig:priceVSrating_books} si evince che le recensioni positive sono maggiormente distribuite nei prodotti con un prezzo che oscilla tra \verb|0| e \verb|15| euro. Andando avanti la percentuale diminuisce, fino a non avere esemplari su un range dal valore compreso tra i \verb|100| e \verb|150| euro. Per quanto riguarda le recensioni negative, invece, si riscontra una presenza dominante tra quelle appartenenti al primo intervallo, cala drasticamente nel secondo fino a non avere prodotti per i tre \textit{range} successivi. Una possibile chiave di lettura per questa rappresentazione, potrebbe essere che, per quanto riguarda i commenti positivi, con un prezzo basso, se l'utente è soddisfatto a maggior ragione lascerà una recensione positiva, in quanto non ha dovuto spendere molto per un prodotto funzionante. A prezzi elevati invece, è difficile che il prodotto non soddisfi le aspettative, in quanto un libro richiede pochi requisiti di qualità, ne consegue che chi spende rimane soddisfatto, pertanto i commenti negativi si concentrino solo nel primo intervallo.
+				Dalla Figura \ref{fig:priceVSrating_books} si evince che le recensioni positive sono maggiormente distribuite nei prodotti con un prezzo che oscilla tra \verb|0| e \verb|15| euro. Andando avanti la percentuale diminuisce, fino a non avere esemplari su un range dal valore compreso tra i \verb|100| e \verb|150| euro. Per quanto riguarda le recensioni negative, invece, si riscontra una presenza dominante tra quelle appartenenti al primo intervallo, cala drasticamente nel secondo, fino a non avere prodotti per i tre \textit{range} successivi. Una possibile chiave di lettura per questa rappresentazione, potrebbe essere che, per quanto riguarda i commenti positivi, con un prezzo basso, se l'utente è soddisfatto, a maggior ragione lascerà una recensione positiva, in quanto non ha dovuto spendere molto per un prodotto funzionante. A prezzi elevati invece, è difficile che il prodotto non soddisfi le aspettative, in quanto un libro richiede pochi requisiti di qualità. Ne consegue che chi spende rimane soddisfatto, pertanto i commenti negativi si concentrano solo nel primo intervallo.
 					
 				\begin{figure} [h]
 					\centering
@@ -331,13 +330,13 @@
 			
 			
 			\subsection{Categoria dvd}
-			Per la categoria "dvd", abbiamo una distribuzione probabilistica di recensioni medie pari a \verb|97.7| per quelle positive e \verb|2.33| per quelle negative (Figura \ref{fig:pie_dvd}).
-			Dalla Figura \ref{fig:priceVSrating_dvd} si può notare che il \verb|60%| delle recensioni positive appartengono al primo intervallo, diminuiscono per il secondo e terzo \textit{range}, mentre per il quarto si ha un impercettibile aumento delle stesse, probabilmente dovute al fattore qualità-prezzo. Come prima per l'ultimo intervallo abbiamo esclusivamente recensioni positive, seppur molto basse; in quanto difficilmente un utente spende grandi somme di denaro per comprare dvd. Dall'altra parte abbiamo invece quelle negative, il cui numero diminuisce all'aumentare del prezzo, ma che comunque si mantiene pressoché uguale per ogni intervallo.
-			
-			\begin{figure} [h]
-				\centering
-				\begin{subfigure}{0.48\textwidth}
-					\includegraphics[width=\textwidth]{Figure/pie_dvd}
+				Per la categoria "dvd", abbiamo una distribuzione probabilistica di recensioni medie pari a \verb|97.7| per quelle positive e \verb|2.33| per quelle negative (Figura \ref{fig:pie_dvd}).
+				Dalla Figura \ref{fig:priceVSrating_dvd} si può notare che il \verb|60%| delle recensioni positive appartengono al primo intervallo, diminuiscono per il secondo e terzo \textit{range}, mentre per il quarto si ha un impercettibile aumento delle stesse, probabilmente dovute al fattore qualità-prezzo. Come prima, per l'ultimo intervallo abbiamo esclusivamente recensioni positive, seppur molto basse; in quanto difficilmente un utente spende grandi somme di denaro per comprare dvd. Dall'altra parte abbiamo invece quelle negative, il cui numero diminuisce all'aumentare del prezzo, ma che comunque si mantiene pressoché uguale per ogni intervallo.
+				
+				\begin{figure} [h]
+					\centering
+					\begin{subfigure}{0.48\textwidth}
+						\includegraphics[width=\textwidth]{Figure/pie_dvd}
 					\caption{Distribuzione delle recensioni}
 					\label{fig:pie_dvd}
 				\end{subfigure}
@@ -352,7 +351,7 @@
 		
 			\subsection{Categoria videogiochi}
 				Per la categoria "videogiochi", abbiamo una distribuzione probabilistica formata da recensioni positive per il \verb|96.5|, mentre dal \verb|3.55| per quelle negative (Figura \ref{fig:pie_videogames}). Studiamo come queste sono distribuite in base al prezzo, più precisamente all'intervallo di prezzi\\
-				Dalla Figura \ref{fig:priceVSrating_videogames} si può notare come anche in questo caso il comportamento per le recensioni positive sia a discesa, con più del \verb|50%| concentrate nel primo intervallo. Per quelle negative invece abbiamo una percentuale più o meno simile per i primi due intervalli, cala proseguendo, fino a scomparire del tutto nell'ultimo intervallo. Anche in questo caso la chiave di lettura può essere la stessa utilizzata per i libri. 
+				Dalla Figura \ref{fig:priceVSrating_videogames} si può notare come, anche in questo caso, il comportamento per le recensioni positive sia in discesa, con più del \verb|50%| concentrate nel primo intervallo. Per quelle negative, invece, abbiamo una percentuale più o meno simile per i primi due intervalli, cala proseguendo, fino a scomparire del tutto nell'ultimo intervallo. Anche in questo caso la chiave di lettura può essere la stessa utilizzata per i libri. 
 			
 				\begin{figure} [h]
 					\centering
@@ -390,9 +389,9 @@
 			
 		
 	\section{Utilità delle recensioni per gli utenti}
-		La nostra analisi del \textit{sentiment} è proseguita nella direzioni delle recensioni; in particolare ci siamo chiesti se gli utenti abbiano trovato più utili le recensioni negative rispetto a quelle positive. Lo studio si è concentrato all'interno di ogni categoria, raggruppando per esse l'attributo \verb|sentiment|, del \textit{dataset} sulle recensioni in due diversi gruppi, uno per ogni polarità (esclusa quella neutra). Il risultato di questa operazione erano otto diversi gruppi, due per ogni categoria. 
+		La nostra analisi del \textit{sentiment} è proseguita nella direzioni delle recensioni; in particolare ci siamo chiesti se gli utenti abbiano trovato più utili le recensioni negative rispetto a quelle positive. Lo studio si è concentrato all'interno di ogni categoria, raggruppando per esse l'attributo \verb|sentiment|, del \textit{dataset} sulle recensioni, in due diversi gruppi, uno per ogni polarità (esclusa quella neutra). Il risultato di questa operazione erano otto diversi insiemi, due per ogni categoria. 
 		
-		Definita questa divisione siamo andati a calcolare per ognuno degli otto insiemi il valore di utilità complessivo per ogni categoria. In particolare per il calcolo del valore abbiamo calcolato i valori su diverse metriche: utilità massima, minima e media.
+		Definita questa divisione siamo andati a calcolare per ognuno degli otto raggruppamenti il valore di utilità complessivo per ogni categoria. In particolare abbiamo calcolato i valori su diverse metriche: utilità massima, minima e media.
 		
 		\begin{description}
 			\item[Minimo:] valore di utilità minimo raggiunto dalle recensioni.
@@ -403,7 +402,7 @@
 		Di tutte le misure prese in considerazione, quella che più ci è sembrata utile per la rappresentazione è stata la media, in quanto esprime l'andamento generico di utilità. Calcolare, invece, l'utilità minima non portava alcun informazione alla nostra analisi; in quanto per tutte le categorie il valore minimo era sempre uguale a zero. Ragionamento più o meno simile è quello seguito per il valore massimo a livello informativo; non è infatti di alcun interesse conoscere il valore massimo, questo potrebbe essere l'unico a fronte di altri valori tutti minimi. 
 		
 		\subsection{Analisi dei risultati tramite box plot}
-			Avendo scelto la metrica per il calcolo dei risultati, siamo andati a visualizzarli tramite un \textit{boxplot}. Il box plot è un metodo per rappresentare graficamente i gruppi di dati numerici attraverso i loro quartili. In particolare la rappresentazione prevede la visualizzazione di cinque valori: minimo, massimo, mediana, primo quantile e terzo quantile.
+			Avendo scelto la metrica per il calcolo dei risultati, siamo andati a visualizzarli tramite un box plot. Il box plot è un metodo per rappresentare graficamente i gruppi di dati numerici attraverso i loro quartili. In particolare la rappresentazione prevede la visualizzazione di cinque valori: minimo, massimo, mediana, primo quantile e terzo quantile.
 			
 			\begin{itemize}
 				\item \textbf{Minimo:} il punto dati più basso esclusi eventuali valori anomali.
@@ -421,7 +420,7 @@
 				\label{fig:boxplot-ratingVShelpful}
 			\end{figure}
 			
-			Dalla Figura \ref{fig:boxplot-ratingVShelpful} si può osservare come per ogni categoria ci siano moltissimi valori sparsi; la "box" del \textit{box plot} si nota a malapena. Tuttavia la considerazione più importante che si può sollevare è la superiorità di utilità delle recensioni negative su quelle positive; questo a significare che gli utenti trovano molto più utile le critiche negative mosse contro i prodotti rispetto che quelle positive.
+			Dalla Figura \ref{fig:boxplot-ratingVShelpful} si può osservare come per ogni categoria ci siano moltissimi valori sparsi; la "box" del box plot si nota a malapena. Tuttavia la considerazione più importante che si può sollevare è la superiorità di utilità delle recensioni negative su quelle positive; questo a significare che gli utenti trovano molto più utile le critiche negative mosse contro i prodotti, rispetto che quelle positive.
 			
 
 				
